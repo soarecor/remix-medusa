@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes/_index.tsx?browser", "../../../app/routes/_index.tsx"],
+  "sourcesContent": ["export { default, meta } from \"./routes/_index.tsx\";", "import type { V2_MetaFunction } from \"@remix-run/node\";\nimport Footer from \"./layouts.footer\";\nimport Navbar from \"./layouts.navbar\";\n\nexport const meta: V2_MetaFunction = () => {\n  return [\n    { title: \"New Remix App\" },\n    { name: \"description\", content: \"Welcome to Remix!\" },\n  ];\n};\n\n// export default function Index() {\n//   return (\n//     <div className=\"container mx-auto mt-8\">\n//     <h1 className=\"text-3xl font-bold text-gray-700 underline\">\n//       Hello world!\n//     </h1>\n//    </div>\n//   );\n// }\n\n\n\nexport default function Index() {\n return (\n  <>\n   <header className=\"border-b\">\n    <Navbar />\n   </header>\n   {/* <main className=\"container flex justify-center flex-grow mx-auto\">\n     {children}\n   </main> */}\n   <Footer />\n  </>\n  );\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA;AAAA;AAAA;AAAA;AAAA;AAyBE;AArBK,IAAM,OAAwB,MAAM;AACzC,SAAO;AAAA,IACL,EAAE,OAAO,gBAAgB;AAAA,IACzB,EAAE,MAAM,eAAe,SAAS,oBAAoB;AAAA,EACtD;AACF;AAce,SAAR,QAAyB;AAC/B,SACC,sFACC;AAAA,uDAAC,YAAO,WAAU,YACjB,6DAAC,YAAD;AAAA;AAAA;AAAA;AAAA,WAAQ,KADT;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IAIA,mDAAC,YAAD;AAAA;AAAA;AAAA;AAAA,WAAQ;AAAA,OAPT;AAAA;AAAA;AAAA;AAAA,SAQA;AAEF;",
+  "names": []
+}
