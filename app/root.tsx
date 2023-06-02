@@ -30,6 +30,30 @@ export default function App() {
     </html>
   );
 }
+// export default function App() {
+//   return (
+//    <Document>
+//     <Layout>
+//      <Outlet />
+//      <ScrollRestoration />
+//      <Scripts />
+//      <LiveReload />
+//     </Layout>
+//    </Document>
+//    );
+//  }
+
+//  function Document({ children }) {
+//   return (
+//    <html lang="en">
+//     <head>
+//      <Meta />
+//      <Links />
+//     </head>
+//     <body>{children}</body>
+//    </html>
+//    );
+//  }
 
 export const links: LinksFunction = () => [
   // {
