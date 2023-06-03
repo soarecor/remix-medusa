@@ -18,12 +18,13 @@ export default function ProductRoute() {
   const [image, setImage] = useState(product.images[0]);
   const [quantity, setQuantity] = useState(1);
 
-  const handleVariantChange = (index) => {
+
+  const handleVariantChange = (index: number) => {
     setVariant(product.variants[index]);
     setQuantity(1);
   };
 
-  const handleQuantityChange = (action) => {
+  const handleQuantityChange = (action: string) => {
     switch (action) {
       case "inc":
         if (quantity < variant.inventory_quantity) 
@@ -39,7 +40,7 @@ export default function ProductRoute() {
     }
   };
 
-  const handleImageChange = (id) => {
+  const handleImageChange = (id:number) => {
     setImage(product.images.find((img) => img.id === id));
   };
 
