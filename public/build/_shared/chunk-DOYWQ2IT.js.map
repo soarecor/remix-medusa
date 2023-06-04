@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/routes/layouts.footer.tsx"],
-  "sourcesContent": ["export default function Footer() {\n    const currentYear = new Date().getFullYear();\n   \n    return (\n     <div className=\"py-4 text-sm text-center text-gray-200 bg-gray-800\">\n      &copy; Copyright {currentYear} [Brand name]. All Rights Reserved\n     </div>\n     );\n   }"],
-  "mappings": ";;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAIK;AAJU,SAAR,SAA0B;AAC7B,QAAM,eAAc,oBAAI,KAAK,GAAE,YAAY;AAE3C,SACC,mDAAC,SAAI,WAAU,sDAAqD;AAAA;AAAA,IACjD;AAAA,IAAY;AAAA,OAD/B;AAAA;AAAA;AAAA;AAAA,SAEA;AAEF;",
-  "names": []
-}

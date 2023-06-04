@@ -9,7 +9,8 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-
+import Footer from "~/components/footer";
+import Navbar from "~/components/navbar";
 import styles from "./tailwind.css";
 
 export default function App() {
@@ -22,38 +23,18 @@ export default function App() {
         <Links />
       </head>
       <body>
+      <header className="border-b">
+      <Navbar />
+    </header>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   );
 }
-// export default function App() {
-//   return (
-//    <Document>
-//     <Layout>
-//      <Outlet />
-//      <ScrollRestoration />
-//      <Scripts />
-//      <LiveReload />
-//     </Layout>
-//    </Document>
-//    );
-//  }
-
-//  function Document({ children }) {
-//   return (
-//    <html lang="en">
-//     <head>
-//      <Meta />
-//      <Links />
-//     </head>
-//     <body>{children}</body>
-//    </html>
-//    );
-//  }
 
 export const links: LinksFunction = () => [
   // {

@@ -1,6 +1,5 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import Footer from "./layouts.footer";
-import Navbar from "./layouts.navbar";
+
 import { Link } from "@remix-run/react";
 
 export const meta: V2_MetaFunction = () => {
@@ -40,9 +39,7 @@ export default function IndexRoute() {
   return (
     <div>
      {/* Hero Banner */}
-    <header className="border-b">
-      <Navbar />
-    </header>
+
     <div className="px-12 py-32 text-center text-gray-200 bg-gray-800">
      <h1 className="text-5xl text-gray-100">New arrivals are here</h1>
      <p className="px-8 mt-2 font-semibold text-gray-300">
@@ -57,7 +54,7 @@ export default function IndexRoute() {
        Shop New Arrivals
      </Link>
     </div>
-    <Footer />
+
    </div>
    );
  }

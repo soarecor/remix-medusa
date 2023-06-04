@@ -139,70 +139,177 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var import_react2 = require("@remix-run/react");
+var import_react3 = require("@remix-run/react");
+
+// app/components/footer.jsx
+var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime");
+function Footer() {
+  let currentYear = (/* @__PURE__ */ new Date()).getFullYear();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "py-4 text-sm text-center text-gray-200 bg-gray-800", children: [
+    "\xA9 Copyright ",
+    currentYear,
+    " [Brand name]. All Rights Reserved"
+  ] }, void 0, !0, {
+    fileName: "app/components/footer.jsx",
+    lineNumber: 5,
+    columnNumber: 6
+  }, this);
+}
+
+// app/components/navbar.jsx
+var import_react2 = require("@remix-run/react"), import_bi = require("react-icons/bi"), import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
+function Navbar() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("nav", { className: "flex items-center justify-between px-8 pt-2", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "font-mono text-3xl font-extrabold uppercase", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react2.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("img", { className: "w-28", src: "/logo.svg", alt: "Medusa" }, void 0, !1, {
+      fileName: "app/components/navbar.jsx",
+      lineNumber: 25,
+      columnNumber: 6
+    }, this) }, void 0, !1, {
+      fileName: "app/components/navbar.jsx",
+      lineNumber: 24,
+      columnNumber: 5
+    }, this) }, void 0, !1, {
+      fileName: "app/components/navbar.jsx",
+      lineNumber: 23,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "space-x-4", children: [
+      {
+        label: "Home",
+        url: "/"
+      },
+      {
+        label: "Products",
+        url: "/products"
+      },
+      {
+        label: "About",
+        url: "/about"
+      }
+    ].map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react2.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
+      fileName: "app/components/navbar.jsx",
+      lineNumber: 32,
+      columnNumber: 6
+    }, this)) }, void 0, !1, {
+      fileName: "app/components/navbar.jsx",
+      lineNumber: 30,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "font-semibold text-gray-600 hover:text-emerald-500", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+      import_react2.NavLink,
+      {
+        to: "/checkout",
+        className: "inline-flex items-center space-x-1 transition-colors duration-300",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_bi.BiShoppingBag, { className: "text-xl" }, void 0, !1, {
+            fileName: "app/components/navbar.jsx",
+            lineNumber: 44,
+            columnNumber: 6
+          }, this),
+          " ",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { children: "0" }, void 0, !1, {
+            fileName: "app/components/navbar.jsx",
+            lineNumber: 44,
+            columnNumber: 44
+          }, this)
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/components/navbar.jsx",
+        lineNumber: 40,
+        columnNumber: 5
+      },
+      this
+    ) }, void 0, !1, {
+      fileName: "app/components/navbar.jsx",
+      lineNumber: 39,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/navbar.jsx",
+    lineNumber: 21,
+    columnNumber: 3
+  }, this);
+}
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-EHOKMSUN.css";
+var tailwind_default = "/build/_assets/tailwind-K7NDTVSD.css";
 
 // app/root.tsx
-var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime");
 function App() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("html", { lang: "en", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("head", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { charSet: "utf-8" }, void 0, !1, {
-        fileName: "app/root.tsx",
-        lineNumber: 19,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("html", { lang: "en", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("head", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("meta", { charSet: "utf-8" }, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 20,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Meta, {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 21,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Links, {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react3.Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 22,
         columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react3.Links, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 23,
+        columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 18,
+      lineNumber: 19,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("body", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Outlet, {}, void 0, !1, {
-        fileName: "app/root.tsx",
-        lineNumber: 25,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.ScrollRestoration, {}, void 0, !1, {
-        fileName: "app/root.tsx",
-        lineNumber: 26,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Scripts, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("body", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("header", { className: "border-b", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(Navbar, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 27,
+        columnNumber: 7
+      }, this) }, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 26,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react3.Outlet, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 29,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.LiveReload, {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react3.ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 28,
+        lineNumber: 30,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react3.Scripts, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 31,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react3.LiveReload, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 32,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(Footer, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 33,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 24,
+      lineNumber: 25,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 17,
+    lineNumber: 18,
     columnNumber: 5
   }, this);
 }
@@ -220,7 +327,7 @@ __export(products_productId_exports, {
   default: () => ProductRoute,
   loader: () => loader
 });
-var import_react3 = require("react"), import_node2 = require("@remix-run/node"), import_react4 = require("@remix-run/react"), import_bi = require("react-icons/bi");
+var import_react4 = require("react"), import_node2 = require("@remix-run/node"), import_react5 = require("@remix-run/react"), import_bi2 = require("react-icons/bi");
 
 // app/utils/client.js
 var import_medusa_js = __toESM(require("@medusajs/medusa-js")), BACKEND_URL = process.env.PUBLIC_MEDUSA_URL || "http://localhost:9000", createClient = () => new import_medusa_js.default({ baseUrl: BACKEND_URL });
@@ -238,12 +345,12 @@ function formatPrice(variant) {
 }
 
 // app/routes/products.$productId.tsx
-var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), loader = async ({ params }) => {
+var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime"), loader = async ({ params }) => {
   let client = createClient(), { product } = await client.products.retrieve(params.productId);
   return (0, import_node2.json)(product);
 };
 function ProductRoute() {
-  let product = (0, import_react4.useLoaderData)(), [variant, setVariant] = (0, import_react3.useState)(product.variants[0]), [image, setImage] = (0, import_react3.useState)(product.images[0]), [quantity, setQuantity] = (0, import_react3.useState)(1), handleVariantChange = (index) => {
+  let product = (0, import_react5.useLoaderData)(), [variant, setVariant] = (0, import_react4.useState)(product.variants[0]), [image, setImage] = (0, import_react4.useState)(product.images[0]), [quantity, setQuantity] = (0, import_react4.useState)(1), handleVariantChange = (index) => {
     setVariant(product.variants[index]), setQuantity(1);
   }, handleQuantityChange = (action) => {
     switch (action) {
@@ -259,9 +366,9 @@ function ProductRoute() {
   }, handleImageChange = (id) => {
     setImage(product.images.find((img) => img.id === id));
   };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "grid items-center md:grid-cols-2", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "w-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "grid items-center md:grid-cols-2", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
         "img",
         {
           className: "w-full rounded-lg",
@@ -272,12 +379,12 @@ function ProductRoute() {
         !1,
         {
           fileName: "app/routes/products.$productId.tsx",
-          lineNumber: 50,
+          lineNumber: 51,
           columnNumber: 11
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex justify-center p-4 space-x-2", children: product.images.map((imageItem) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex justify-center p-4 space-x-2", children: product.images.map((imageItem) => /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
         "img",
         {
           className: `w-16 border-2 rounded-lg ${imageItem.id === image.id ? "border-teal-400" : null}`,
@@ -289,41 +396,41 @@ function ProductRoute() {
         !1,
         {
           fileName: "app/routes/products.$productId.tsx",
-          lineNumber: 57,
+          lineNumber: 58,
           columnNumber: 15
         },
         this
       )) }, void 0, !1, {
         fileName: "app/routes/products.$productId.tsx",
-        lineNumber: 55,
+        lineNumber: 56,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.$productId.tsx",
-      lineNumber: 49,
+      lineNumber: 50,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex flex-col px-16 py-4 space-y-8", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex flex-col px-16 py-4 space-y-8", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { children: [
         product.title,
         " "
       ] }, void 0, !0, {
         fileName: "app/routes/products.$productId.tsx",
-        lineNumber: 70,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-semibold text-teal-600", children: formatPrice(variant) }, void 0, !1, {
-        fileName: "app/routes/products.$productId.tsx",
         lineNumber: 71,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-semibold", children: "Select Size" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "font-semibold text-teal-600", children: formatPrice(variant) }, void 0, !1, {
+        fileName: "app/routes/products.$productId.tsx",
+        lineNumber: 72,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "font-semibold", children: "Select Size" }, void 0, !1, {
           fileName: "app/routes/products.$productId.tsx",
-          lineNumber: 73,
+          lineNumber: 74,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "grid grid-cols-3 gap-2 mt-2 md:grid-cols-2 xl:grid-cols-4", children: product.variants.map((variantItem, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "grid grid-cols-3 gap-2 mt-2 md:grid-cols-2 xl:grid-cols-4", children: product.variants.map((variantItem, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
           "button",
           {
             className: `px-2 py-1 mr-2 text-sm hover:brightness-90 ${variantItem.id === variant.id ? "bg-gray-700 text-gray-100" : "bg-gray-300 text-gray-700"}`,
@@ -334,28 +441,28 @@ function ProductRoute() {
           !1,
           {
             fileName: "app/routes/products.$productId.tsx",
-            lineNumber: 76,
+            lineNumber: 77,
             columnNumber: 17
           },
           this
         )) }, void 0, !1, {
           fileName: "app/routes/products.$productId.tsx",
-          lineNumber: 74,
+          lineNumber: 75,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.$productId.tsx",
-        lineNumber: 72,
+        lineNumber: 73,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-semibold", children: "Select Quantity" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "font-semibold", children: "Select Quantity" }, void 0, !1, {
           fileName: "app/routes/products.$productId.tsx",
-          lineNumber: 91,
+          lineNumber: 92,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center px-4 mt-2 space-x-4", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex items-center px-4 mt-2 space-x-4", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
             "button",
             {
               className: "px-4 py-2 hover:shadow-sm hover:text-teal-500 hover:font-bold",
@@ -366,17 +473,17 @@ function ProductRoute() {
             !1,
             {
               fileName: "app/routes/products.$productId.tsx",
-              lineNumber: 93,
+              lineNumber: 94,
               columnNumber: 15
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { children: quantity }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { children: quantity }, void 0, !1, {
             fileName: "app/routes/products.$productId.tsx",
-            lineNumber: 99,
+            lineNumber: 100,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
             "button",
             {
               className: "px-4 py-2 hover:shadow-sm hover:text-teal-500 hover:font-bold",
@@ -387,75 +494,75 @@ function ProductRoute() {
             !1,
             {
               fileName: "app/routes/products.$productId.tsx",
-              lineNumber: 100,
+              lineNumber: 101,
               columnNumber: 15
             },
             this
           )
         ] }, void 0, !0, {
           fileName: "app/routes/products.$productId.tsx",
-          lineNumber: 92,
+          lineNumber: 93,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.$productId.tsx",
-        lineNumber: 90,
+        lineNumber: 91,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("button", { className: "inline-flex items-center px-4 py-2 font-semibold text-gray-200 bg-gray-700 rounded hover:text-white hover:bg-gray-900", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_bi.BiShoppingBag, { className: "mr-2 text-lg" }, void 0, !1, {
-          fileName: "app/routes/products.$productId.tsx",
-          lineNumber: 110,
-          columnNumber: 15
-        }, this),
-        " ",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { children: "Add to Cart" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { className: "inline-flex items-center px-4 py-2 font-semibold text-gray-200 bg-gray-700 rounded hover:text-white hover:bg-gray-900", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_bi2.BiShoppingBag, { className: "mr-2 text-lg" }, void 0, !1, {
           fileName: "app/routes/products.$productId.tsx",
           lineNumber: 111,
           columnNumber: 15
+        }, this),
+        " ",
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { children: "Add to Cart" }, void 0, !1, {
+          fileName: "app/routes/products.$productId.tsx",
+          lineNumber: 112,
+          columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.$productId.tsx",
-        lineNumber: 109,
+        lineNumber: 110,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.$productId.tsx",
-        lineNumber: 108,
+        lineNumber: 109,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "font-semibold", children: "Product Description" }, void 0, !1, {
-          fileName: "app/routes/products.$productId.tsx",
-          lineNumber: 115,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("hr", { className: "w-2/3 mt-2 border-t-2 border-gray-300" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "font-semibold", children: "Product Description" }, void 0, !1, {
           fileName: "app/routes/products.$productId.tsx",
           lineNumber: 116,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "mt-4 text-gray-700", children: product.description }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("hr", { className: "w-2/3 mt-2 border-t-2 border-gray-300" }, void 0, !1, {
           fileName: "app/routes/products.$productId.tsx",
           lineNumber: 117,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "mt-4 text-gray-700", children: product.description }, void 0, !1, {
+          fileName: "app/routes/products.$productId.tsx",
+          lineNumber: 118,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.$productId.tsx",
-        lineNumber: 114,
+        lineNumber: 115,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.$productId.tsx",
-      lineNumber: 69,
+      lineNumber: 70,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/products.$productId.tsx",
-    lineNumber: 48,
+    lineNumber: 49,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/routes/products.$productId.tsx",
-    lineNumber: 47,
+    lineNumber: 48,
     columnNumber: 5
   }, this);
 }
@@ -466,26 +573,26 @@ __export(products_index_exports, {
   default: () => ProductsIndexRoute,
   loader: () => loader2
 });
-var import_node3 = require("@remix-run/node"), import_react6 = require("@remix-run/react");
+var import_node3 = require("@remix-run/node"), import_react7 = require("@remix-run/react");
 
 // app/components/product-card.jsx
-var import_react5 = require("@remix-run/react");
-var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime");
+var import_react6 = require("@remix-run/react");
+var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
 function ProductCard({ product }) {
   let variant = product.variants[0];
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("section", { className: "overflow-hidden bg-white rounded-lg shadow:md hover:shadow-lg w-80", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react5.Link, { to: `/products/${product.id}`, children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("img", { className: "w-80", src: product.thumbnail, alt: product.title }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("section", { className: "overflow-hidden bg-white rounded-lg shadow:md hover:shadow-lg w-80", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to: `/products/${product.id}`, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("img", { className: "w-80", src: product.thumbnail, alt: product.title }, void 0, !1, {
       fileName: "app/components/product-card.jsx",
       lineNumber: 10,
       columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "p-4", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("h3", { className: "text-lg font-bold text-gray-700 hover:underline", children: product.title }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "p-4", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h3", { className: "text-lg font-bold text-gray-700 hover:underline", children: product.title }, void 0, !1, {
         fileName: "app/components/product-card.jsx",
         lineNumber: 12,
         columnNumber: 6
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", { className: "font-semibold text-teal-600", children: formatPrice(variant) }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "font-semibold text-teal-600", children: formatPrice(variant) }, void 0, !1, {
         fileName: "app/components/product-card.jsx",
         lineNumber: 15,
         columnNumber: 6
@@ -507,19 +614,19 @@ function ProductCard({ product }) {
 }
 
 // app/routes/products._index.tsx
-var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime"), loader2 = async () => {
+var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime"), loader2 = async () => {
   let client = createClient(), { products } = await client.products.list();
   return (0, import_node3.json)(products);
 };
 function ProductsIndexRoute() {
-  let products = (0, import_react6.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "w-full p-4 my-8", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { className: "text-center", children: "Latest Arrivals" }, void 0, !1, {
+  let products = (0, import_react7.useLoaderData)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "w-full p-4 my-8", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h1", { className: "text-center", children: "Latest Arrivals" }, void 0, !1, {
       fileName: "app/routes/products._index.tsx",
       lineNumber: 18,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "grid grid-cols-1 gap-6 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 xl:gap-6 2xl:px-24 2xl:gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4", children: products.map((product) => /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(ProductCard, { product }, product.id, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "grid grid-cols-1 gap-6 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 xl:gap-6 2xl:px-24 2xl:gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4", children: products.map((product) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(ProductCard, { product }, product.id, !1, {
       fileName: "app/routes/products._index.tsx",
       lineNumber: 21,
       columnNumber: 6
@@ -531,107 +638,6 @@ function ProductsIndexRoute() {
   ] }, void 0, !0, {
     fileName: "app/routes/products._index.tsx",
     lineNumber: 17,
-    columnNumber: 3
-  }, this);
-}
-
-// app/routes/layouts.footer.tsx
-var layouts_footer_exports = {};
-__export(layouts_footer_exports, {
-  default: () => Footer
-});
-var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
-function Footer() {
-  let currentYear = (/* @__PURE__ */ new Date()).getFullYear();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "py-4 text-sm text-center text-gray-200 bg-gray-800", children: [
-    "\xA9 Copyright ",
-    currentYear,
-    " [Brand name]. All Rights Reserved"
-  ] }, void 0, !0, {
-    fileName: "app/routes/layouts.footer.tsx",
-    lineNumber: 5,
-    columnNumber: 6
-  }, this);
-}
-
-// app/routes/layouts.navbar.tsx
-var layouts_navbar_exports = {};
-__export(layouts_navbar_exports, {
-  default: () => Navbar
-});
-var import_react7 = require("@remix-run/react"), import_bi2 = require("react-icons/bi"), import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
-function Navbar() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("nav", { className: "flex items-center justify-between px-8 pt-2", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "font-mono text-3xl font-extrabold uppercase", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("img", { className: "w-28", src: "/logo.svg", alt: "Medusa" }, void 0, !1, {
-      fileName: "app/routes/layouts.navbar.tsx",
-      lineNumber: 25,
-      columnNumber: 6
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/layouts.navbar.tsx",
-      lineNumber: 24,
-      columnNumber: 5
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/layouts.navbar.tsx",
-      lineNumber: 23,
-      columnNumber: 4
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "space-x-4", children: [
-      {
-        label: "Home",
-        url: "/"
-      },
-      {
-        label: "Products",
-        url: "/products"
-      },
-      {
-        label: "About",
-        url: "/about"
-      }
-    ].map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
-      fileName: "app/routes/layouts.navbar.tsx",
-      lineNumber: 32,
-      columnNumber: 6
-    }, this)) }, void 0, !1, {
-      fileName: "app/routes/layouts.navbar.tsx",
-      lineNumber: 30,
-      columnNumber: 4
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "font-semibold text-gray-600 hover:text-emerald-500", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
-      import_react7.NavLink,
-      {
-        to: "/checkout",
-        className: "inline-flex items-center space-x-1 transition-colors duration-300",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_bi2.BiShoppingBag, { className: "text-xl" }, void 0, !1, {
-            fileName: "app/routes/layouts.navbar.tsx",
-            lineNumber: 44,
-            columnNumber: 6
-          }, this),
-          " ",
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("span", { children: "0" }, void 0, !1, {
-            fileName: "app/routes/layouts.navbar.tsx",
-            lineNumber: 44,
-            columnNumber: 44
-          }, this)
-        ]
-      },
-      void 0,
-      !0,
-      {
-        fileName: "app/routes/layouts.navbar.tsx",
-        lineNumber: 40,
-        columnNumber: 5
-      },
-      this
-    ) }, void 0, !1, {
-      fileName: "app/routes/layouts.navbar.tsx",
-      lineNumber: 39,
-      columnNumber: 4
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/routes/layouts.navbar.tsx",
-    lineNumber: 21,
     columnNumber: 3
   }, this);
 }
@@ -665,56 +671,40 @@ var import_react8 = require("@remix-run/react"), import_jsx_dev_runtime9 = requi
   { name: "description", content: "Welcome to Remix!" }
 ];
 function IndexRoute() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("header", { className: "border-b", children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(Navbar, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { className: "px-12 py-32 text-center text-gray-200 bg-gray-800", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("h1", { className: "text-5xl text-gray-100", children: "New arrivals are here" }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 44,
-      columnNumber: 7
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 43,
-      columnNumber: 5
+      columnNumber: 6
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { className: "px-12 py-32 text-center text-gray-200 bg-gray-800", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("h1", { className: "text-5xl text-gray-100", children: "New arrivals are here" }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 47,
-        columnNumber: 6
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { className: "px-8 mt-2 font-semibold text-gray-300", children: "The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they're still in stock." }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 48,
-        columnNumber: 6
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
-        import_react8.Link,
-        {
-          to: "/products",
-          className: "inline-block px-6 py-2 mt-8 text-sm font-semibold text-gray-700 transition duration-300 bg-gray-100 rounded-md hover:bg-white hover:text-gray-900 hover:scale-110 color",
-          children: "Shop New Arrivals"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 53,
-          columnNumber: 6
-        },
-        this
-      )
-    ] }, void 0, !0, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { className: "px-8 mt-2 font-semibold text-gray-300", children: "The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they're still in stock." }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 46,
-      columnNumber: 5
+      lineNumber: 45,
+      columnNumber: 6
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(Footer, {}, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 60,
-      columnNumber: 5
-    }, this)
+    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
+      import_react8.Link,
+      {
+        to: "/products",
+        className: "inline-block px-6 py-2 mt-8 text-sm font-semibold text-gray-700 transition duration-300 bg-gray-100 rounded-md hover:bg-white hover:text-gray-900 hover:scale-110 color",
+        children: "Shop New Arrivals"
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 50,
+        columnNumber: 6
+      },
+      this
+    )
   ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 41,
+    lineNumber: 43,
+    columnNumber: 5
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/_index.tsx",
+    lineNumber: 40,
     columnNumber: 5
   }, this);
 }
@@ -745,7 +735,7 @@ function AboutRoute() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-QXN6FJPP.js", imports: ["/build/_shared/chunk-CZWZPO3E.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-OTIWSX5L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-NALMVB3I.js", imports: ["/build/_shared/chunk-DOYWQ2IT.js", "/build/_shared/chunk-RRFJ4U45.js", "/build/_shared/chunk-4IXUXPDU.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-7HT2DB7B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-HALGULJC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/layouts.footer": { id: "routes/layouts.footer", parentId: "root", path: "layouts/footer", index: void 0, caseSensitive: void 0, module: "/build/routes/layouts.footer-PKLSEV34.js", imports: ["/build/_shared/chunk-DOYWQ2IT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/layouts.navbar": { id: "routes/layouts.navbar", parentId: "root", path: "layouts/navbar", index: void 0, caseSensitive: void 0, module: "/build/routes/layouts.navbar-Z6NEXX3G.js", imports: ["/build/_shared/chunk-RRFJ4U45.js", "/build/_shared/chunk-4IXUXPDU.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products.$productId": { id: "routes/products.$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$productId-A2CDHRTP.js", imports: ["/build/_shared/chunk-QTYL33GH.js", "/build/_shared/chunk-4IXUXPDU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products._index": { id: "routes/products._index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products._index-B56J2NDE.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "979cf715", hmr: void 0, url: "/build/manifest-979CF715.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-QXN6FJPP.js", imports: ["/build/_shared/chunk-CZWZPO3E.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CLB552JU.js", imports: ["/build/_shared/chunk-4IXUXPDU.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-TBHT2QMQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-7HT2DB7B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-HALGULJC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products.$productId": { id: "routes/products.$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$productId-L7MBQY24.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products._index": { id: "routes/products._index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products._index-B56J2NDE.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "b5c48ba1", hmr: void 0, url: "/build/manifest-B5C48BA1.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -772,22 +762,6 @@ var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable
     index: !0,
     caseSensitive: void 0,
     module: products_index_exports
-  },
-  "routes/layouts.footer": {
-    id: "routes/layouts.footer",
-    parentId: "root",
-    path: "layouts/footer",
-    index: void 0,
-    caseSensitive: void 0,
-    module: layouts_footer_exports
-  },
-  "routes/layouts.navbar": {
-    id: "routes/layouts.navbar",
-    parentId: "root",
-    path: "layouts/navbar",
-    index: void 0,
-    caseSensitive: void 0,
-    module: layouts_navbar_exports
   },
   "routes/checkout": {
     id: "routes/checkout",
