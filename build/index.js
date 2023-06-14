@@ -352,8 +352,8 @@ var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime"), loader = async (
 function ProductRoute() {
   let product = (0, import_react5.useLoaderData)(), [variant, setVariant] = (0, import_react4.useState)(product.variants[0]), [image, setImage] = (0, import_react4.useState)(product.images[0]), [quantity, setQuantity] = (0, import_react4.useState)(1), handleVariantChange = (index) => {
     setVariant(product.variants[index]), setQuantity(1);
-  }, handleQuantityChange = (action) => {
-    switch (action) {
+  }, handleQuantityChange = (action2) => {
+    switch (action2) {
       case "inc":
         quantity < variant.inventory_quantity && setQuantity(quantity + 1);
         break;
@@ -734,8 +734,153 @@ function AboutRoute() {
   }, this);
 }
 
+// app/routes/login.tsx
+var login_exports = {};
+__export(login_exports, {
+  action: () => action,
+  default: () => LoginRoute
+});
+
+// app/data/auth.server.js
+async function signup(credentials) {
+  let client = createClient(), { customer } = await client.customers.create({
+    first_name: "Alec",
+    last_name: "Reynolds",
+    email: credentials.email,
+    password: credentials.password
+  });
+  return customer;
+}
+async function login(credentials) {
+  let client = createClient(), { customer } = await client.auth.authenticate({
+    email: credentials.email,
+    password: credentials.password
+  });
+  return console.log(customer), customer;
+}
+
+// app/data/validation.server.js
+function isValidEmail(value) {
+  return value && value.includes("@");
+}
+function isValidPassword(value) {
+  return value && value.trim().length >= 7;
+}
+function validateCredentials(input) {
+  let validationErrors = {};
+  if (isValidEmail(input.email) || (validationErrors.email = "Invalid email address."), isValidPassword(input.password) || (validationErrors.password = "Invalid password. Must be at least 7 characters long."), Object.keys(validationErrors).length > 0)
+    throw validationErrors;
+}
+
+// app/components/AuthForm.jsx
+var import_react9 = require("@remix-run/react"), import_fa = require("react-icons/fa"), import_jsx_dev_runtime11 = require("react/jsx-dev-runtime");
+function AuthForm() {
+  let [searchParams] = (0, import_react9.useSearchParams)(), navigation = (0, import_react9.useTransition)(), validationErrors = (0, import_react9.useActionData)(), authMode = searchParams.get("mode") || "login", submitBtnCaption = authMode === "login" ? "Login" : "Create User", toggleBtnCaption = authMode === "login" ? "Create a new user" : "Log in with existing user", isSubmitting = navigation.state !== "idle";
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_react9.Form, { method: "post", className: "form", id: "auth-form", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "icon-img", children: authMode === "login" ? /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_fa.FaLock, {}, void 0, !1, {
+      fileName: "app/components/AuthForm.jsx",
+      lineNumber: 26,
+      columnNumber: 35
+    }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_fa.FaUserPlus, {}, void 0, !1, {
+      fileName: "app/components/AuthForm.jsx",
+      lineNumber: 26,
+      columnNumber: 48
+    }, this) }, void 0, !1, {
+      fileName: "app/components/AuthForm.jsx",
+      lineNumber: 25,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("label", { htmlFor: "email", children: "Email Address" }, void 0, !1, {
+        fileName: "app/components/AuthForm.jsx",
+        lineNumber: 29,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("input", { type: "email", id: "email", name: "email", required: !0 }, void 0, !1, {
+        fileName: "app/components/AuthForm.jsx",
+        lineNumber: 30,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/AuthForm.jsx",
+      lineNumber: 28,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("label", { htmlFor: "password", children: "Password" }, void 0, !1, {
+        fileName: "app/components/AuthForm.jsx",
+        lineNumber: 33,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("input", { type: "password", id: "password", name: "password", minLength: 7 }, void 0, !1, {
+        fileName: "app/components/AuthForm.jsx",
+        lineNumber: 34,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/AuthForm.jsx",
+      lineNumber: 32,
+      columnNumber: 9
+    }, this),
+    validationErrors && /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("ul", { children: Object.values(validationErrors).map((error) => /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("li", { children: error }, error, !1, {
+      fileName: "app/components/AuthForm.jsx",
+      lineNumber: 39,
+      columnNumber: 15
+    }, this)) }, void 0, !1, {
+      fileName: "app/components/AuthForm.jsx",
+      lineNumber: 37,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "form-actions", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("button", { disabled: isSubmitting, children: isSubmitting ? "Authenticating..." : submitBtnCaption }, void 0, !1, {
+        fileName: "app/components/AuthForm.jsx",
+        lineNumber: 44,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_react9.Link, { to: authMode === "login" ? "?mode=signup" : "?mode=login", children: toggleBtnCaption }, void 0, !1, {
+        fileName: "app/components/AuthForm.jsx",
+        lineNumber: 47,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/AuthForm.jsx",
+      lineNumber: 43,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/AuthForm.jsx",
+    lineNumber: 24,
+    columnNumber: 7
+  }, this);
+}
+var AuthForm_default = AuthForm;
+
+// app/routes/login.tsx
+var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime");
+function LoginRoute() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(AuthForm_default, {}, void 0, !1, {
+    fileName: "app/routes/login.tsx",
+    lineNumber: 25,
+    columnNumber: 12
+  }, this);
+}
+async function action({ request }) {
+  let authMode = new URL(request.url).searchParams.get("mode") || "login", formData = await request.formData(), credentials = Object.fromEntries(formData);
+  try {
+    validateCredentials(credentials);
+  } catch (error) {
+    return error;
+  }
+  try {
+    return authMode === "login" ? await login(credentials) : await signup(credentials);
+  } catch (error) {
+    if (error.status === 422)
+      return { credentials: error.message };
+  }
+}
+
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-QXN6FJPP.js", imports: ["/build/_shared/chunk-CZWZPO3E.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CLB552JU.js", imports: ["/build/_shared/chunk-4IXUXPDU.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-TBHT2QMQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-7HT2DB7B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-HALGULJC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products.$productId": { id: "routes/products.$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$productId-L7MBQY24.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products._index": { id: "routes/products._index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products._index-B56J2NDE.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "b5c48ba1", hmr: void 0, url: "/build/manifest-B5C48BA1.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-O5XW3Q3W.js", imports: ["/build/_shared/chunk-V3NDK6DD.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YXF6MJGA.js", imports: ["/build/_shared/chunk-HCAYHE65.js", "/build/_shared/chunk-3NZY4G46.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-5RKCYYQC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-7HT2DB7B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-HALGULJC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-TTKWWPMJ.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products.$productId": { id: "routes/products.$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$productId-JVVRHBNT.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products._index": { id: "routes/products._index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products._index-TRJKMYNE.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "45d0038e", hmr: void 0, url: "/build/manifest-45D0038E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -786,6 +931,14 @@ var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable
     index: void 0,
     caseSensitive: void 0,
     module: about_exports
+  },
+  "routes/login": {
+    id: "routes/login",
+    parentId: "root",
+    path: "login",
+    index: void 0,
+    caseSensitive: void 0,
+    module: login_exports
   }
 };
 // Annotate the CommonJS export names for ESM import in node:
