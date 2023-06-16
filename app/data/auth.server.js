@@ -1,4 +1,28 @@
 import { createClient } from "~/utils/client";
+import {createCookieSessionStorage, redirect} from '@remix-run/node'
+const SESSION_SECRET = process.env.SESSION_SECRET
+
+const sessionStorage = createCookieSessionStorage({
+    cookie: {
+        name: "__session",
+         secure:process.env.NODE_ENV === 'production',
+         secrets: [SESSION_SECRET],
+         sameSite: 'lax',
+         maxAge: 30*24*60*60, // 30 days
+         httpOnly: true
+    }
+})
+
+async function createUserSession(userId, redirectPath) {
+    const session = await sessionStorage.getSession()
+    session.set('userId', userId)
+    return redirect(redirectPath, {
+        headers:{
+            'Set-Cookie': await sessionStorage.commitSession(session)
+        }
+    })
+}
+
 
 export async function signup(credentials) {
     const client = createClient();
@@ -11,7 +35,7 @@ export async function signup(credentials) {
     //   ({
 
     //     email: 'user@example.com',
-    //     password: 'supersecret'
+    //     password: 'supersecret'  
     //   });
     return customer;
 }
@@ -23,6 +47,6 @@ export async function login(credentials) {
         password: credentials.password
       })
 
-      console.log(customer)
-    return customer;
+     return createUserSession(customer.id, '/about')
+    // return customer.id;
 }

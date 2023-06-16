@@ -10,7 +10,7 @@ import {
   function AuthForm() {
     const [searchParams] = useSearchParams();
     const navigation = useNavigation();
-    const validationErrors = useActionData();
+    const actionData = useActionData();
   
     const authMode = searchParams.get('mode') || 'login';
   
@@ -33,10 +33,10 @@ import {
           <label htmlFor="password">Password</label>
           <input type="password" id="password" name="password" minLength={7} />
         </p>
-        {validationErrors && (
+        {actionData && (
           <ul>
-            {Object.values(validationErrors).map((error) => (
-              <li key={error}>{error}</li>
+            {Object.values(actionData).map((item) => (
+              <li key={item}>{item}</li>
             ))}
           </ul>
         )}

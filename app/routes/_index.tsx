@@ -1,6 +1,15 @@
 import type { V2_MetaFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
+import { Link, useLoaderData } from "@remix-run/react";
+import { createClient } from "~/utils/client";
 
-import { Link } from "@remix-run/react";
+// export const loader = async () => {
+//   const client = createClient();
+//   const { customer } = await client.auth.getSession()
+//   console.log(customer)
+//   return json(customer);
+// };
+
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -9,36 +18,12 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
-// export default function Index() {
-//   return (
-//     <div className="container mx-auto mt-8">
-//     <h1 className="text-3xl font-bold text-gray-700 underline">
-//       Hello world!
-//     </h1>
-//    </div>
-//   );
-// }
-
-
-// export default function Index() {
-//  return (
-//   <>
-
-//     <div className="container mx-auto mt-8">
-//     <h1 className="text-3xl font-bold text-gray-700 underline">
-//       Hello world!
-//     </h1>
-//    </div>
-//    <Footer />
-//   </>
-//   );
-// }
-
 
 export default function IndexRoute() {
+  //  const customer = useLoaderData();
   return (
     <div>
-     {/* Hero Banner */}
+     {/* {customer} */}
 
     <div className="px-12 py-32 text-center text-gray-200 bg-gray-800">
      <h1 className="text-5xl text-gray-100">New arrivals are here</h1>

@@ -235,7 +235,7 @@ function Navbar() {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-K7NDTVSD.css";
+var tailwind_default = "/build/_assets/tailwind-KSCYKGK4.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime");
@@ -623,21 +623,21 @@ function ProductsIndexRoute() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "w-full p-4 my-8", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h1", { className: "text-center", children: "Latest Arrivals" }, void 0, !1, {
       fileName: "app/routes/products._index.tsx",
-      lineNumber: 18,
+      lineNumber: 20,
       columnNumber: 4
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "grid grid-cols-1 gap-6 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 xl:gap-6 2xl:px-24 2xl:gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4", children: products.map((product) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(ProductCard, { product }, product.id, !1, {
       fileName: "app/routes/products._index.tsx",
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 6
     }, this)) }, void 0, !1, {
       fileName: "app/routes/products._index.tsx",
-      lineNumber: 19,
+      lineNumber: 21,
       columnNumber: 4
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/products._index.tsx",
-    lineNumber: 17,
+    lineNumber: 19,
     columnNumber: 3
   }, this);
 }
@@ -674,12 +674,12 @@ function IndexRoute() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { className: "px-12 py-32 text-center text-gray-200 bg-gray-800", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("h1", { className: "text-5xl text-gray-100", children: "New arrivals are here" }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 44,
+      lineNumber: 29,
       columnNumber: 6
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { className: "px-8 mt-2 font-semibold text-gray-300", children: "The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they're still in stock." }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 45,
+      lineNumber: 30,
       columnNumber: 6
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
@@ -693,18 +693,18 @@ function IndexRoute() {
       !1,
       {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 50,
+        lineNumber: 35,
         columnNumber: 6
       },
       this
     )
   ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 43,
+    lineNumber: 28,
     columnNumber: 5
   }, this) }, void 0, !1, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 40,
+    lineNumber: 25,
     columnNumber: 5
   }, this);
 }
@@ -742,6 +742,25 @@ __export(login_exports, {
 });
 
 // app/data/auth.server.js
+var import_node4 = require("@remix-run/node"), SESSION_SECRET = process.env.SESSION_SECRET, sessionStorage = (0, import_node4.createCookieSessionStorage)({
+  cookie: {
+    name: "__session",
+    secure: !1,
+    secrets: [SESSION_SECRET],
+    sameSite: "lax",
+    maxAge: 30 * 24 * 60 * 60,
+    // 30 days
+    httpOnly: !0
+  }
+});
+async function createUserSession(userId, redirectPath) {
+  let session = await sessionStorage.getSession();
+  return session.set("userId", userId), (0, import_node4.redirect)(redirectPath, {
+    headers: {
+      "Set-Cookie": await sessionStorage.commitSession(session)
+    }
+  });
+}
 async function signup(credentials) {
   let client = createClient(), { customer } = await client.customers.create({
     first_name: "Alec",
@@ -756,7 +775,7 @@ async function login(credentials) {
     email: credentials.email,
     password: credentials.password
   });
-  return console.log(customer), customer;
+  return createUserSession(customer.id, "/about");
 }
 
 // app/data/validation.server.js
@@ -775,7 +794,7 @@ function validateCredentials(input) {
 // app/components/AuthForm.jsx
 var import_react9 = require("@remix-run/react"), import_fa = require("react-icons/fa"), import_jsx_dev_runtime11 = require("react/jsx-dev-runtime");
 function AuthForm() {
-  let [searchParams] = (0, import_react9.useSearchParams)(), navigation = (0, import_react9.useTransition)(), validationErrors = (0, import_react9.useActionData)(), authMode = searchParams.get("mode") || "login", submitBtnCaption = authMode === "login" ? "Login" : "Create User", toggleBtnCaption = authMode === "login" ? "Create a new user" : "Log in with existing user", isSubmitting = navigation.state !== "idle";
+  let [searchParams] = (0, import_react9.useSearchParams)(), navigation = (0, import_react9.useTransition)(), actionData = (0, import_react9.useActionData)(), authMode = searchParams.get("mode") || "login", submitBtnCaption = authMode === "login" ? "Login" : "Create User", toggleBtnCaption = authMode === "login" ? "Create a new user" : "Log in with existing user", isSubmitting = navigation.state !== "idle";
   return /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_react9.Form, { method: "post", className: "form", id: "auth-form", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "icon-img", children: authMode === "login" ? /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_fa.FaLock, {}, void 0, !1, {
       fileName: "app/components/AuthForm.jsx",
@@ -822,7 +841,7 @@ function AuthForm() {
       lineNumber: 32,
       columnNumber: 9
     }, this),
-    validationErrors && /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("ul", { children: Object.values(validationErrors).map((error) => /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("li", { children: error }, error, !1, {
+    actionData && /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("ul", { children: Object.values(actionData).map((item) => /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("li", { children: item }, item, !1, {
       fileName: "app/components/AuthForm.jsx",
       lineNumber: 39,
       columnNumber: 15
@@ -880,7 +899,7 @@ async function action({ request }) {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-O5XW3Q3W.js", imports: ["/build/_shared/chunk-V3NDK6DD.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YXF6MJGA.js", imports: ["/build/_shared/chunk-HCAYHE65.js", "/build/_shared/chunk-3NZY4G46.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-5RKCYYQC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-7HT2DB7B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-HALGULJC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-TTKWWPMJ.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products.$productId": { id: "routes/products.$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$productId-JVVRHBNT.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products._index": { id: "routes/products._index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products._index-TRJKMYNE.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "45d0038e", hmr: void 0, url: "/build/manifest-45D0038E.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-O5XW3Q3W.js", imports: ["/build/_shared/chunk-V3NDK6DD.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RTVDICNL.js", imports: ["/build/_shared/chunk-HCAYHE65.js", "/build/_shared/chunk-3NZY4G46.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3LXSAMAZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-7HT2DB7B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-HALGULJC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-EXBDTVCF.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products.$productId": { id: "routes/products.$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$productId-JVVRHBNT.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products._index": { id: "routes/products._index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products._index-IZFDEXHN.js", imports: ["/build/_shared/chunk-QTYL33GH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "c530af6e", hmr: void 0, url: "/build/manifest-C530AF6E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

@@ -11,7 +11,9 @@ export const loader = async () => {
 };
 
 export default function ProductsIndexRoute() {
- const products = useLoaderData();
+//  const products = useLoaderData();
+
+ const products = useLoaderData<typeof loader>();
 
  return (
   <div className="w-full p-4 my-8">
