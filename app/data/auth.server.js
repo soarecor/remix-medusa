@@ -23,6 +23,32 @@ async function createUserSession(userId, redirectPath) {
     })
 }
 
+export async function getUserFromSession(request) {
+    console.log('COOOOOKE', request.headers.get('Cookie'))
+    const session = await sessionStorage.getSession(
+      request.headers.get('Cookie')
+    );
+  
+    const userId = session.get('userId');
+  
+    if (!userId) {
+      return null;
+    }
+  
+    return userId;
+}
+
+export async function destroyUserSession(request) {
+    const session = await sessionStorage.getSession(
+      request.headers.get('Cookie')
+    );
+  
+    return redirect('/', {
+      headers: {
+        'Set-Cookie': await sessionStorage.destroySession(session),
+      },
+    });
+  }
 
 export async function signup(credentials) {
     const client = createClient();
@@ -32,12 +58,8 @@ export async function signup(credentials) {
         email: credentials.email,
         password: credentials.password
       })
-    //   ({
-
-    //     email: 'user@example.com',
-    //     password: 'supersecret'  
-    //   });
-    return customer;
+      return createUserSession(customer.id, '/user')
+    // return customer;
 }
 
 export async function login(credentials) {
@@ -47,6 +69,6 @@ export async function login(credentials) {
         password: credentials.password
       })
 
-     return createUserSession(customer.id, '/about')
+     return createUserSession(customer.id, '/user')
     // return customer.id;
 }

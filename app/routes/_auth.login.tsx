@@ -1,32 +1,15 @@
-import { createClient } from "~/utils/client";
-import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
-import { redirect } from '@remix-run/node';
 import { signup, login } from '~/data/auth.server';
 import { validateCredentials } from '~/data/validation.server';
 import AuthForm from '~/components/AuthForm';
+import type { ActionArgs } from "@remix-run/node"; // or cloudflare/deno
 
-// export const loader = async () => {
-//     const client = createClient();
-//     const { customer } = await client.auth.authenticate({
-//         email: 'user@example.com',
-//         password: 'supersecret'
-//       })
-    //   ({
-    //     first_name: 'Alec',
-    //     last_name: 'Reynolds',
-    //     email: 'user@example.com',
-    //     password: 'supersecret'
-    //   });
-//     return json(customer);
-//   };
 
 export default function LoginRoute() {
     return <AuthForm />;
    }
 
 
-export async function action({ request }) {
+export async function action({ request }: ActionArgs) {
   const searchParams = new URL(request.url).searchParams;
   const authMode = searchParams.get('mode') || 'login';
 

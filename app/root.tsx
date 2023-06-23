@@ -10,7 +10,6 @@ import {
 } from "@remix-run/react";
 
 import Footer from "~/components/footer";
-import Navbar from "~/components/navbar";
 import styles from "./tailwind.css";
 
 export default function App() {
@@ -24,7 +23,6 @@ export default function App() {
       </head>
       <body>
       <header className="border-b">
-      <Navbar />
     </header>
         <Outlet />
         <ScrollRestoration />

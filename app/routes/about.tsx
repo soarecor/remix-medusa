@@ -1,6 +1,10 @@
+import { useLoaderData } from "@remix-run/react";
+
 export default function AboutRoute() {
+  const userId = useLoaderData();
     return (
      <div className="w-full mt-8">
+
       <h1>About</h1>
       <p className="mt-4 text-justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aperiam
