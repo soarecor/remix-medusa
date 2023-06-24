@@ -9,22 +9,12 @@ export async function loader({request}: LoaderArgs){
   return getUserFromSession(request)
 };
 
-export default function AboutRoute() {
+export default function AuthRoute() {
   const userId = useLoaderData();
     return (
      <div className="w-full mt-8">
-           {userId &&        <Form method="post" action="/logout">
-          <button className="cta">Logout</button>
-        </Form>}
-    {!userId && <NavLink
-     to="/login"
-     className="inline-flex items-center space-x-1 transition-colors duration-300"
-    >
-      Login
-    </NavLink>}
-    <div>        
-        
- </div>
+        {userId}
+    
         <div>We are redirecting here after a user is logged in</div>
      </div>
      );

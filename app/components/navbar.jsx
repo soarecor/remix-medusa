@@ -1,4 +1,4 @@
-import { Link, NavLink, useLoaderData } from "@remix-run/react";
+import { Link, NavLink, useLoaderData, Form } from "@remix-run/react";
 import { BiShoppingBag } from "react-icons/bi";
 
 
@@ -55,6 +55,14 @@ export default function Navbar() {
             <button className="cta-alt">Logout</button>
           </Form>
         )}
+
+{userId && <NavLink
+        to="/user"
+        className="inline-flex items-center space-x-1 transition-colors duration-300"
+        >
+          User
+        </NavLink>}
+        
         {!userId && <NavLink
         to="/login"
         className="inline-flex items-center space-x-1 transition-colors duration-300"

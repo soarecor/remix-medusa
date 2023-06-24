@@ -4,11 +4,11 @@ import { getUserFromSession } from '~/data/auth.server';
 import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
 
 export async function loader({request}: LoaderArgs){
-    console.log('REQUEST', request)
-    return getUserFromSession(request)
-  };
+  console.log('REQUEST', request)
+  return getUserFromSession(request)
+};
 
-export default function AuthLayout() {
+export default function ExpensesAppLayout() {
   return (
     <>
       <Navbar />
