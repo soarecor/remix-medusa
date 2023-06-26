@@ -24,7 +24,6 @@ async function createUserSession(userId, redirectPath) {
 }
 
 export async function getUserFromSession(request) {
-    console.log('COOOOOKE', request.headers.get('Cookie'))
     const session = await sessionStorage.getSession(
       request.headers.get('Cookie')
     );
@@ -37,6 +36,16 @@ export async function getUserFromSession(request) {
   
     return userId;
 }
+
+export async function requireUserSession(request) {
+    const userId = await getUserFromSession(request);
+  
+    if (!userId) {
+      throw redirect('/login');
+    }
+  
+    return userId;
+  }
 
 export async function destroyUserSession(request) {
     const session = await sessionStorage.getSession(

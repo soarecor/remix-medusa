@@ -1,4 +1,4 @@
-import { getUserFromSession } from '~/data/auth.server';
+import { getUserFromSession, requireUserSession } from '~/data/auth.server';
 import { useLoaderData } from "@remix-run/react";
 import { Form,NavLink } from "@remix-run/react";
 import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
@@ -6,6 +6,8 @@ import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
 
 export async function loader({request}: LoaderArgs){
   console.log('REQUEST', request)
+
+  await requireUserSession(request)
   return getUserFromSession(request)
 };
 
