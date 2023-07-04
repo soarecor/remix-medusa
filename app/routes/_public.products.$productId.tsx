@@ -2,14 +2,43 @@ import { useState } from "react";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { BiShoppingBag } from "react-icons/bi";
+import {
+  Form
+} from '@remix-run/react';
 
 import { createClient } from "~/utils/client";
 import { formatPrice } from "~/utils/prices";
+import type { ActionArgs, LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
+import { cartCookie } from "~/data/cookies";
 
-export const loader = async ({ params }) => {
+
+
+export const loader = async ({ params }: LoaderArgs) => {
   const client = createClient();
   const { product } = await client.products.retrieve(params.productId);
   return json(product);
+};
+
+export const action = async ({ params, request }: ActionArgs) => {
+  const client = createClient();
+  const { product } = await client.products.retrieve(params.productId);
+  console.log("PRODUCT", product)
+  console.log(typeof product.id)
+  const variant_id = product.variants[0].id
+
+  const cookieHeader = request.headers.get("Cookie");
+  const cookie = (await cartCookie.parse(cookieHeader)) || {};
+  console.log('product cookie', cookie.cartId)
+
+
+  const { cart }= await client.carts.lineItems.create(cookie.cartId, {
+    variant_id,
+    quantity: 1,
+  })
+  console.log('UPDATED CART', cart)
+
+  return json(cart);
+  // return cookie
 };
 
 export default function ProductRoute() {
@@ -70,7 +99,7 @@ export default function ProductRoute() {
         <div className="flex flex-col px-16 py-4 space-y-8">
           <h1>{product.title} </h1>
           <p className="font-semibold text-teal-600">{formatPrice(variant)}</p>
-          <div>
+          {/* <div>
             <p className="font-semibold">Select Size</p>
             <div className="grid grid-cols-3 gap-2 mt-2 md:grid-cols-2 xl:grid-cols-4">
               {product.variants.map((variantItem, index) => (
@@ -87,7 +116,7 @@ export default function ProductRoute() {
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
           <div>
             <p className="font-semibold">Select Quantity</p>
             <div className="flex items-center px-4 mt-2 space-x-4">
@@ -107,10 +136,13 @@ export default function ProductRoute() {
             </div>
           </div>
           <div>
-            <button className="inline-flex items-center px-4 py-2 font-semibold text-gray-200 bg-gray-700 rounded hover:text-white hover:bg-gray-900">
-              <BiShoppingBag className="mr-2 text-lg" />{" "}
-              <span>Add to Cart</span>
-            </button>
+            <Form method="post">
+              {/* <input type="text" name="title" /> */}
+              <button type="submit" className="inline-flex items-center px-4 py-2 font-semibold text-gray-200 bg-gray-700 rounded hover:text-white hover:bg-gray-900">
+                <BiShoppingBag className="mr-2 text-lg" />{" "}
+                <span>Add to Cart</span>
+              </button>
+            </Form>
           </div>
           <div>
             <p className="font-semibold">Product Description</p>

@@ -41,12 +41,12 @@ export default function Navbar() {
     {/* Shopping Cart Indicator/Checkout Link */}
    <div className="font-semibold text-gray-600 hover:text-emerald-500">
     <NavLink
-     to="/checkout"
+     to="/cart"
      className="inline-flex items-center space-x-1 transition-colors duration-300"
     >
+     <BiShoppingBag className="text-xl" /> <span>0</span>
     </NavLink>
 
-     <BiShoppingBag className="text-xl" /> <span>0</span>
    </div>
 
    <div>

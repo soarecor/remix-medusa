@@ -5,8 +5,6 @@ import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
 
 
 export async function loader({request}: LoaderArgs){
-  console.log('REQUEST', request)
-
   await requireUserSession(request)
   return getUserFromSession(request)
 };
