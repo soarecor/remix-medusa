@@ -35,22 +35,6 @@ export async function loader({ request }: LoaderArgs) {
     },
   });
 }
-// export async function loader({request}: LoaderArgs){
-//   const client = createClient();
-//   // check if cart exists
-//   let cartId = await getCartFromSession(request)
-
-//   // if yes, get cart and add item to cart with correct quantity
-//   // if no, create cart, get cart and add item and quantity to cart
-//   if (cartId) {
-//       await client.carts.retrieve(cartId)
-//       .then(({ cart }) => console.log("this cart already exists", cart))
-//   } else {
-//       const { cart } = await client.carts.create()
-//       await createCartSession(cart.id)
-//   }
-//   return cartId
-// };
 
 export default function IndexRoute() {
   // const { cartId } = useLoaderData<typeof loader>();

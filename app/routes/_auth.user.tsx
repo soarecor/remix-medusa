@@ -18,4 +18,4 @@ export default function AuthRoute() {
         <div>We are redirecting here after a user is logged in</div>
      </div>
      );
-   }    
+  }    
