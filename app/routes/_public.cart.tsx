@@ -20,9 +20,16 @@ export default function CartRoute() {
     <div className="w-full mt-8">
       <h1>Cart</h1>
       <div className="grid grid-cols-1 gap-6 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 xl:gap-6 2xl:px-24 2xl:gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-<div>
-  {items.map((item) => <div key={item.id}>{item.id}</div>)}
-</div>
+        <div>
+        {items.map((item) => 
+        <div key={item.id}>
+        <span>{item.title}</span>
+        {/* <span>{JSON.stringify(item)}</span> */}
+        <img className="w-80" src={item.thumbnail} alt={item.title} />
+        </div>
+
+                            )}
+        </div>
       </div>
     </div>
   );
