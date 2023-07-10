@@ -1,39 +1,49 @@
-import {createCookieSessionStorage, redirect} from '@remix-run/node'
-const SESSION_SECRET = process.env.SESSION_SECRET
 import { createCookie } from "@remix-run/node";
 import { json } from "@remix-run/node";
+import { createClient } from "~/utils/client";
 
-const sessionStorage = createCookieSessionStorage({
-    cookie: {
-        name: "__cartsession",
-         secure:process.env.NODE_ENV === 'production',
-         secrets: [SESSION_SECRET],
-         sameSite: 'lax',
-         maxAge: 30*24*60*60, // 30 days
-         httpOnly: true
-    }
-})
+const cartCookie = createCookie("cart", {
+  maxAge: 604_800, // one week
+});
 
-export async function createCartSession(cartId) {
-    const session = await sessionStorage.getSession()
-    session.set('cartId', cartId)
+export async function createCartCookie(request) {
+  const client = createClient();
+  const cookieHeader = request.headers.get("Cookie");
+  const cookie = (await cartCookie.parse(cookieHeader)) || {};
 
-    return json(null, {
-        headers: { "Set-Cookie": await sessionStorage.commitSession(session) }
-    })
+  //   if cart cookie has been created, do not recreate and return the cookie id
+  if (cookie.cartId) {
+    return cookie.cartId;
+  }
+
+  // else create the cookie, serializing the cartId to be used for future cart mutations
+  const { cart } = await client.carts.create();
+  return {
+    cartId: cart.id,
+    headers: {
+      "Set-Cookie": await cartCookie.serialize({
+        cartId: cart.id,
+      }),
+    },
+  };
 }
 
-export async function getCartFromSession(request) {
-    const session = await sessionStorage.getSession(
-      request.headers.get('Cookie')
-    );
-  
-    const cartId = session.get('cartId');
-    // console.log('STORED CART ID', cartId)
-  
-    if (!cartId) {
-      return null
-    }
-  
-    return cartId;
+export async function getCartCookie(request) {
+  const cookieHeader = request.headers.get("Cookie");
+  const cookie = (await cartCookie.parse(cookieHeader)) || {};
+
+  if (cookie.cartId) {
+    return cookie.cartId;
+  }
+  return null;
+}
+
+export async function cartItems(request) {
+  const cartId = await getCartCookie(request);
+  if (!cartId) return null;
+
+  const client = createClient();
+  const { cart } = await client.carts.retrieve(cartId);
+
+  return cart.items;
 }

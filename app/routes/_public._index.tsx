@@ -1,10 +1,5 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import { Link, useLoaderData } from "@remix-run/react";
-import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
-import { getCartFromSession, createCartSession } from '~/data/cart.server';
-import { createClient } from "~/utils/client";
-import { cartCookie } from "~/data/cookies";
-import { json } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -12,29 +7,6 @@ export const meta: V2_MetaFunction = () => {
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
-
-export async function loader({ request }: LoaderArgs) {
-  const client = createClient();
-  const cookieHeader = request.headers.get("Cookie");
-  const cookie = (await cartCookie.parse(cookieHeader)) || {};
-
-  // if cart cookie has been created, do not recreate and return the cookie id
-  if (cookie.cartId) {
-    // await client.carts.retrieve(cookie.cartId)
-    // .then(({ cart }) => console.log("this cart already exists", cart))
-    return cookie.cartId
-  } 
-  
-  // else create the cookie, serializing the cartId to be used for future cart mutations
-  const { cart } = await client.carts.create()
-  return json(null, {
-    headers: {
-      "Set-Cookie": await cartCookie.serialize({
-        cartId: cart.id,
-      }),
-    },
-  });
-}
 
 export default function IndexRoute() {
   // const { cartId } = useLoaderData<typeof loader>();

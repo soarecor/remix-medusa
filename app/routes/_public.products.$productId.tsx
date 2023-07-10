@@ -9,36 +9,47 @@ import {
 import { createClient } from "~/utils/client";
 import { formatPrice } from "~/utils/prices";
 import type { ActionArgs, LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
-import { cartCookie } from "~/data/cookies";
+import { createCartCookie, getCartCookie } from "~/data/cart.server"
 
 
+const client = createClient();
 
 export const loader = async ({ params }: LoaderArgs) => {
-  const client = createClient();
   const { product } = await client.products.retrieve(params.productId);
   return json(product);
 };
 
-export const action = async ({ params, request }: ActionArgs) => {
-  const client = createClient();
+export async function action({ params ,request }: ActionArgs) {
+
+  let cartId = await getCartCookie(request)
+  
+  let headers = new Headers();
+
+  // if no cart cookie, create the cookie
+  if(!cartId) {
+    const response = await createCartCookie(request)
+    cartId = response.cartId
+    console.log('CART COOKIE', response)
+
+    // to create the cookie here, we need to return it. Can this be avoided?
+    headers = new Headers({
+      // Copy over any other headers you may want to set
+      ...response.headers,
+    });
+  }
+  
+  // else, cart cookie exists. Update cart with cartId
   const { product } = await client.products.retrieve(params.productId);
-  console.log("PRODUCT", product)
-  console.log(typeof product.id)
   const variant_id = product.variants[0].id
 
-  const cookieHeader = request.headers.get("Cookie");
-  const cookie = (await cartCookie.parse(cookieHeader)) || {};
-  console.log('product cookie', cookie.cartId)
+  const { cart }= await client.carts.lineItems.create(cartId, {
+      variant_id,
+      quantity: 1,
+    })
 
-
-  const { cart }= await client.carts.lineItems.create(cookie.cartId, {
-    variant_id,
-    quantity: 1,
-  })
-  console.log('UPDATED CART', cart)
-
-  return json(cart);
-  // return cookie
+  return json(cart.items, {
+    headers,
+  });
 };
 
 export default function ProductRoute() {

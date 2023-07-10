@@ -24,11 +24,7 @@ export default function Navbar() {
     },
   ];
 
-  const data = useLoaderData();
-  // console.log("CART DATA", data);
-
-  const userId = data.userId;
-  const itemLength = data.itemLength;
+  const userId = useLoaderData();
 
   return (
     <nav className="flex items-center justify-between px-8 pt-2">
@@ -46,16 +42,6 @@ export default function Navbar() {
             {link.label}
           </NavLink>
         ))}
-      </div>
-
-      {/* Shopping Cart Indicator/Checkout Link */}
-      <div className="font-semibold text-gray-600 hover:text-emerald-500">
-        <NavLink
-          to="/cart"
-          className="inline-flex items-center space-x-1 transition-colors duration-300"
-        >
-          <BiShoppingBag className="text-xl" /> <span>{itemLength}</span>
-        </NavLink>
       </div>
 
       <div>
