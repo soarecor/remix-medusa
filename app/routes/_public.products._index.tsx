@@ -1,10 +1,6 @@
-import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-
 import ProductCard from "~/components/product-card";
 import { createClient } from "~/utils/client";
-
-import { getCartCookie } from "~/data/cart.server";
 import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
 
 export const loader = async ({request}:LoaderArgs) => {
@@ -15,8 +11,6 @@ export const loader = async ({request}:LoaderArgs) => {
 };
 
 export default function ProductsIndexRoute() {
-  //  const products = useLoaderData();
-
   const { products } = useLoaderData<typeof loader>();
 
   return (

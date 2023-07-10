@@ -29,20 +29,16 @@ export async function action({ params ,request }: ActionArgs) {
   if(!cartId) {
     const response = await createCartCookie(request)
     cartId = response.cartId
-    console.log('CART COOKIE', response)
 
-    // to create the cookie here, we need to return it. Can this be avoided?
     headers = new Headers({
-      // Copy over any other headers you may want to set
       ...response.headers,
     });
   }
   
-  // else, cart cookie exists. Update cart with cartId
   const { product } = await client.products.retrieve(params.productId);
   const variant_id = product.variants[0].id
 
-  const { cart }= await client.carts.lineItems.create(cartId, {
+  const { cart } = await client.carts.lineItems.create(cartId, {
       variant_id,
       quantity: 1,
     })
