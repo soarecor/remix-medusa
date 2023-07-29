@@ -11,13 +11,16 @@ export async function createCartCookie(request) {
   const cookieHeader = request.headers.get("Cookie");
   const cookie = (await cartCookie.parse(cookieHeader)) || {};
 
+  const regions = await client.regions.list();
+  const regionId = regions.regions[0].id;
+
   //   if cart cookie has been created, do not recreate and return the cookie id
   if (cookie.cartId) {
     return cookie.cartId;
   }
 
   // else create the cookie, serializing the cartId to be used for future cart mutations
-  const { cart } = await client.carts.create();
+  const { cart } = await client.carts.create({ region_id: regionId });
   return {
     cartId: cart.id,
     headers: {

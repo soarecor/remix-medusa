@@ -1,5 +1,5 @@
 import { createClient } from "~/utils/client";
-import { createCookieSessionStorage, redirect } from "@remix-run/node";
+import { createCookieSessionStorage, json, redirect } from "@remix-run/node";
 const SESSION_SECRET = process.env.SESSION_SECRET;
 
 const sessionStorage = createCookieSessionStorage({
@@ -72,13 +72,48 @@ export async function signup(credentials) {
   // return customer;
 }
 
+export async function requireUserCookie(request) {
+  let cookie = request.headers.get("cookie") || "";
+  if (!cookie) {
+    throw redirect("/login");
+  }
+}
+
+export async function getUser(request) {
+  let cookie = request.headers.get("cookie") || "";
+  if (!cookie) {
+    return null;
+  }
+
+  const headers = new Headers({
+    accept: "application/json",
+    ["Content-Type"]: "application/json",
+    connection: request.headers.get("connection"),
+    cookie: request.headers.get("cookie"),
+  });
+
+  const response = await fetch("http://localhost:9000/store/auth", {
+    method: "GET",
+    headers,
+  });
+
+  const customer = await response.json().then((data) => data.customer);
+  // console.log("CUSTOMEERRR", customer);
+  return customer;
+}
+
 export async function login(credentials) {
   const client = createClient();
-  const { customer } = await client.auth.authenticate({
+  const data = await client.auth.authenticate({
     email: credentials.email,
     password: credentials.password,
   });
 
-  return createUserSession(customer.id, "/user");
-  // return customer.id;
+  const headers = new Headers({
+    ...data.response.headers,
+  });
+
+  return redirect("/user", {
+    headers,
+  });
 }
