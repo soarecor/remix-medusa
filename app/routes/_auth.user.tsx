@@ -1,6 +1,5 @@
-import { getUserFromSession, requireUserSession, getUser, requireUserCookie } from '~/data/auth.server';
+import { getUser, requireUserCookie } from '~/data/auth.server';
 import { useLoaderData } from "@remix-run/react";
-import { Form,NavLink } from "@remix-run/react";
 import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
 import { createClient } from "~/utils/client";
 import { json } from "@remix-run/node";

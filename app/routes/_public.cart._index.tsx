@@ -17,7 +17,6 @@ export async function loader({ request }: LoaderArgs) {
 export default function CartRoute() {
   const  data = useLoaderData<typeof loader>();
   const items = data.items
-  const cartId = data.cartId
 
   return (
     <div className="w-full mt-8 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 flex justify-items-center">

@@ -73,23 +73,73 @@ export async function signup(credentials) {
 }
 
 export async function requireUserCookie(request) {
-  let cookie = request.headers.get("cookie") || "";
-  if (!cookie) {
+  const cookie = request.headers.get("cookie") || "";
+  const parsedCookie = cookie.split("; ").reduce((prev, current) => {
+    const [name, ...value] = current.split("=");
+    prev[name] = value.join("=");
+    return prev;
+  }, {});
+
+  if (!parsedCookie) {
+    throw redirect("/login");
+  }
+
+  let reqCookie;
+  if (parsedCookie.hasOwnProperty("connect.sid")) {
+    reqCookie = parsedCookie["connect.sid"];
+    if (!reqCookie) throw redirect("/login");
+  } else {
     throw redirect("/login");
   }
 }
 
+export async function logout(request) {
+  const requestHeaders = new Headers({
+    // accept: "application/json",
+    // ["Content-Type"]: "application/json",
+    // connection: request.headers.get("connection"),
+    cookie: request.headers.get("cookie"),
+  });
+
+  const response = await fetch("http://localhost:9000/store/auth", {
+    method: "DELETE",
+    headers: requestHeaders,
+  });
+
+  const responseHeaders = new Headers({
+    "Set-Cookie": "connect.sid=",
+  });
+
+  return redirect("/", { headers: responseHeaders });
+}
+
 export async function getUser(request) {
-  let cookie = request.headers.get("cookie") || "";
+  const cookie = request.headers.get("cookie");
+
+  // early exit if there are no cookies stored
   if (!cookie) {
     return null;
   }
+
+  // split cookie string to extract just connect.sid
+  const splitCookie = cookie.split("; ").reduce((prev, current) => {
+    const [name, ...value] = current.split("=");
+    prev[name] = value.join("=");
+    return prev;
+  }, {});
+
+  // early exit if no sid
+  if (!splitCookie["connect.sid"]) {
+    return null;
+  }
+
+  const sid = `connect.sid=${splitCookie["connect.sid"]}`;
 
   const headers = new Headers({
     accept: "application/json",
     ["Content-Type"]: "application/json",
     connection: request.headers.get("connection"),
-    cookie: request.headers.get("cookie"),
+    cookie: sid,
   });
 
   const response = await fetch("http://localhost:9000/store/auth", {
@@ -98,7 +148,12 @@ export async function getUser(request) {
   });
 
   const customer = await response.json().then((data) => data.customer);
-  // console.log("CUSTOMEERRR", customer);
+
+  // if no customer, the sid has expired. customer has to sign in again.
+  if (!customer) {
+    return null;
+  }
+
   return customer;
 }
 

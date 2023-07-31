@@ -2,13 +2,14 @@ import { getCartCookie } from "~/data/cart.server";
 import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
 import { useLoaderData } from "@remix-run/react";
 import { createClient } from "~/utils/client";
-import { getUserFromSession } from '~/data/auth.server';
+import { getUser } from '~/data/auth.server';
 import { cartItems } from '~/data/cart.server'
 
 export async function loader({request}: LoaderArgs){
   const items = await cartItems(request)
 
-  const userId = await getUserFromSession(request)
+  const user = await getUser(request)
+  const userId = user?.id ? user.id : null
 
   if(items) {
     return{ userId, itemLength: items.length}
