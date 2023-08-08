@@ -16,33 +16,38 @@ export async function loader({ request }: LoaderArgs) {
 
 export default function CartRoute() {
   const  data = useLoaderData<typeof loader>();
-  const items = data.items
+  const items = data && data.items ? data.items : []
+  const cartId = data && data.cartId ? data.cartId : ''
 
   return (
     <div className="w-full mt-8 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 flex justify-items-center">
       <div className="">
       <h1 className="text-3xl">Cart</h1>
-        <div>
-          {items.map((item) => 
-          <div className="pb-6" key={item.id}>
-          <span>{item.title}</span>
-          {/* <span>{JSON.stringify(item)}</span> */}
-          <img className="w-80" src={item.thumbnail} alt={item.title} />
-            
-          <Link to={`/cart/${item.id}`}>
-            Delete
-          </Link>
-          </div>
-          )}
-        </div>
+
+        {items.length? 
+          <div>
+              {items.map((item) => 
+              <div className="pb-6" key={item.id}>
+              <span>{item.title}</span>
+              <img className="w-80" src={item.thumbnail} alt={item.title} />
+                
+              <Link to={`/cart/${item.id}`}>
+                Delete
+              </Link>
+              </div>
+              )}
+            </div>
+          : 
+          <div> Please add items to your cart</div>
+        }
       </div>
       <div>
         Checkout
       </div>
       <div>
-      {/* {cartId && (
+      {cartId && (
         <PaymentContainer cartId={cartId}/>
-        )} */}
+        )}
       </div>
     </div>
   );
