@@ -62,13 +62,21 @@ export async function destroyUserSession(request) {
 
 export async function signup(credentials) {
   const client = createClient();
-  const { customer } = await client.customers.create({
+  const data = await client.customers.create({
     first_name: "Alec",
     last_name: "Reynolds",
     email: credentials.email,
     password: credentials.password,
   });
-  return createUserSession(customer.id, "/user");
+  // return createUserSession(customer.id, "/user");
+
+  const headers = new Headers({
+    ...data.response.headers,
+  });
+
+  return redirect("/user", {
+    headers,
+  });
   // return customer;
 }
 
