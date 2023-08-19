@@ -44,11 +44,11 @@ export default function CartRoute() {
       <div>
         Checkout
       </div>
-      <div>
+      {/* <div>
       {cartId && (
         <PaymentContainer cartId={cartId}/>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }
