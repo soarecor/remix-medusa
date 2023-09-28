@@ -1,5 +1,7 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+import { IframeDocument } from "~/components/iframeDoc";
+
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -27,6 +29,10 @@ export default function IndexRoute() {
      >
        Shop New Arrivals
      </Link>
+    </div>
+
+    <div>
+    <IframeDocument>Hello, IframeDocument</IframeDocument>;
     </div>
 
    </div>

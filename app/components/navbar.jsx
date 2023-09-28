@@ -7,6 +7,7 @@ import {
   Form,
 } from "@remix-run/react";
 import { BiShoppingBag } from "react-icons/bi";
+import pao from "~/assets/pao.png";
 
 export default function Navbar() {
   const links = [
@@ -35,7 +36,7 @@ export default function Navbar() {
       {/* Site Logo */}
       <div className="font-mono text-3xl font-extrabold uppercase">
         <Link to="/">
-          <img className="w-28" src="/logo.svg" alt="Medusa" />
+          <img src={pao} width="50" />
         </Link>
       </div>
 
