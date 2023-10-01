@@ -11,17 +11,17 @@ import pao from "~/assets/pao.png";
 
 export default function Navbar() {
   const links = [
+    // {
+    //   label: "Home",
+    //   url: "/",
+    // },
     {
-      label: "Home",
-      url: "/",
-    },
-    {
-      label: "Products",
-      url: "/products",
-    },
-    {
-      label: "About",
+      label: "Story",
       url: "/about",
+    },
+    {
+      label: "Shop",
+      url: "/products",
     },
   ];
 
@@ -32,16 +32,16 @@ export default function Navbar() {
   const itemLength = data.itemLength;
 
   return (
-    <nav className="flex items-center justify-between px-8 pt-2">
+    <nav className="flex items-center justify-between px-8 py-10 bg-black">
       {/* Site Logo */}
-      <div className="font-mono text-3xl font-extrabold uppercase">
+      <div className="font-mono pl-2 text-3xl font-extrabold uppercase">
         <Link to="/">
-          <img src={pao} width="50" />
+          <img src={pao} width="100" />
         </Link>
       </div>
 
       {/* Navigation Links */}
-      <div className="space-x-4">
+      <div className="space-x-4 text-white">
         {links.map((link, index) => (
           <NavLink key={index} to={link.url} className="navlink">
             {link.label}
@@ -50,39 +50,41 @@ export default function Navbar() {
       </div>
 
       {/* Shopping Cart Indicator/Checkout Link */}
-      <div className="font-semibold text-gray-600 hover:text-emerald-500">
-        <NavLink
-          to="/cart"
-          className="inline-flex items-center space-x-1 transition-colors duration-300"
-        >
-          <BiShoppingBag className="text-xl" /> <span>{itemLength}</span>
-        </NavLink>
-      </div>
-
-      <div>
-        {userId && (
-          <Form method="post" action="/logout" id="logout-form">
-            <button className="cta-alt">Logout</button>
-          </Form>
-        )}
-
-        {userId && (
+      <div className="flex items-center justify-between">
+        <div className="font-semibold text-white hover:text-emerald-500">
           <NavLink
-            to="/user"
-            className="inline-flex items-center space-x-1 transition-colors duration-300"
+            to="/cart"
+            className="inline-flex items-center space-x-1 text-white duration-300"
           >
-            User
+            <BiShoppingBag className="text-xl" /> <span>{itemLength}</span>
           </NavLink>
-        )}
+        </div>
 
-        {!userId && (
-          <NavLink
-            to="/login"
-            className="inline-flex items-center space-x-1 transition-colors duration-300"
-          >
-            Login
-          </NavLink>
-        )}
+        <div className="px-4">
+          {userId && (
+            <Form method="post" action="/logout" id="logout-form">
+              <button className="cta-alt text-white">Logout</button>
+            </Form>
+          )}
+
+          {userId && (
+            <NavLink
+              to="/user"
+              className="inline-flex items-center space-x-1 text-white duration-300"
+            >
+              User
+            </NavLink>
+          )}
+
+          {!userId && (
+            <NavLink
+              to="/login"
+              className="inline-flex items-center space-x-1 text-white duration-300"
+            >
+              Login
+            </NavLink>
+          )}
+        </div>
       </div>
     </nav>
   );

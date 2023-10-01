@@ -1,11 +1,9 @@
 import { ReactNode } from "react";
 
 export const IframeDocument = (props) => (
-  <div className="container">
-    <h1 className="text-2xl font-extrabold py-3">
-      <iframe
-        style={{}}
-        srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+  <iframe
+    style={{}}
+    srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
             <script>
               window.botpressWebChat.init({
                   'composerPlaceholder': 'Chat with bot',
@@ -32,9 +30,7 @@ export const IframeDocument = (props) => (
               });
             window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
             </script></body>"
-        width="100%"
-        height="700px"
-      ></iframe>
-    </h1>
-  </div>
+    width="100%"
+    height="700px"
+  ></iframe>
 );

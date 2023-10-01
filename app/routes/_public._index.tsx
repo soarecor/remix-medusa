@@ -1,7 +1,7 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { IframeDocument } from "~/components/iframeDoc";
-
+import hero from "~/assets/home-hero.jpg";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -16,22 +16,16 @@ export default function IndexRoute() {
     <div>
      {/* {cartId} */}
  
-    <div className="px-12 py-32 text-center text-gray-200 bg-gray-800">
-     <h1 className="text-5xl text-gray-100">New arrivals are here</h1>
-     <p className="px-8 mt-2 font-semibold text-gray-300">
-       The new arrivals have, well, newly arrived. Check out the latest
-       options from our summer small-batch release while they're still in
-       stock.
-     </p>
-     <Link
-      to="/products"
-      className="inline-block px-6 py-2 mt-8 text-sm font-semibold text-gray-700 transition duration-300 bg-gray-100 rounded-md hover:bg-white hover:text-gray-900 hover:scale-110 color"
-     >
-       Shop New Arrivals
-     </Link>
+    <div className="relative">
+     <img className="w-screen" src={hero}  />
+     <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white">
+       <span className="text-9xl">FAST FORWARD TO THE END.</span> 
+       <span className="text-3xl block">Climate change has destroyed the world in 2050. </span>  </span>
     </div>
 
-    <div>
+
+    <div className="text-6xl text-center py-20"> CHAT WITH AN AGENT FROM THE FUTURE.</div>
+    <div className="m-auto w-screen">
     <IframeDocument>Hello, IframeDocument</IframeDocument>;
     </div>
 
