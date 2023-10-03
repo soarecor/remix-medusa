@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export const IframeDocument = (props) => (
   <iframe
     style={{}}
-    srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+    srcDoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
             <script>
               window.botpressWebChat.init({
                   'composerPlaceholder': 'Chat with bot',

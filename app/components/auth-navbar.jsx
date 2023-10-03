@@ -7,43 +7,46 @@ import {
   Form,
 } from "@remix-run/react";
 import { BiShoppingBag } from "react-icons/bi";
+import pao from "~/assets/pao.png";
 
 export default function Navbar() {
   const links = [
-    {
-      label: "Home",
-      url: "/",
-    },
+    // {
+    //   label: "Home",
+    //   url: "/",
+    // },
     {
       label: "Products",
       url: "/products",
     },
-    {
-      label: "About",
-      url: "/about",
-    },
+    // {
+    //   label: "About",
+    //   url: "/about",
+    // },
   ];
 
   const userId = useLoaderData();
 
   return (
-    <nav className="flex items-center justify-between px-8 pt-2">
+    <nav className="flex items-center justify-between px-8 py-10 bg-black">
       {/* Site Logo */}
-      <div className="font-mono text-3xl font-extrabold uppercase">
+      <div className="font-mono pl-2 text-3xl font-extrabold uppercase">
         <Link to="/">
-          <img className="w-28" src="/logo.svg" alt="Medusa" />
+          <img src={pao} width="100" />
         </Link>
       </div>
-
       {/* Navigation Links */}
       <div className="space-x-4">
         {links.map((link, index) => (
-          <NavLink key={index} to={link.url} className="navlink">
+          <NavLink
+            className="inline-flex items-center space-x-1 text-white duration-300"
+            key={index}
+            to={link.url}
+          >
             {link.label}
           </NavLink>
         ))}
       </div>
-
       <div>
         {userId && (
           <Form method="post" action="/logout" id="logout-form">
@@ -54,7 +57,7 @@ export default function Navbar() {
         {userId && (
           <NavLink
             to="/user"
-            className="inline-flex items-center space-x-1 transition-colors duration-300"
+            className="inline-flex items-center space-x-1 text-white duration-300"
           >
             User
           </NavLink>
@@ -63,7 +66,7 @@ export default function Navbar() {
         {!userId && (
           <NavLink
             to="/login"
-            className="inline-flex items-center space-x-1 transition-colors duration-300"
+            className="inline-flex items-center space-x-1 text-white duration-300"
           >
             Login
           </NavLink>

@@ -20,7 +20,7 @@ export default function Navbar() {
       url: "/about",
     },
     {
-      label: "Shop",
+      label: "",
       url: "/products",
     },
   ];
@@ -39,7 +39,6 @@ export default function Navbar() {
           <img src={pao} width="100" />
         </Link>
       </div>
-
       {/* Navigation Links */}
       <div className="space-x-4 text-white">
         {links.map((link, index) => (
@@ -48,7 +47,6 @@ export default function Navbar() {
           </NavLink>
         ))}
       </div>
-
       {/* Shopping Cart Indicator/Checkout Link */}
       <div className="flex items-center justify-between">
         <div className="font-semibold text-white hover:text-emerald-500">

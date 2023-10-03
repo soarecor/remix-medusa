@@ -23,49 +23,6 @@ export default function Container({ clientSecret, cartId, customer }) {
 
   const handlePayment = async (e) => {
     e.preventDefault();
-    // const card = elements.getElement("card");
-    // console.log("card", card);
-
-    // const payment = await stripe.confirmCardPayment(clientSecret, {
-    //   payment_method: {
-    //     card: elements.getElement(CardElement),
-    //     billing_details: {
-    //       email: customer.email,
-    //       phone: 6478888888,
-    //       address: {
-    //         city: "Toronto",
-    //         country: "CA",
-    //         line1: "1 Yonge Street",
-    //         postal_code: "M8Y 1C8",
-    //       },
-    //     },
-    //   },
-    // });
-
-    // console.log("PAYYYMENT", payment);
-    // return stripe
-    //   .confirmCardPayment(clientSecret, {
-    //     payment_method: {
-    //       card: elements.getElement(CardElement),
-    //       billing_details: {
-    //         email: customer.email,
-    //         phone: 6478888888,
-    //         address: {
-    //           city: "Toronto",
-    //           country: "CA",
-    //           line1: "1 Yonge Street",
-    //           postal_code: "M8Y 1C8",
-    //         },
-    //       },
-    //     },
-    //   })
-    //   .then(async ({ error, paymentIntent }) => {
-    //     if (error) console.log("ERRRR", error);
-    //     if (paymentIntent) console.log("PAYMENT INTENT", paymentIntent);
-    //     const cart = await client.carts.complete(cartId);
-    //     console.log("CAARRT COMPLETEEEEE", cart);
-    //   });
-
     return stripe.confirmPayment({
       elements,
       confirmParams: {
