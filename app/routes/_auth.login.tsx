@@ -4,11 +4,6 @@ import AuthForm from '~/components/AuthForm';
 import type { ActionArgs } from "@remix-run/node"; // or cloudflare/deno
 
 
-export default function LoginRoute() {
-    return <AuthForm />;
-   }
-
-
 export async function action({ request }: ActionArgs) {
   const searchParams = new URL(request.url).searchParams;
   const authMode = searchParams.get('mode') || 'login';
@@ -37,6 +32,11 @@ export async function action({ request }: ActionArgs) {
   }
 }
 
-// export function links() {
-//   return [{ rel: 'stylesheet', href: authStyles }];
-// }
+export default function LoginRoute() {
+
+  return (
+    <div className="h-screen grid place-items-center gap-8">
+      <AuthForm />
+    </div>
+  );
+}  

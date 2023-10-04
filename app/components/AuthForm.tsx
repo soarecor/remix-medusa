@@ -6,11 +6,13 @@ import {
   useTransition as useNavigation,
 } from "@remix-run/react";
 import { FaLock, FaUserPlus } from "react-icons/fa";
+import { Input } from "~/components/ui/input";
+import { Button } from "~/components/ui/button";
 
 function AuthForm() {
   const [searchParams] = useSearchParams();
   const navigation = useNavigation();
-  const actionData = useActionData();
+  const validationErrors = useActionData();
 
   const authMode = searchParams.get("mode") || "login";
 
@@ -21,29 +23,33 @@ function AuthForm() {
   const isSubmitting = navigation.state !== "idle";
 
   return (
-    <Form method="post" className="form" id="auth-form">
+    <Form
+      method="post"
+      className="grid w-full max-w-sm items-center gap-1.5"
+      id="auth-form"
+    >
       <div className="icon-img">
         {authMode === "login" ? <FaLock /> : <FaUserPlus />}
       </div>
       <p>
         <label htmlFor="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
+        <Input type="email" id="email" name="email" required />
       </p>
       <p>
         <label htmlFor="password">Password</label>
-        <input type="password" id="password" name="password" minLength={7} />
+        <Input type="password" id="password" name="password" minLength={7} />
       </p>
-      {actionData && (
+      {validationErrors && (
         <ul>
-          {Object.values(actionData).map((item) => (
-            <li key={item}>{item}</li>
+          {Object.values(validationErrors).map((error) => (
+            <li key={error}>{error}</li>
           ))}
         </ul>
       )}
       <div className="form-actions">
-        <button disabled={isSubmitting}>
+        <Button disabled={isSubmitting}>
           {isSubmitting ? "Authenticating..." : submitBtnCaption}
-        </button>
+        </Button>
         <Link to={authMode === "login" ? "?mode=signup" : "?mode=login"}>
           {toggleBtnCaption}
         </Link>
