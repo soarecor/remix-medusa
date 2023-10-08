@@ -8,6 +8,7 @@ import {
 import { FaLock, FaUserPlus } from "react-icons/fa";
 import { Input } from "~/components/ui/input";
 import { Button } from "~/components/ui/button";
+import paoBlack from "~/assets/pao-black.png";
 
 function AuthForm() {
   const [searchParams] = useSearchParams();
@@ -28,17 +29,26 @@ function AuthForm() {
       className="grid w-full max-w-sm items-center gap-1.5"
       id="auth-form"
     >
-      <div className="icon-img">
+      {/* <div className="icon-img">
         {authMode === "login" ? <FaLock /> : <FaUserPlus />}
+      </div> */}
+      <img className="w-26" src={paoBlack} alt="" />
+
+      <div className="my-4 text-xl font-semibold">
+        {authMode === "login" ? <div>Login</div> : <div>Sign up</div>}
       </div>
-      <p>
-        <label htmlFor="email">Email Address</label>
-        <Input type="email" id="email" name="email" required />
-      </p>
-      <p>
-        <label htmlFor="password">Password</label>
-        <Input type="password" id="password" name="password" minLength={7} />
-      </p>
+
+      <div className="my-2">
+        <p className="mb-4">
+          <label htmlFor="email">Email Address</label>
+          <Input type="email" id="email" name="email" required />
+        </p>
+        <p className="mt-6">
+          <label htmlFor="password">Password</label>
+          <Input type="password" id="password" name="password" minLength={7} />
+        </p>
+      </div>
+
       {validationErrors && (
         <ul>
           {Object.values(validationErrors).map((error) => (
@@ -46,11 +56,14 @@ function AuthForm() {
           ))}
         </ul>
       )}
-      <div className="form-actions">
-        <Button disabled={isSubmitting}>
+      <div className="flex flex-col">
+        <Button className="mt-5" disabled={isSubmitting}>
           {isSubmitting ? "Authenticating..." : submitBtnCaption}
         </Button>
-        <Link to={authMode === "login" ? "?mode=signup" : "?mode=login"}>
+        <Link
+          className="text-center mt-5"
+          to={authMode === "login" ? "?mode=signup" : "?mode=login"}
+        >
           {toggleBtnCaption}
         </Link>
       </div>

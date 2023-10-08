@@ -157,7 +157,7 @@ function Footer() {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-ETQYZCXQ.css";
+var tailwind_default = "/build/_assets/tailwind-S2W6HXU2.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
@@ -1109,7 +1109,7 @@ function IndexRoute() {
         columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "text-9xl", children: "FAST FORWARD TO THE END." }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "text-9xl font-bold", children: "FAST FORWARD TO THE END." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
           lineNumber: 22,
           columnNumber: 8
@@ -1212,7 +1212,7 @@ function validateCredentials(input) {
 }
 
 // app/components/AuthForm.tsx
-var import_react16 = require("@remix-run/react"), import_fa = require("react-icons/fa");
+var import_react16 = require("@remix-run/react");
 
 // app/components/ui/input.tsx
 var React2 = __toESM(require("react"));
@@ -1240,6 +1240,9 @@ var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), Input = React2.
 );
 Input.displayName = "Input";
 
+// app/assets/pao-black.png
+var pao_black_default = "/build/_assets/pao-black-MVR5KJHI.png";
+
 // app/components/AuthForm.tsx
 var import_jsx_dev_runtime21 = require("react/jsx-dev-runtime");
 function AuthForm() {
@@ -1251,74 +1254,96 @@ function AuthForm() {
       className: "grid w-full max-w-sm items-center gap-1.5",
       id: "auth-form",
       children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "icon-img", children: authMode === "login" ? /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(import_fa.FaLock, {}, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("img", { className: "w-26", src: pao_black_default, alt: "" }, void 0, !1, {
           fileName: "app/components/AuthForm.tsx",
-          lineNumber: 32,
-          columnNumber: 33
-        }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(import_fa.FaUserPlus, {}, void 0, !1, {
-          fileName: "app/components/AuthForm.tsx",
-          lineNumber: 32,
-          columnNumber: 46
-        }, this) }, void 0, !1, {
-          fileName: "app/components/AuthForm.tsx",
-          lineNumber: 31,
+          lineNumber: 35,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("p", { children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("label", { htmlFor: "email", children: "Email Address" }, void 0, !1, {
-            fileName: "app/components/AuthForm.tsx",
-            lineNumber: 35,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Input, { type: "email", id: "email", name: "email", required: !0 }, void 0, !1, {
-            fileName: "app/components/AuthForm.tsx",
-            lineNumber: 36,
-            columnNumber: 9
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/components/AuthForm.tsx",
-          lineNumber: 34,
-          columnNumber: 7
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("p", { children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("label", { htmlFor: "password", children: "Password" }, void 0, !1, {
-            fileName: "app/components/AuthForm.tsx",
-            lineNumber: 39,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Input, { type: "password", id: "password", name: "password", minLength: 7 }, void 0, !1, {
-            fileName: "app/components/AuthForm.tsx",
-            lineNumber: 40,
-            columnNumber: 9
-          }, this)
-        ] }, void 0, !0, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "my-4 text-xl font-semibold", children: authMode === "login" ? /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { children: "Login" }, void 0, !1, {
           fileName: "app/components/AuthForm.tsx",
           lineNumber: 38,
+          columnNumber: 33
+        }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { children: "Sign up" }, void 0, !1, {
+          fileName: "app/components/AuthForm.tsx",
+          lineNumber: 38,
+          columnNumber: 52
+        }, this) }, void 0, !1, {
+          fileName: "app/components/AuthForm.tsx",
+          lineNumber: 37,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "my-2", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("p", { className: "mb-4", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("label", { htmlFor: "email", children: "Email Address" }, void 0, !1, {
+              fileName: "app/components/AuthForm.tsx",
+              lineNumber: 43,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Input, { type: "email", id: "email", name: "email", required: !0 }, void 0, !1, {
+              fileName: "app/components/AuthForm.tsx",
+              lineNumber: 44,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/AuthForm.tsx",
+            lineNumber: 42,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("p", { className: "mt-6", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("label", { htmlFor: "password", children: "Password" }, void 0, !1, {
+              fileName: "app/components/AuthForm.tsx",
+              lineNumber: 47,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Input, { type: "password", id: "password", name: "password", minLength: 7 }, void 0, !1, {
+              fileName: "app/components/AuthForm.tsx",
+              lineNumber: 48,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/AuthForm.tsx",
+            lineNumber: 46,
+            columnNumber: 9
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/AuthForm.tsx",
+          lineNumber: 41,
           columnNumber: 7
         }, this),
         validationErrors && /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("ul", { children: Object.values(validationErrors).map((error) => /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("li", { children: error }, error, !1, {
           fileName: "app/components/AuthForm.tsx",
-          lineNumber: 45,
+          lineNumber: 55,
           columnNumber: 13
         }, this)) }, void 0, !1, {
           fileName: "app/components/AuthForm.tsx",
-          lineNumber: 43,
+          lineNumber: 53,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "form-actions", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Button, { disabled: isSubmitting, children: isSubmitting ? "Authenticating..." : submitBtnCaption }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "flex flex-col", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Button, { className: "mt-5", disabled: isSubmitting, children: isSubmitting ? "Authenticating..." : submitBtnCaption }, void 0, !1, {
             fileName: "app/components/AuthForm.tsx",
-            lineNumber: 50,
+            lineNumber: 60,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(import_react16.Link, { to: authMode === "login" ? "?mode=signup" : "?mode=login", children: toggleBtnCaption }, void 0, !1, {
-            fileName: "app/components/AuthForm.tsx",
-            lineNumber: 53,
-            columnNumber: 9
-          }, this)
+          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(
+            import_react16.Link,
+            {
+              className: "text-center mt-5",
+              to: authMode === "login" ? "?mode=signup" : "?mode=login",
+              children: toggleBtnCaption
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/AuthForm.tsx",
+              lineNumber: 63,
+              columnNumber: 9
+            },
+            this
+          )
         ] }, void 0, !0, {
           fileName: "app/components/AuthForm.tsx",
-          lineNumber: 49,
+          lineNumber: 59,
           columnNumber: 7
         }, this)
       ]
@@ -1327,13 +1352,16 @@ function AuthForm() {
     !0,
     {
       fileName: "app/components/AuthForm.tsx",
-      lineNumber: 26,
+      lineNumber: 27,
       columnNumber: 5
     },
     this
   );
 }
 var AuthForm_default = AuthForm;
+
+// app/assets/forest.jpg
+var forest_default = "/build/_assets/forest-6RXTOGRR.jpg";
 
 // app/routes/_auth.login.tsx
 var import_jsx_dev_runtime22 = require("react/jsx-dev-runtime");
@@ -1352,14 +1380,29 @@ async function action2({ request }) {
   }
 }
 function LoginRoute() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "h-screen grid place-items-center gap-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(AuthForm_default, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "relative hidden h-full flex-col bg-muted text-white dark:border-r md:hidden lg:flex", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("img", { className: "h-screen", src: forest_default, alt: "" }, void 0, !1, {
+      fileName: "app/routes/_auth.login.tsx",
+      lineNumber: 43,
+      columnNumber: 7
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_auth.login.tsx",
+      lineNumber: 42,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "h-screen grid place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(AuthForm_default, {}, void 0, !1, {
+      fileName: "app/routes/_auth.login.tsx",
+      lineNumber: 48,
+      columnNumber: 7
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_auth.login.tsx",
+      lineNumber: 46,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, !0, {
     fileName: "app/routes/_auth.login.tsx",
-    lineNumber: 39,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/_auth.login.tsx",
-    lineNumber: 38,
-    columnNumber: 5
+    lineNumber: 41,
+    columnNumber: 3
   }, this);
 }
 
@@ -1613,7 +1656,7 @@ function AuthLayout() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-DBMSH7Y3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-JOQYYS2Q.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js", "/build/_shared/chunk-QS7MC2HN.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-COYPZ6IQ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-R2FWX4PW.js", "/build/_shared/chunk-QS7MC2HN.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-LWGHUDYP.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-6BMQQMMY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-OE5RWX2U.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-YM6KOSQM.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-A6ENUFDN.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-EDIOLPR2.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "07abd172", hmr: void 0, url: "/build/manifest-07ABD172.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-IN57EE22.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-FVHLIEDG.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-GJIMYQIA.js", imports: ["/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-G3PXCU5R.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-3WIBSKPA.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-6BMQQMMY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-OE5RWX2U.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-YM6KOSQM.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-6VQEV2EF.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-EDIOLPR2.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "0b48eb28", hmr: void 0, url: "/build/manifest-0B48EB28.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

@@ -19,7 +19,7 @@ export default function IndexRoute() {
     <div className="relative">
      <img className="w-screen" src={hero}  />
      <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white">
-       <span className="text-9xl">FAST FORWARD TO THE END.</span> 
+       <span className="text-9xl font-bold">FAST FORWARD TO THE END.</span> 
        <span className="text-3xl block">Climate change has destroyed the world in 2050. </span>  
        <div>
       <Button size="lg" variant="ghost">SHAD BTN</Button>
