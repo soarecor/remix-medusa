@@ -157,7 +157,7 @@ function Footer() {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-UFAGUMUO.css";
+var tailwind_default = "/build/_assets/tailwind-V4TMBKSA.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
@@ -1064,9 +1064,6 @@ Button.displayName = "Button";
 // app/assets/root1.svg
 var root1_default = "/build/_assets/root1-G6RBKOQG.svg";
 
-// app/assets/hero.gif
-var hero_default = "/build/_assets/hero-C3EBE2CT.gif";
-
 // app/routes/_public._index.tsx
 var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), meta = () => [
   { title: "New Remix App" },
@@ -1080,36 +1077,40 @@ function IndexRoute() {
         lineNumber: 24,
         columnNumber: 6
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "text-lg md:text-3xl lg:text-4xl xl:text-7xl 2xl:text-9xl font-semibold ", children: "FAST FORWARD TO 2050." }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "absolute top-1/3 z-10  grid grid-cols-5 items-center w-screen px-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "col-span-4 col-start-2 justify-center text-white", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ", children: "FAST FORWARD TO 2050." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 26,
-          columnNumber: 8
+          lineNumber: 28,
+          columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-10 drop-shadow-lg", children: "The world is impacted by climate change. " }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 27,
-          columnNumber: 8
+          lineNumber: 29,
+          columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(Button, { className: "mt-10", size: "lg", variant: "secondary", children: [
           " ",
           /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "text-base md:text-lg lg:text-2xl 2xl:text-3xl p-3", children: " CHAT TO LEARN MORE" }, void 0, !1, {
             fileName: "app/routes/_public._index.tsx",
-            lineNumber: 29,
-            columnNumber: 64
+            lineNumber: 31,
+            columnNumber: 74
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 29,
-          columnNumber: 7
+          lineNumber: 31,
+          columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 28,
-          columnNumber: 8
+          lineNumber: 30,
+          columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 25,
+        lineNumber: 27,
+        columnNumber: 8
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 26,
         columnNumber: 6
       }, this)
     ] }, void 0, !0, {
@@ -1117,109 +1118,109 @@ function IndexRoute() {
       lineNumber: 23,
       columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative h-full  col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 39,
+        lineNumber: 42,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 37,
+        lineNumber: 40,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid col-span-3 p-20 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "lg:w-3/5 text-xl", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Why Pao?" }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 45,
+          lineNumber: 48,
           columnNumber: 17
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block leading-relaxed", children: "Why a word that is used in the Indian subcontinent, Brazil, Portugal and Macao? Pao (meaning bread) is a simple word that unites us, no matter which part of the world you come from. While climate change might be visible in certain parts of the globe, we are all responsible for the outcome. At the rate of decline, we are likely on a trajectory that will put us in a bleak position in 2050. We are hoping to shed some light on what the future will look like in this scenario - some food for thought." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 48,
+          lineNumber: 51,
           columnNumber: 17
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 44,
+        lineNumber: 47,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 41,
+        lineNumber: 44,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_public._index.tsx",
-      lineNumber: 35,
-      columnNumber: 9
+      lineNumber: 38,
+      columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-4 lg:px-0", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid p-20 col-span-2 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "flex flex-col-reverse items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid col-start-2 col-span-2 m-10 h-full place-items-center xl:place-items-start content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "lg:w-3/5 text-xl", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Deforestation is still an issue" }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 67,
+          lineNumber: 70,
           columnNumber: 17
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block leading-relaxed", children: "The world was once a much greener place. 10,000 years ago, 71% of the Earth\u2019s land surface \u2013 a total of 10.6 billion hectares \u2013 was covered by forests, shrubs, and wild grasslands. Today, half of this land is mostly used for agriculture, grazing, and urban settlements, while the total surface still covered by forests and grassland dropped down to just around 4.1 billion hectares. To put things into perspective, we are losing forests at a rate equivalent to 27 soccer fields per minute." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 70,
+          lineNumber: 73,
           columnNumber: 17
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 66,
+        lineNumber: 69,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 65,
+        lineNumber: 68,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative h-full col-span-2 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "w-full", src: hero_default }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "h-full col-span-2 grid justify-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "max-h-full object-contain", src: home_hero_default }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 76,
+        lineNumber: 79,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 75,
+        lineNumber: 78,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_public._index.tsx",
-      lineNumber: 64,
+      lineNumber: 67,
       columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative h-full col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 82,
-        columnNumber: 15
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/_public._index.tsx",
-        lineNumber: 81,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid col-span-3 p-20 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Nearly 1.6 Billion Hectares of Forest Are at High Risk of Degradation" }, void 0, !1, {
-          fileName: "app/routes/_public._index.tsx",
-          lineNumber: 86,
-          columnNumber: 17
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block leading-relaxed", children: "In terms of land mass, forest degradation is an even bigger problem than deforestation. Nearly 1.6 billion hectares of forest are at high risk of degradation in the next decade. This phenomenon occurs when forest ecosystems are weakened to a point where they lose their ability to provide goods and services to people and nature. Even though climate change is a contributing factor in degradation, the main trigger for it has been unsustainable and illegal logging. This, along with timber extraction, are the major drivers in Asia and Latin America: together, they account for more than 70% of total tropical forest degradation. In Africa, this occurs as forests are exploited to obtain fuelwood and charcoal. Indeed, more than 80% of people in Sub-Saharan Africa do not have clean cooking fuels and thus heavily rely on wood." }, void 0, !1, {
-          fileName: "app/routes/_public._index.tsx",
-          lineNumber: 89,
-          columnNumber: 17
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/_public._index.tsx",
         lineNumber: 85,
-        columnNumber: 13
+        columnNumber: 15
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
         lineNumber: 84,
         columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "lg:w-3/5 text-xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Nearly 1.6 Billion Hectares of Forest Are at High Risk of Degradation" }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 89,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block leading-relaxed", children: "In terms of land mass, forest degradation is an even bigger problem than deforestation. Nearly 1.6 billion hectares of forest are at high risk of degradation in the next decade. This phenomenon occurs when forest ecosystems are weakened to a point where they lose their ability to provide goods and services to people and nature. Even though climate change is a contributing factor in degradation, the main trigger for it has been unsustainable and illegal logging. This, along with timber extraction, are the major drivers in Asia and Latin America: together, they account for more than 70% of total tropical forest degradation. In Africa, this occurs as forests are exploited to obtain fuelwood and charcoal. Indeed, more than 80% of people in Sub-Saharan Africa do not have clean cooking fuels and thus heavily rely on wood." }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 92,
+          columnNumber: 17
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 88,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 87,
+        columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_public._index.tsx",
-      lineNumber: 80,
+      lineNumber: 83,
       columnNumber: 5
     }, this)
   ] }, void 0, !0, {
@@ -1789,8 +1790,8 @@ function Navbar() {
       url: "/chat"
     }
   ], data = (0, import_react18.useLoaderData)(), userId = data.userId, itemLength = data.itemLength;
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("nav", { className: "flex items-center justify-between px-8 py-10 bg-black", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "pl-2 flex justify-between w-screen md-w-auto", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("nav", { className: "flex sm:grid sm:grid-cols-5 items-center justify-between px-8 py-10 bg-black", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "col-span-1 col-start-2 flex w-screen md:w-auto", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react18.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("img", { src: pao_default, width: "150" }, void 0, !1, {
         fileName: "app/components/navbar.tsx",
         lineNumber: 47,
@@ -1866,7 +1867,7 @@ function Navbar() {
       lineNumber: 45,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "space-x-4 text-white hidden md:block", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react18.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "col-span-1 flex justify-between text-white ", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react18.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
       fileName: "app/components/navbar.tsx",
       lineNumber: 79,
       columnNumber: 21
@@ -1875,7 +1876,7 @@ function Navbar() {
       lineNumber: 77,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "md:flex items-center justify-between hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "col-span-2 flex justify-end", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "font-semibold text-white hover:text-emerald-500", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
         import_react18.NavLink,
         {
@@ -2028,7 +2029,7 @@ function AuthLayout() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EK2DDPTF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-FVHLIEDG.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-4AAGK5KU.js", imports: ["/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-G3PXCU5R.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-MUTL7KP5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js", "/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-XQACP3S5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-X22BDGDY.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.chat": { id: "routes/_public.chat", parentId: "routes/_public", path: "chat", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.chat-X2QRUHHX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-ZGA7YNVF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-6VQEV2EF.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-DVNKEFEK.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "533442f2", hmr: void 0, url: "/build/manifest-533442F2.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-2FNJRWHM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-FVHLIEDG.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-CK53LTAS.js", imports: ["/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-G3PXCU5R.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-THR6OCIW.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js", "/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-XQACP3S5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-X22BDGDY.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.chat": { id: "routes/_public.chat", parentId: "routes/_public", path: "chat", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.chat-X2QRUHHX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-ZGA7YNVF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-6VQEV2EF.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-DVNKEFEK.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "d4275cdc", hmr: void 0, url: "/build/manifest-D4275CDC.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

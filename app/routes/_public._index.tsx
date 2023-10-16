@@ -4,7 +4,7 @@ import { IframeDocument } from "~/components/iframeDoc";
 import hero from "~/assets/home-hero.png";
 import {Button} from "~/components/ui/button"
 import root from "~/assets/root1.svg";
-import forest from "~/assets/hero.gif";
+import forest from "~/assets/home-hero.png";
 
 
 
@@ -22,26 +22,29 @@ export default function IndexRoute() {
      {/* {cartId} */}
     <div className="relative">
      <img className="w-screen" src={hero}  />
-     <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white">
-       <span className="text-lg md:text-3xl lg:text-4xl xl:text-7xl 2xl:text-9xl font-semibold ">FAST FORWARD TO 2050.</span> 
-       <span className="text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-10 drop-shadow-lg">The world is impacted by climate change. </span>  
-       <div>
-      <Button className="mt-10" size="lg" variant="secondary"> <span className="text-base md:text-lg lg:text-2xl 2xl:text-3xl p-3"> CHAT TO LEARN MORE</span></Button>
-    </div>
+     {/* <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white"> */}
+     <div className="absolute top-1/3 z-10  grid grid-cols-5 items-center w-screen px-8">
+       <span className="col-span-4 col-start-2 justify-center text-white">
+            <span className="text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ">FAST FORWARD TO 2050.</span> 
+            <span className="text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-10 drop-shadow-lg">The world is impacted by climate change. </span>  
+            <div>
+                <Button className="mt-10" size="lg" variant="secondary"> <span className="text-base md:text-lg lg:text-2xl 2xl:text-3xl p-3"> CHAT TO LEARN MORE</span></Button>
+            </div>
        </span>
+       </div>
     </div>
 
         {/* ARTICLE 1 */}
-        <div className="container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0">
+    <div className="flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20">
         {/* 1 */}
         <div className="relative h-full  col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center">
             {/* border-solid border-4 border-sky-500 */}
             <img className="w-40" src={root} />
         </div>
-        <div className="grid col-span-3 p-20 h-full place-items-center content-center gap-0">
+        <div className="grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0">
             {/* <img className="text-left" src={paoBlack} alt=""/> */}
             {/* <AuthForm /> */}
-            <div className="w-3/5 text-xl">
+            <div className="lg:w-3/5 text-xl">
                 <span className="block font-bold text-3xl mb-4">
                     Why Pao?
                 </span>
@@ -61,9 +64,9 @@ export default function IndexRoute() {
         </div>
     </div>
 
-    <div className="container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-4 lg:px-0">
-        <div className="grid p-20 col-span-2 h-full place-items-center content-center gap-0">
-            <div className="w-3/5 text-xl">
+    <div className="flex flex-col-reverse items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20">
+        <div className="grid col-start-2 col-span-2 m-10 h-full place-items-center xl:place-items-start content-center gap-0">
+            <div className="lg:w-3/5 text-xl">
                 <span className="block font-bold text-3xl mb-4">
                     Deforestation is still an issue
                 </span>
@@ -72,17 +75,17 @@ export default function IndexRoute() {
                 </span>
             </div>
         </div>
-        <div className="relative h-full col-span-2 grid place-items-center content-center">
-            <img className="w-full" src={forest} />
+        <div className="h-full col-span-2 grid justify-center content-center">
+            <img className="max-h-full object-contain" src={forest} />
         </div>
     </div>
 
-    <div className="container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0">
+    <div className="flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20">
         <div className="relative h-full col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center">
               <img className="w-40" src={root} />
         </div>
-        <div className="grid col-span-3 p-20 h-full place-items-center content-center gap-0">
-            <div className="w-3/5 text-xl">
+        <div className="grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0">
+            <div className="lg:w-3/5 text-xl">
                 <span className="block font-bold text-3xl mb-4">
                 Nearly 1.6 Billion Hectares of Forest Are at High Risk of Degradation
                 </span>

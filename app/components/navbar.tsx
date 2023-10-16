@@ -40,9 +40,9 @@ export default function Navbar() {
     const itemLength = data.itemLength
 
     return (
-        <nav className="flex items-center justify-between px-8 py-10 bg-black">
+        <nav className="flex sm:grid sm:grid-cols-5 items-center justify-between px-8 py-10 bg-black">
             {/* Site Logo */}
-            <div className="pl-2 flex justify-between w-screen md-w-auto">
+            <div className="col-span-1 col-start-2 flex w-screen md:w-auto">
                 <Link to="/">
                     <img src={pao} width="150" />
                 </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
                 </div>
             </div>
             {/* Navigation Links */}
-            <div className="space-x-4 text-white hidden md:block">
+            <div className="col-span-1 flex justify-between text-white ">
                 {links.map((link, index) => (
                     <NavLink key={index} to={link.url} className="navlink">
                         {link.label}
@@ -82,7 +82,7 @@ export default function Navbar() {
                 ))}
             </div>
             {/* Shopping Cart Indicator/Checkout Link */}
-            <div className="md:flex items-center justify-between hidden">
+            <div className="col-span-2 flex justify-end">
                 <div className="font-semibold text-white hover:text-emerald-500">
                     <NavLink
                         to="/cart"
