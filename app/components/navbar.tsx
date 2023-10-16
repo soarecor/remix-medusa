@@ -40,9 +40,9 @@ export default function Navbar() {
     const itemLength = data.itemLength
 
     return (
-        <nav className="flex sm:grid sm:grid-cols-5 items-center justify-between px-8 py-10 bg-black">
+        <nav className="flex md:grid md:grid-cols-5 items-center justify-between px-8 py-10 bg-black">
             {/* Site Logo */}
-            <div className="col-span-1 col-start-2 flex w-screen md:w-auto">
+            <div className="flex justify-between lg:col-span-1 lg:col-start-2 w-screen">
                 <Link to="/">
                     <img src={pao} width="150" />
                 </Link>
@@ -53,6 +53,7 @@ export default function Navbar() {
                     >
                         <Menu />
                     </button>
+
                     <div
                         className={`h-screen w-screen left-0 bg-black pl-2 z-10 pb-3 mt-8 md:hidden ${
                             state ? 'absolute' : 'hidden'
@@ -74,7 +75,7 @@ export default function Navbar() {
                 </div>
             </div>
             {/* Navigation Links */}
-            <div className="col-span-1 flex justify-between text-white ">
+            <div className="hidden md:flex col-span-1 justify-between text-white ">
                 {links.map((link, index) => (
                     <NavLink key={index} to={link.url} className="navlink">
                         {link.label}
@@ -82,7 +83,7 @@ export default function Navbar() {
                 ))}
             </div>
             {/* Shopping Cart Indicator/Checkout Link */}
-            <div className="col-span-2 flex justify-end">
+            <div className="hidden md:flex col-span-2 justify-end ">
                 <div className="font-semibold text-white hover:text-emerald-500">
                     <NavLink
                         to="/cart"

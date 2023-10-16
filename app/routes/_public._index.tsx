@@ -23,8 +23,8 @@ export default function IndexRoute() {
     <div className="relative">
      <img className="w-screen" src={hero}  />
      {/* <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white"> */}
-     <div className="absolute top-1/3 z-10  grid grid-cols-5 items-center w-screen px-8">
-       <span className="col-span-4 col-start-2 justify-center text-white">
+     <div className="absolute top-1/3 grid grid-cols-5 items-center w-screen px-8">
+       <span className="col-span-4 md:col-start-2 justify-center text-white">
             <span className="text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ">FAST FORWARD TO 2050.</span> 
             <span className="text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-10 drop-shadow-lg">The world is impacted by climate change. </span>  
             <div>
