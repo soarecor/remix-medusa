@@ -152,12 +152,12 @@ function Footer() {
   ] }, void 0, !0, {
     fileName: "app/components/footer.jsx",
     lineNumber: 5,
-    columnNumber: 5
+    columnNumber: 9
   }, this);
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-S2W6HXU2.css";
+var tailwind_default = "/build/_assets/tailwind-UFAGUMUO.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
@@ -523,28 +523,28 @@ function ExpenseForm() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Are you sure you want to delete this item from your cart?" }, void 0, !1, {
       fileName: "app/components/deleteItemForm.jsx",
       lineNumber: 8,
-      columnNumber: 7
+      columnNumber: 13
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "form-actions", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { children: "Delete" }, void 0, !1, {
         fileName: "app/components/deleteItemForm.jsx",
         lineNumber: 11,
-        columnNumber: 9
+        columnNumber: 17
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react6.Link, { to: "..", children: "Cancel" }, void 0, !1, {
         fileName: "app/components/deleteItemForm.jsx",
         lineNumber: 12,
-        columnNumber: 9
+        columnNumber: 17
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/deleteItemForm.jsx",
       lineNumber: 10,
-      columnNumber: 7
+      columnNumber: 13
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/deleteItemForm.jsx",
     lineNumber: 7,
-    columnNumber: 5
+    columnNumber: 9
   }, this);
 }
 var deleteItemForm_default = ExpenseForm;
@@ -616,35 +616,46 @@ var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
 function ProductCard({ product }) {
   let variant = product.variants[0];
   return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("section", { className: "overflow-hidden bg-white rounded-lg shadow:md hover:shadow-lg w-80", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Link, { to: `/products/${product.id}`, children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("img", { className: "w-80", src: product.thumbnail, alt: product.title }, void 0, !1, {
-      fileName: "app/components/product-card.jsx",
-      lineNumber: 10,
-      columnNumber: 9
-    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
+      "img",
+      {
+        className: "w-80",
+        src: product.thumbnail,
+        alt: product.title
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/product-card.jsx",
+        lineNumber: 10,
+        columnNumber: 17
+      },
+      this
+    ),
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "p-4", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("h3", { className: "text-lg font-bold text-gray-700 hover:underline", children: product.title }, void 0, !1, {
         fileName: "app/components/product-card.jsx",
-        lineNumber: 12,
-        columnNumber: 11
+        lineNumber: 16,
+        columnNumber: 21
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "font-semibold text-teal-600", children: formatPrice(variant) }, void 0, !1, {
         fileName: "app/components/product-card.jsx",
-        lineNumber: 15,
-        columnNumber: 11
+        lineNumber: 19,
+        columnNumber: 21
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/product-card.jsx",
-      lineNumber: 11,
-      columnNumber: 9
+      lineNumber: 15,
+      columnNumber: 17
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/product-card.jsx",
     lineNumber: 9,
-    columnNumber: 7
+    columnNumber: 13
   }, this) }, void 0, !1, {
     fileName: "app/components/product-card.jsx",
     lineNumber: 8,
-    columnNumber: 5
+    columnNumber: 9
   }, this);
 }
 
@@ -900,7 +911,7 @@ function Container({ clientSecret, cartId, customer }) {
       /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_react_stripe_js2.PaymentElement, {}, void 0, !1, {
         fileName: "app/components/paymentContainer.jsx",
         lineNumber: 39,
-        columnNumber: 9
+        columnNumber: 17
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("button", { onClick: async (e) => (e.preventDefault(), stripe2.confirmPayment({
         elements,
@@ -910,17 +921,17 @@ function Container({ clientSecret, cartId, customer }) {
       })), children: "Submit" }, void 0, !1, {
         fileName: "app/components/paymentContainer.jsx",
         lineNumber: 40,
-        columnNumber: 9
+        columnNumber: 17
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/paymentContainer.jsx",
       lineNumber: 37,
-      columnNumber: 7
+      columnNumber: 13
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/paymentContainer.jsx",
     lineNumber: 35,
-    columnNumber: 5
+    columnNumber: 9
   }, this);
 }
 
@@ -993,8 +1004,392 @@ __export(public_index_exports, {
   meta: () => meta
 });
 
+// app/assets/home-hero.png
+var home_hero_default = "/build/_assets/home-hero-SNSI4A4G.png";
+
+// app/components/ui/button.tsx
+var React = __toESM(require("react")), import_react_slot = require("@radix-ui/react-slot"), import_class_variance_authority = require("class-variance-authority");
+
+// app/lib/utils .ts
+var import_clsx = require("clsx"), import_tailwind_merge = require("tailwind-merge");
+function cn(...inputs) {
+  return (0, import_tailwind_merge.twMerge)((0, import_clsx.clsx)(inputs));
+}
+
+// app/components/ui/button.tsx
+var import_jsx_dev_runtime16 = require("react/jsx-dev-runtime"), buttonVariants = (0, import_class_variance_authority.cva)(
+  "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+        destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+        outline: "border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground",
+        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
+        link: "text-primary underline-offset-4 hover:underline"
+      },
+      size: {
+        default: "h-9 px-4 py-2",
+        sm: "h-8 rounded-md px-3 text-xs",
+        lg: "h-10 rounded-md px-8",
+        icon: "h-9 w-9"
+      }
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default"
+    }
+  }
+), Button = React.forwardRef(
+  ({ className, variant, size, asChild = !1, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+    asChild ? import_react_slot.Slot : "button",
+    {
+      className: cn(buttonVariants({ variant, size, className })),
+      ref,
+      ...props
+    },
+    void 0,
+    !1,
+    {
+      fileName: "app/components/ui/button.tsx",
+      lineNumber: 47,
+      columnNumber: 7
+    },
+    this
+  )
+);
+Button.displayName = "Button";
+
+// app/assets/root1.svg
+var root1_default = "/build/_assets/root1-G6RBKOQG.svg";
+
+// app/assets/hero.gif
+var hero_default = "/build/_assets/hero-C3EBE2CT.gif";
+
+// app/routes/_public._index.tsx
+var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), meta = () => [
+  { title: "New Remix App" },
+  { name: "description", content: "Welcome to Remix!" }
+];
+function IndexRoute() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "w-screen", src: home_hero_default }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 24,
+        columnNumber: 6
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "text-lg md:text-3xl lg:text-4xl xl:text-7xl 2xl:text-9xl font-semibold ", children: "FAST FORWARD TO 2050." }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 26,
+          columnNumber: 8
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-10 drop-shadow-lg", children: "The world is impacted by climate change. " }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 27,
+          columnNumber: 8
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(Button, { className: "mt-10", size: "lg", variant: "secondary", children: [
+          " ",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "text-base md:text-lg lg:text-2xl 2xl:text-3xl p-3", children: " CHAT TO LEARN MORE" }, void 0, !1, {
+            fileName: "app/routes/_public._index.tsx",
+            lineNumber: 29,
+            columnNumber: 64
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 29,
+          columnNumber: 7
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 28,
+          columnNumber: 8
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 25,
+        columnNumber: 6
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public._index.tsx",
+      lineNumber: 23,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative h-full  col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 39,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 37,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid col-span-3 p-20 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Why Pao?" }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 45,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block leading-relaxed", children: "Why a word that is used in the Indian subcontinent, Brazil, Portugal and Macao? Pao (meaning bread) is a simple word that unites us, no matter which part of the world you come from. While climate change might be visible in certain parts of the globe, we are all responsible for the outcome. At the rate of decline, we are likely on a trajectory that will put us in a bleak position in 2050. We are hoping to shed some light on what the future will look like in this scenario - some food for thought." }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 48,
+          columnNumber: 17
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 44,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 41,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public._index.tsx",
+      lineNumber: 35,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-4 lg:px-0", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid p-20 col-span-2 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Deforestation is still an issue" }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 67,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block leading-relaxed", children: "The world was once a much greener place. 10,000 years ago, 71% of the Earth\u2019s land surface \u2013 a total of 10.6 billion hectares \u2013 was covered by forests, shrubs, and wild grasslands. Today, half of this land is mostly used for agriculture, grazing, and urban settlements, while the total surface still covered by forests and grassland dropped down to just around 4.1 billion hectares. To put things into perspective, we are losing forests at a rate equivalent to 27 soccer fields per minute." }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 70,
+          columnNumber: 17
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 66,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 65,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative h-full col-span-2 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "w-full", src: hero_default }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 76,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 75,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public._index.tsx",
+      lineNumber: 64,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative h-full col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 82,
+        columnNumber: 15
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 81,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid col-span-3 p-20 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Nearly 1.6 Billion Hectares of Forest Are at High Risk of Degradation" }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 86,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("span", { className: "block leading-relaxed", children: "In terms of land mass, forest degradation is an even bigger problem than deforestation. Nearly 1.6 billion hectares of forest are at high risk of degradation in the next decade. This phenomenon occurs when forest ecosystems are weakened to a point where they lose their ability to provide goods and services to people and nature. Even though climate change is a contributing factor in degradation, the main trigger for it has been unsustainable and illegal logging. This, along with timber extraction, are the major drivers in Asia and Latin America: together, they account for more than 70% of total tropical forest degradation. In Africa, this occurs as forests are exploited to obtain fuelwood and charcoal. Indeed, more than 80% of people in Sub-Saharan Africa do not have clean cooking fuels and thus heavily rely on wood." }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 89,
+          columnNumber: 17
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 85,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 84,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public._index.tsx",
+      lineNumber: 80,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_public._index.tsx",
+    lineNumber: 21,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/_public.about.tsx
+var public_about_exports = {};
+__export(public_about_exports, {
+  default: () => AboutRoute,
+  loader: () => loader8
+});
+var import_react14 = require("@remix-run/react");
+
+// app/assets/roots-slim.png
+var roots_slim_default = "/build/_assets/roots-slim-KJNBM2K5.png";
+
+// app/routes/_public.about.tsx
+var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime");
+async function loader8({ request }) {
+  let items = await cartItems(request), user = await getUser(request), userId = user != null && user.id ? user.id : null;
+  return items ? { userId, itemLength: items.length } : { userId, itemLength: 0 };
+}
+function AboutRoute() {
+  let userId = (0, import_react14.useLoaderData)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("section", { className: "w-full", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "relative", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("img", { className: "w-screen", src: roots_slim_default }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 31,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "text-9xl font-bold", children: "ROOTS." }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 33,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 32,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public.about.tsx",
+      lineNumber: 30,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "relative h-full  col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 42,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 40,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "grid col-span-3 p-20 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Why Pao?" }, void 0, !1, {
+          fileName: "app/routes/_public.about.tsx",
+          lineNumber: 48,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "block leading-relaxed", children: "Why a word that is used in the Indian subcontinent, Brazil, Portugal and Macao? Pao (meaning bread) is a simple word that unites us, no matter which part of the world you come from. While climate change might be visible in certain parts of the globe, we are all responsible for the outcome. At the rate of decline, we are likely on a trajectory that will put us in a bleak position in 2050. We are hoping to shed some light on what the future will look like in this scenario - some food for thought." }, void 0, !1, {
+          fileName: "app/routes/_public.about.tsx",
+          lineNumber: 51,
+          columnNumber: 17
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 47,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 44,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public.about.tsx",
+      lineNumber: 38,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "grid col-span-3 p-20 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Deforestation is still an issue" }, void 0, !1, {
+          fileName: "app/routes/_public.about.tsx",
+          lineNumber: 70,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "block leading-relaxed", children: "The world was once a much greener place. 10,000 years ago, 71% of the Earth\u2019s land surface \u2013 a total of 10.6 billion hectares \u2013 was covered by forests, shrubs, and wild grasslands. Today, half of this land is mostly used for agriculture, grazing, and urban settlements, while the total surface still covered by forests and grassland dropped down to just around 4.1 billion hectares. To put things into perspective, we are losing forests at a rate equivalent to 27 soccer fields per minute." }, void 0, !1, {
+          fileName: "app/routes/_public.about.tsx",
+          lineNumber: 73,
+          columnNumber: 17
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 69,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 68,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "relative h-full col-start-4 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 79,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 78,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public.about.tsx",
+      lineNumber: 67,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-5 lg:px-0", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "relative h-full col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 85,
+        columnNumber: 15
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 84,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "grid col-span-3 p-20 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "w-3/5 text-xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Nearly 1.6 Billion Hectares of Forest Are at High Risk of Degradation" }, void 0, !1, {
+          fileName: "app/routes/_public.about.tsx",
+          lineNumber: 89,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "block leading-relaxed", children: "In terms of land mass, forest degradation is an even bigger problem than deforestation. Nearly 1.6 billion hectares of forest are at high risk of degradation in the next decade. This phenomenon occurs when forest ecosystems are weakened to a point where they lose their ability to provide goods and services to people and nature. Even though climate change is a contributing factor in degradation, the main trigger for it has been unsustainable and illegal logging. This, along with timber extraction, are the major drivers in Asia and Latin America: together, they account for more than 70% of total tropical forest degradation. In Africa, this occurs as forests are exploited to obtain fuelwood and charcoal. Indeed, more than 80% of people in Sub-Saharan Africa do not have clean cooking fuels and thus heavily rely on wood." }, void 0, !1, {
+          fileName: "app/routes/_public.about.tsx",
+          lineNumber: 92,
+          columnNumber: 17
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 88,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public.about.tsx",
+        lineNumber: 87,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public.about.tsx",
+      lineNumber: 83,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_public.about.tsx",
+    lineNumber: 27,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/_public.chat.tsx
+var public_chat_exports = {};
+__export(public_chat_exports, {
+  default: () => IndexRoute2,
+  meta: () => meta2
+});
+
 // app/components/iframeDoc.jsx
-var import_react14 = require("react"), import_jsx_dev_runtime16 = require("react/jsx-dev-runtime"), IframeDocument = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+var import_react15 = require("react"), import_jsx_dev_runtime19 = require("react/jsx-dev-runtime"), IframeDocument = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(
   "iframe",
   {
     style: {},
@@ -1039,154 +1434,64 @@ var import_react14 = require("react"), import_jsx_dev_runtime16 = require("react
 );
 
 // app/assets/home-hero.jpg
-var home_hero_default = "/build/_assets/home-hero-KN67GFGH.jpg";
+var home_hero_default2 = "/build/_assets/home-hero-KN67GFGH.jpg";
 
-// app/components/ui/button.tsx
-var React = __toESM(require("react")), import_react_slot = require("@radix-ui/react-slot"), import_class_variance_authority = require("class-variance-authority");
-
-// app/lib/utils .ts
-var import_clsx = require("clsx"), import_tailwind_merge = require("tailwind-merge");
-function cn(...inputs) {
-  return (0, import_tailwind_merge.twMerge)((0, import_clsx.clsx)(inputs));
-}
-
-// app/components/ui/button.tsx
-var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), buttonVariants = (0, import_class_variance_authority.cva)(
-  "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
-  {
-    variants: {
-      variant: {
-        default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
-        outline: "border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline"
-      },
-      size: {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
-        icon: "h-9 w-9"
-      }
-    },
-    defaultVariants: {
-      variant: "default",
-      size: "default"
-    }
-  }
-), Button = React.forwardRef(
-  ({ className, variant, size, asChild = !1, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
-    asChild ? import_react_slot.Slot : "button",
-    {
-      className: cn(buttonVariants({ variant, size, className })),
-      ref,
-      ...props
-    },
-    void 0,
-    !1,
-    {
-      fileName: "app/components/ui/button.tsx",
-      lineNumber: 47,
-      columnNumber: 7
-    },
-    this
-  )
-);
-Button.displayName = "Button";
-
-// app/routes/_public._index.tsx
-var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), meta = () => [
+// app/routes/_public.chat.tsx
+var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), meta2 = () => [
   { title: "New Remix App" },
   { name: "description", content: "Welcome to Remix!" }
 ];
-function IndexRoute() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "relative", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("img", { className: "w-screen", src: home_hero_default }, void 0, !1, {
-        fileName: "app/routes/_public._index.tsx",
+function IndexRoute2() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "relative", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("img", { className: "w-screen", src: home_hero_default2 }, void 0, !1, {
+        fileName: "app/routes/_public.chat.tsx",
         lineNumber: 20,
         columnNumber: 6
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "text-9xl font-bold", children: "FAST FORWARD TO THE END." }, void 0, !1, {
-          fileName: "app/routes/_public._index.tsx",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("span", { className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("span", { className: "text-9xl font-semibold ", children: "CHAT." }, void 0, !1, {
+          fileName: "app/routes/_public.chat.tsx",
           lineNumber: 22,
           columnNumber: 8
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "text-3xl block", children: "Climate change has destroyed the world in 2050. " }, void 0, !1, {
-          fileName: "app/routes/_public._index.tsx",
+        /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("span", { className: "text-3xl block pt-10", children: "An agent from the future will assist with your questions on the impact of climate change. " }, void 0, !1, {
+          fileName: "app/routes/_public.chat.tsx",
           lineNumber: 23,
           columnNumber: 8
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(Button, { size: "lg", variant: "ghost", children: "SHAD BTN" }, void 0, !1, {
-          fileName: "app/routes/_public._index.tsx",
-          lineNumber: 25,
-          columnNumber: 7
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/_public._index.tsx",
+        /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", {}, void 0, !1, {
+          fileName: "app/routes/_public.chat.tsx",
           lineNumber: 24,
           columnNumber: 8
         }, this)
       ] }, void 0, !0, {
-        fileName: "app/routes/_public._index.tsx",
+        fileName: "app/routes/_public.chat.tsx",
         lineNumber: 21,
         columnNumber: 6
       }, this)
     ] }, void 0, !0, {
-      fileName: "app/routes/_public._index.tsx",
+      fileName: "app/routes/_public.chat.tsx",
       lineNumber: 19,
       columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "text-6xl text-center py-20", children: " CHAT WITH AN AGENT FROM THE FUTURE." }, void 0, !1, {
-      fileName: "app/routes/_public._index.tsx",
-      lineNumber: 31,
+    /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "text-6xl text-center py-20", children: " CHAT WITH AN AGENT FROM THE FUTURE." }, void 0, !1, {
+      fileName: "app/routes/_public.chat.tsx",
+      lineNumber: 30,
       columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "m-auto w-screen", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(IframeDocument, { children: "Hello, IframeDocument" }, void 0, !1, {
-      fileName: "app/routes/_public._index.tsx",
-      lineNumber: 33,
-      columnNumber: 5
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/_public._index.tsx",
+    /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "m-auto w-screen md:w-8/12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(IframeDocument, { children: "Hello, IframeDocument" }, void 0, !1, {
+      fileName: "app/routes/_public.chat.tsx",
       lineNumber: 32,
       columnNumber: 5
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_public.chat.tsx",
+      lineNumber: 31,
+      columnNumber: 5
     }, this)
   ] }, void 0, !0, {
-    fileName: "app/routes/_public._index.tsx",
+    fileName: "app/routes/_public.chat.tsx",
     lineNumber: 17,
-    columnNumber: 5
-  }, this);
-}
-
-// app/routes/_public.about.tsx
-var public_about_exports = {};
-__export(public_about_exports, {
-  default: () => AboutRoute,
-  loader: () => loader8
-});
-var import_react15 = require("@remix-run/react");
-var import_jsx_dev_runtime19 = require("react/jsx-dev-runtime");
-async function loader8({ request }) {
-  let items = await cartItems(request), user = await getUser(request), userId = user != null && user.id ? user.id : null;
-  return items ? { userId, itemLength: items.length } : { userId, itemLength: 0 };
-}
-function AboutRoute() {
-  let userId = (0, import_react15.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "w-full mt-8", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("h1", { children: "About" }, void 0, !1, {
-      fileName: "app/routes/_public.about.tsx",
-      lineNumber: 25,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("p", { className: "mt-4 text-justify", children: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aperiam maxime assumenda dolore excepturi ipsam accusantium repudiandae ducimus eum, voluptatibus, adipisci nam temporibus vel ex! Non iure dolore at mollitia." }, void 0, !1, {
-      fileName: "app/routes/_public.about.tsx",
-      lineNumber: 26,
-      columnNumber: 7
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/routes/_public.about.tsx",
-    lineNumber: 24,
     columnNumber: 5
   }, this);
 }
@@ -1216,8 +1521,8 @@ var import_react16 = require("@remix-run/react");
 
 // app/components/ui/input.tsx
 var React2 = __toESM(require("react"));
-var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), Input = React2.forwardRef(
-  ({ className, type, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(
+var import_jsx_dev_runtime21 = require("react/jsx-dev-runtime"), Input = React2.forwardRef(
+  ({ className, type, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(
     "input",
     {
       type,
@@ -1244,26 +1549,26 @@ Input.displayName = "Input";
 var pao_black_default = "/build/_assets/pao-black-MVR5KJHI.png";
 
 // app/components/AuthForm.tsx
-var import_jsx_dev_runtime21 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime22 = require("react/jsx-dev-runtime");
 function AuthForm() {
   let [searchParams] = (0, import_react16.useSearchParams)(), navigation = (0, import_react16.useTransition)(), validationErrors = (0, import_react16.useActionData)(), authMode = searchParams.get("mode") || "login", submitBtnCaption = authMode === "login" ? "Login" : "Create User", toggleBtnCaption = authMode === "login" ? "Create a new user" : "Log in with existing user", isSubmitting = navigation.state !== "idle";
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
     import_react16.Form,
     {
       method: "post",
       className: "grid w-full max-w-sm items-center gap-1.5",
       id: "auth-form",
       children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("img", { className: "w-26", src: pao_black_default, alt: "" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("img", { className: "w-26", src: pao_black_default, alt: "" }, void 0, !1, {
           fileName: "app/components/AuthForm.tsx",
           lineNumber: 35,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "my-4 text-xl font-semibold", children: authMode === "login" ? /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { children: "Login" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "my-4 text-xl font-semibold", children: authMode === "login" ? /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { children: "Login" }, void 0, !1, {
           fileName: "app/components/AuthForm.tsx",
           lineNumber: 38,
           columnNumber: 33
-        }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { children: "Sign up" }, void 0, !1, {
+        }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { children: "Sign up" }, void 0, !1, {
           fileName: "app/components/AuthForm.tsx",
           lineNumber: 38,
           columnNumber: 52
@@ -1272,14 +1577,14 @@ function AuthForm() {
           lineNumber: 37,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "my-2", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("p", { className: "mb-4", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("label", { htmlFor: "email", children: "Email Address" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "my-2", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("p", { className: "mb-4", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("label", { htmlFor: "email", children: "Email Address" }, void 0, !1, {
               fileName: "app/components/AuthForm.tsx",
               lineNumber: 43,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Input, { type: "email", id: "email", name: "email", required: !0 }, void 0, !1, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(Input, { type: "email", id: "email", name: "email", required: !0 }, void 0, !1, {
               fileName: "app/components/AuthForm.tsx",
               lineNumber: 44,
               columnNumber: 11
@@ -1289,13 +1594,13 @@ function AuthForm() {
             lineNumber: 42,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("p", { className: "mt-6", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("label", { htmlFor: "password", children: "Password" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("p", { className: "mt-6", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("label", { htmlFor: "password", children: "Password" }, void 0, !1, {
               fileName: "app/components/AuthForm.tsx",
               lineNumber: 47,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Input, { type: "password", id: "password", name: "password", minLength: 7 }, void 0, !1, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(Input, { type: "password", id: "password", name: "password", minLength: 7 }, void 0, !1, {
               fileName: "app/components/AuthForm.tsx",
               lineNumber: 48,
               columnNumber: 11
@@ -1310,7 +1615,7 @@ function AuthForm() {
           lineNumber: 41,
           columnNumber: 7
         }, this),
-        validationErrors && /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("ul", { children: Object.values(validationErrors).map((error) => /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("li", { children: error }, error, !1, {
+        validationErrors && /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("ul", { children: Object.values(validationErrors).map((error) => /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("li", { children: error }, error, !1, {
           fileName: "app/components/AuthForm.tsx",
           lineNumber: 55,
           columnNumber: 13
@@ -1319,13 +1624,13 @@ function AuthForm() {
           lineNumber: 53,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "flex flex-col", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Button, { className: "mt-5", disabled: isSubmitting, children: isSubmitting ? "Authenticating..." : submitBtnCaption }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex flex-col", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(Button, { className: "mt-5", disabled: isSubmitting, children: isSubmitting ? "Authenticating..." : submitBtnCaption }, void 0, !1, {
             fileName: "app/components/AuthForm.tsx",
             lineNumber: 60,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
             import_react16.Link,
             {
               className: "text-center mt-5",
@@ -1364,7 +1669,7 @@ var AuthForm_default = AuthForm;
 var forest_default = "/build/_assets/forest-6RXTOGRR.jpg";
 
 // app/routes/_auth.login.tsx
-var import_jsx_dev_runtime22 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime23 = require("react/jsx-dev-runtime");
 async function action2({ request }) {
   let authMode = new URL(request.url).searchParams.get("mode") || "login", formData = await request.formData(), credentials = Object.fromEntries(formData);
   try {
@@ -1380,8 +1685,8 @@ async function action2({ request }) {
   }
 }
 function LoginRoute() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "relative hidden h-full flex-col bg-muted text-white dark:border-r md:hidden lg:flex", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("img", { className: "h-screen", src: forest_default, alt: "" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "relative hidden h-full flex-col bg-muted text-white dark:border-r md:hidden lg:flex", children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("img", { className: "h-screen", src: forest_default, alt: "" }, void 0, !1, {
       fileName: "app/routes/_auth.login.tsx",
       lineNumber: 43,
       columnNumber: 7
@@ -1390,7 +1695,7 @@ function LoginRoute() {
       lineNumber: 42,
       columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "h-screen grid place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(AuthForm_default, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "h-screen grid place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(AuthForm_default, {}, void 0, !1, {
       fileName: "app/routes/_auth.login.tsx",
       lineNumber: 48,
       columnNumber: 7
@@ -1413,7 +1718,7 @@ __export(auth_user_exports, {
   loader: () => loader9
 });
 var import_react17 = require("@remix-run/react");
-var import_node6 = require("@remix-run/node"), import_jsx_dev_runtime23 = require("react/jsx-dev-runtime"), client9 = createClient();
+var import_node6 = require("@remix-run/node"), import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), client9 = createClient();
 async function loader9({ request }) {
   await requireUserCookie(request);
   let customer = await getUser(request);
@@ -1421,23 +1726,23 @@ async function loader9({ request }) {
 }
 function AuthRoute() {
   let customer = (0, import_react17.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "w-full mt-8", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { children: customer.id }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-full mt-8", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { children: customer.id }, void 0, !1, {
       fileName: "app/routes/_auth.user.tsx",
       lineNumber: 22,
       columnNumber: 8
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { children: customer.first_name }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { children: customer.first_name }, void 0, !1, {
       fileName: "app/routes/_auth.user.tsx",
       lineNumber: 23,
       columnNumber: 8
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { children: customer.last_name }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { children: customer.last_name }, void 0, !1, {
       fileName: "app/routes/_auth.user.tsx",
       lineNumber: 24,
       columnNumber: 8
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { children: "We are redirecting here after a user is logged in" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { children: "We are redirecting here after a user is logged in" }, void 0, !1, {
       fileName: "app/routes/_auth.user.tsx",
       lineNumber: 26,
       columnNumber: 9
@@ -1458,15 +1763,15 @@ __export(public_exports, {
 var import_react19 = require("@remix-run/react");
 
 // app/components/navbar.tsx
-var import_react18 = require("@remix-run/react"), import_bi2 = require("react-icons/bi");
+var import_react18 = require("@remix-run/react"), React3 = __toESM(require("react")), import_bi2 = require("react-icons/bi");
 
 // app/assets/pao.png
-var pao_default = "/build/_assets/pao-NBA35UG2.png";
+var pao_default = "/build/_assets/pao-DZGNF7ZU.png";
 
 // app/components/navbar.tsx
-var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime");
+var import_lucide_react = require("lucide-react"), import_jsx_dev_runtime25 = require("react/jsx-dev-runtime");
 function Navbar() {
-  let links2 = [
+  let [state, setState] = React3.useState(!1), links2 = [
     // {
     //   label: "Home",
     //   url: "/",
@@ -1476,50 +1781,117 @@ function Navbar() {
       url: "/about"
     },
     {
-      label: "",
+      label: "Shop",
       url: "/products"
+    },
+    {
+      label: "Chat",
+      url: "/chat"
     }
   ], data = (0, import_react18.useLoaderData)(), userId = data.userId, itemLength = data.itemLength;
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("nav", { className: "flex items-center justify-between px-8 py-10 bg-black", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "font-mono pl-2 text-3xl font-extrabold uppercase", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react18.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("img", { src: pao_default, width: "100" }, void 0, !1, {
-      fileName: "app/components/navbar.tsx",
-      lineNumber: 39,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/components/navbar.tsx",
-      lineNumber: 38,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/components/navbar.tsx",
-      lineNumber: 37,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "space-x-4 text-white", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react18.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("nav", { className: "flex items-center justify-between px-8 py-10 bg-black", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "pl-2 flex justify-between w-screen md-w-auto", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react18.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("img", { src: pao_default, width: "150" }, void 0, !1, {
+        fileName: "app/components/navbar.tsx",
+        lineNumber: 47,
+        columnNumber: 21
+      }, this) }, void 0, !1, {
+        fileName: "app/components/navbar.tsx",
+        lineNumber: 46,
+        columnNumber: 17
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "md:hidden", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
+          "button",
+          {
+            className: "text-white outline-none p-2 focus:border-white focus:border",
+            onClick: () => setState(!state),
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_lucide_react.Menu, {}, void 0, !1, {
+              fileName: "app/components/navbar.tsx",
+              lineNumber: 54,
+              columnNumber: 25
+            }, this)
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/components/navbar.tsx",
+            lineNumber: 50,
+            columnNumber: 21
+          },
+          this
+        ),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
+          "div",
+          {
+            className: `h-screen w-screen left-0 bg-black pl-2 z-10 pb-3 mt-8 md:hidden ${state ? "absolute" : "hidden"}`,
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
+              import_react18.NavLink,
+              {
+                to: link.url,
+                className: "text-white block hover:text-indigo-600",
+                onClick: () => setState(!state),
+                children: link.label
+              },
+              index,
+              !1,
+              {
+                fileName: "app/components/navbar.tsx",
+                lineNumber: 63,
+                columnNumber: 33
+              },
+              this
+            )) }, void 0, !1, {
+              fileName: "app/components/navbar.tsx",
+              lineNumber: 61,
+              columnNumber: 25
+            }, this)
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/components/navbar.tsx",
+            lineNumber: 56,
+            columnNumber: 21
+          },
+          this
+        )
+      ] }, void 0, !0, {
+        fileName: "app/components/navbar.tsx",
+        lineNumber: 49,
+        columnNumber: 17
+      }, this)
+    ] }, void 0, !0, {
       fileName: "app/components/navbar.tsx",
       lineNumber: 45,
-      columnNumber: 11
+      columnNumber: 13
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "space-x-4 text-white hidden md:block", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react18.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
+      fileName: "app/components/navbar.tsx",
+      lineNumber: 79,
+      columnNumber: 21
     }, this)) }, void 0, !1, {
       fileName: "app/components/navbar.tsx",
-      lineNumber: 43,
-      columnNumber: 7
+      lineNumber: 77,
+      columnNumber: 13
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-between", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "font-semibold text-white hover:text-emerald-500", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "md:flex items-center justify-between hidden", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "font-semibold text-white hover:text-emerald-500", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
         import_react18.NavLink,
         {
           to: "/cart",
-          className: "inline-flex items-center space-x-1 text-white duration-300",
+          className: "inline-flex items-center space-x-1 text-white duration-300 ",
           children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_bi2.BiShoppingBag, { className: "text-xl" }, void 0, !1, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_bi2.BiShoppingBag, { className: "text-xl" }, void 0, !1, {
               fileName: "app/components/navbar.tsx",
-              lineNumber: 57,
-              columnNumber: 13
+              lineNumber: 91,
+              columnNumber: 25
             }, this),
             " ",
-            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("span", { children: itemLength }, void 0, !1, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("span", { children: itemLength }, void 0, !1, {
               fileName: "app/components/navbar.tsx",
-              lineNumber: 57,
-              columnNumber: 51
+              lineNumber: 92,
+              columnNumber: 25
             }, this)
           ]
         },
@@ -1527,26 +1899,26 @@ function Navbar() {
         !0,
         {
           fileName: "app/components/navbar.tsx",
-          lineNumber: 53,
-          columnNumber: 11
+          lineNumber: 87,
+          columnNumber: 21
         },
         this
       ) }, void 0, !1, {
         fileName: "app/components/navbar.tsx",
-        lineNumber: 52,
-        columnNumber: 9
+        lineNumber: 86,
+        columnNumber: 17
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "px-4", children: [
-        userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react18.Form, { method: "post", action: "/logout", id: "logout-form", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("button", { className: "cta-alt text-white", children: "Logout" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "px-4", children: [
+        userId && /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react18.Form, { method: "post", action: "/logout", id: "logout-form", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("button", { className: "cta-alt text-white", children: "Logout" }, void 0, !1, {
           fileName: "app/components/navbar.tsx",
-          lineNumber: 64,
-          columnNumber: 15
+          lineNumber: 99,
+          columnNumber: 29
         }, this) }, void 0, !1, {
           fileName: "app/components/navbar.tsx",
-          lineNumber: 63,
-          columnNumber: 13
+          lineNumber: 98,
+          columnNumber: 25
         }, this),
-        userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+        userId && /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
           import_react18.NavLink,
           {
             to: "/user",
@@ -1557,12 +1929,12 @@ function Navbar() {
           !1,
           {
             fileName: "app/components/navbar.tsx",
-            lineNumber: 69,
-            columnNumber: 13
+            lineNumber: 106,
+            columnNumber: 25
           },
           this
         ),
-        !userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+        !userId && /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
           import_react18.NavLink,
           {
             to: "/login",
@@ -1573,42 +1945,42 @@ function Navbar() {
           !1,
           {
             fileName: "app/components/navbar.tsx",
-            lineNumber: 78,
-            columnNumber: 13
+            lineNumber: 115,
+            columnNumber: 25
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/components/navbar.tsx",
-        lineNumber: 61,
-        columnNumber: 9
+        lineNumber: 96,
+        columnNumber: 17
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/navbar.tsx",
-      lineNumber: 51,
-      columnNumber: 7
+      lineNumber: 85,
+      columnNumber: 13
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/navbar.tsx",
-    lineNumber: 35,
-    columnNumber: 5
+    lineNumber: 43,
+    columnNumber: 9
   }, this);
 }
 
 // app/routes/_public.tsx
-var import_jsx_dev_runtime25 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime");
 async function loader10({ request }) {
   let items = await cartItems(request), user = await getUser(request), userId = user != null && user.id ? user.id : null;
   return items ? { userId, itemLength: items.length } : { userId, itemLength: 0 };
 }
 function IndexLayout() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_jsx_dev_runtime25.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(Navbar, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_jsx_dev_runtime26.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(Navbar, {}, void 0, !1, {
       fileName: "app/routes/_public.tsx",
       lineNumber: 21,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react19.Outlet, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_react19.Outlet, {}, void 0, !1, {
       fileName: "app/routes/_public.tsx",
       lineNumber: 22,
       columnNumber: 7
@@ -1639,12 +2011,12 @@ __export(auth_exports, {
   loader: () => loader11
 });
 var import_react20 = require("@remix-run/react");
-var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime");
 async function loader11({ request }) {
   return getUser(request);
 }
 function AuthLayout() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_jsx_dev_runtime26.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_react20.Outlet, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(import_jsx_dev_runtime27.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(import_react20.Outlet, {}, void 0, !1, {
     fileName: "app/routes/_auth.tsx",
     lineNumber: 12,
     columnNumber: 7
@@ -1656,7 +2028,7 @@ function AuthLayout() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-IN57EE22.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-FVHLIEDG.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-GJIMYQIA.js", imports: ["/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-G3PXCU5R.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-3WIBSKPA.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-6BMQQMMY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-OE5RWX2U.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-YM6KOSQM.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-6VQEV2EF.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-EDIOLPR2.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "0b48eb28", hmr: void 0, url: "/build/manifest-0B48EB28.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EK2DDPTF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-FVHLIEDG.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-4AAGK5KU.js", imports: ["/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-G3PXCU5R.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-MUTL7KP5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js", "/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-XQACP3S5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-X22BDGDY.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.chat": { id: "routes/_public.chat", parentId: "routes/_public", path: "chat", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.chat-X2QRUHHX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-ZGA7YNVF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-6VQEV2EF.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-DVNKEFEK.js", imports: ["/build/_shared/chunk-FGNAQ4K4.js", "/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "533442f2", hmr: void 0, url: "/build/manifest-533442F2.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -1747,6 +2119,14 @@ var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable
     index: void 0,
     caseSensitive: void 0,
     module: public_about_exports
+  },
+  "routes/_public.chat": {
+    id: "routes/_public.chat",
+    parentId: "routes/_public",
+    path: "chat",
+    index: void 0,
+    caseSensitive: void 0,
+    module: public_chat_exports
   },
   "routes/_auth.login": {
     id: "routes/_auth.login",
