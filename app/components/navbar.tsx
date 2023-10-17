@@ -8,8 +8,9 @@ import {
 } from '@remix-run/react'
 import * as React from 'react'
 import { BiShoppingBag } from 'react-icons/bi'
-import pao from '~/assets/pao.png'
-import { Menu } from 'lucide-react'
+// import pao from '~/assets/pao.png'
+import pao from '~/assets/zro.svg'
+import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
     const [state, setState] = React.useState(false)
@@ -40,26 +41,35 @@ export default function Navbar() {
     const itemLength = data.itemLength
 
     return (
-        <nav className="flex md:grid md:grid-cols-5 items-center justify-between px-8 py-10 bg-black">
+        <nav className="flex md:grid md:grid-cols-5 items-center justify-between md:py-10 bg-black">
             {/* Site Logo */}
-            <div className="flex justify-between lg:col-span-1 lg:col-start-2 w-screen">
+            <div className="flex w-screen justify-between items-center p-4 md:p-0 lg:col-span-1 lg:col-start-2">
                 <Link to="/">
-                    <img src={pao} width="150" />
+                    <img
+                        src={pao}
+                        className="pl-4 md:pl-0 w-[70px] md:w-[150px]"
+                    />
                 </Link>
                 <div className="md:hidden">
                     <button
-                        className="text-white outline-none p-2 focus:border-white focus:border"
+                        className="text-white outline-none p-2"
                         onClick={() => setState(!state)}
                     >
                         <Menu />
                     </button>
 
                     <div
-                        className={`h-screen w-screen left-0 bg-black pl-2 z-10 pb-3 mt-8 md:hidden ${
+                        className={`h-screen w-screen top-0 left-0 bg-black pl-2 z-10 pb-3 md:hidden border-4 border-lime-500 ${
                             state ? 'absolute' : 'hidden'
                         }`}
                     >
-                        <div className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <button
+                            className="text-white outline-none p-2"
+                            onClick={() => setState(!state)}
+                        >
+                            <X />
+                        </button>
+                        <div className="justify-center items-center md:flex md:space-x-6 md:space-y-0">
                             {links.map((link, index) => (
                                 <NavLink
                                     key={index}

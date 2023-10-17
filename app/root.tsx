@@ -22,7 +22,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-      <header className="border-b">
+      <header>
     </header>
         <Outlet />
         <ScrollRestoration />
