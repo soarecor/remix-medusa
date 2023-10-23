@@ -28,13 +28,13 @@ export default function IndexRoute() {
      {/* <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white"> */}
      <div className="absolute top-1/4 md:top-1/3 grid grid-cols-5 items-center px-8 md:p-0 md:w-screen">
        <span className="col-span-4 md:col-start-2 justify-center text-white">
-            <span className="text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ">FAST FORWARD TO 2050.</span> 
+            <span className="text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ">A dystopian treeless view from 2050.</span> 
             <span className="text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-4 md:pt-10 drop-shadow-lg">The world is impacted by climate change. </span>  
             <div>
                 <Button className="mt-4 md:mt-10" size="lg" variant="secondary"> <span className="text-base md:text-lg lg:text-2xl 2xl:text-3xl p-0 md:p-3"> CHAT TO LEARN MORE</span></Button>
             </div>
        </span>
-       </div>
+     </div>
     </div>
 
         {/* ARTICLE 1 */}

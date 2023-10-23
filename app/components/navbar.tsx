@@ -9,7 +9,7 @@ import {
 import * as React from 'react'
 import { BiShoppingBag } from 'react-icons/bi'
 // import pao from '~/assets/pao.png'
-import pao from '~/assets/zro.svg'
+import pao from '~/assets/zer0.svg'
 import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
@@ -43,7 +43,7 @@ export default function Navbar() {
     return (
         <nav className="flex md:grid md:grid-cols-5 items-center justify-between md:py-10 bg-black">
             {/* Site Logo */}
-            <div className="flex w-screen justify-between items-center p-4 md:p-0 lg:col-span-1 lg:col-start-2">
+            <div className="flex w-screen justify-between items-center p-4 md:pl-0 col-span-1 md:col-span-1 md:col-start-2">
                 <Link to="/">
                     <img
                         src={pao}
@@ -85,7 +85,7 @@ export default function Navbar() {
                 </div>
             </div>
             {/* Navigation Links */}
-            <div className="hidden md:flex col-span-1 justify-between text-white ">
+            <div className="hidden md:flex md:pl-6 md:col-span-2 lg:col-span-1 justify-between text-white ">
                 {links.map((link, index) => (
                     <NavLink key={index} to={link.url} className="navlink">
                         {link.label}
@@ -93,7 +93,7 @@ export default function Navbar() {
                 ))}
             </div>
             {/* Shopping Cart Indicator/Checkout Link */}
-            <div className="hidden md:flex col-span-2 justify-end ">
+            <div className="hidden md:flex md:col-span-1 lg:col-span-2 justify-end ">
                 <div className="font-semibold text-white hover:text-emerald-500">
                     <NavLink
                         to="/cart"
