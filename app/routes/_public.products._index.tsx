@@ -37,8 +37,8 @@ export default function ProductsIndexRoute() {
 
         {/* UNCOMMENT THESE LINES WHEN THE PRODUCT IS READY */}
         <section className="my-20">
-      <h1 className="text-center text-6xl my-10">COMING SOON</h1>
-      <div className="mx-auto text-2xl my-2 w-[50vw] sm:max-w-lg"> <span className="">We are partnering with a nature conscious organization that will plant trees for every item purchased.  </span></div>
+      <h1 className="text-center text-lg md:text-3xl text-6xl my-10">COMING SOON</h1>
+      <div className="mx-auto text-md md:text-2xl  my-2 px-12 md:py-0 md:w-[50vw] sm:max-w-lg"> <span className="">We are partnering with a nature conscious organization that will plant trees for every item purchased.  </span></div>
         </section>
       {/* <div className="grid grid-cols-1 gap-6 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 xl:gap-6 2xl:px-24 2xl:gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {products.map((product) => (

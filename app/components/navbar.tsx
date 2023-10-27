@@ -41,16 +41,16 @@ export default function Navbar() {
     const itemLength = data.itemLength
 
     return (
-        <nav className="flex md:grid md:grid-cols-5 items-center justify-between md:py-10 bg-black">
+        <nav className="flex lg:grid lg:grid-cols-5 items-center justify-between md:py-10 bg-black">
             {/* Site Logo */}
-            <div className="flex w-screen justify-between items-center p-4 md:pl-0 col-span-1 md:col-span-1 md:col-start-2">
+            <div className="flex flex-1 justify-between items-center p-4 sm:p-8 lg:pl-0 col-span-1 lg:col-span-1 lg:col-start-2">
                 <Link to="/">
                     <img
                         src={pao}
                         className="pl-4 md:pl-0 w-[70px] md:w-[150px]"
                     />
                 </Link>
-                <div className="md:hidden">
+                <div className="lg:hidden">
                     <button
                         className="text-white outline-none p-2"
                         onClick={() => setState(!state)}
@@ -59,7 +59,7 @@ export default function Navbar() {
                     </button>
 
                     <div
-                        className={`h-screen w-screen top-0 left-0 bg-black pl-2 z-10 pb-3 md:hidden border-4 border-lime-500 ${
+                        className={`h-screen w-screen top-0 left-0 bg-black pl-2 z-10 pb-3 lg:hidden border-4 border-lime-500 ${
                             state ? 'absolute' : 'hidden'
                         }`}
                     >
@@ -85,7 +85,7 @@ export default function Navbar() {
                 </div>
             </div>
             {/* Navigation Links */}
-            <div className="hidden md:flex md:pl-6 md:col-span-2 lg:col-span-1 justify-between text-white ">
+            <div className="hidden lg:flex md:pl-6 md:col-span-2 lg:col-span-1 justify-between text-white ">
                 {links.map((link, index) => (
                     <NavLink key={index} to={link.url} className="navlink">
                         {link.label}
@@ -93,7 +93,7 @@ export default function Navbar() {
                 ))}
             </div>
             {/* Shopping Cart Indicator/Checkout Link */}
-            <div className="hidden md:flex md:col-span-1 lg:col-span-2 justify-end ">
+            <div className="hidden lg:flex md:col-span-1 lg:col-span-2 justify-end ">
                 <div className="font-semibold text-white hover:text-emerald-500">
                     <NavLink
                         to="/cart"
