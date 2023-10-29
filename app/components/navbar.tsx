@@ -20,10 +20,10 @@ export default function Navbar() {
         //   label: "Home",
         //   url: "/",
         // },
-        {
-            label: 'Story',
-            url: '/about',
-        },
+        // {
+        //     label: 'Story',
+        //     url: '/about',
+        // },
         {
             label: 'Shop',
             url: '/products',
@@ -69,7 +69,7 @@ export default function Navbar() {
                         >
                             <X />
                         </button>
-                        <div className="justify-center items-center md:flex md:space-x-6 md:space-y-0">
+                        <div className="justify-center items-center flex-col md:flex md:space-x-6 md:space-y-0">
                             {links.map((link, index) => (
                                 <NavLink
                                     key={index}

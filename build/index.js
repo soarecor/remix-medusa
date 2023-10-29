@@ -153,7 +153,7 @@ function Footer() {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-SEW3HZEE.css";
+var tailwind_default = "/build/_assets/tailwind-VVOUFW6C.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
@@ -620,8 +620,8 @@ var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime"), loader3 = async 
 function ProductsIndexRoute() {
   let { products } = (0, import_react8.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "w-full", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "grid xl:h-[75vh] content-center justify-items-center grid-cols-1 xl:grid-cols-5 bg-black", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("img", { className: "py-6 md:col-start-1 xl:col-start-2 xl:col-span-1  px-8 w-[50vw] md:w-20vw] sm:w-[35vw] xl:w-[15vw]", src: bag_default }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "grid py-2 xl:h-[75vh] content-center justify-items-center grid-cols-1 xl:grid-cols-5 bg-black", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("img", { className: "py-6 md:col-start-1 xl:col-start-2 xl:col-span-1 w-[50vw] md:w-20vw] sm:w-[35vw] xl:w-[15vw]", src: bag_default }, void 0, !1, {
         fileName: "app/routes/_public.products._index.tsx",
         lineNumber: 24,
         columnNumber: 9
@@ -642,22 +642,17 @@ function ProductsIndexRoute() {
           lineNumber: 31,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("span", { className: "text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-4 md:pt-10 drop-shadow-lg max-w-3xl leading-relaxed", children: " Chill. " }, void 0, !1, {
-          fileName: "app/routes/_public.products._index.tsx",
-          lineNumber: 32,
-          columnNumber: 13
-        }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("span", { className: "text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-4 md:pt-10 drop-shadow-lg max-w-3xl leading-relaxed", children: [
           " Plant 1          ",
           /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("img", { src: tree_default, className: "inline-block", width: "25" }, void 0, !1, {
             fileName: "app/routes/_public.products._index.tsx",
-            lineNumber: 33,
+            lineNumber: 32,
             columnNumber: 177
           }, this),
           " for every sale.  "
         ] }, void 0, !0, {
           fileName: "app/routes/_public.products._index.tsx",
-          lineNumber: 33,
+          lineNumber: 32,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
@@ -675,26 +670,26 @@ function ProductsIndexRoute() {
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("section", { className: "my-20", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("h1", { className: "text-center text-lg md:text-3xl text-6xl my-10", children: "COMING SOON" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("h1", { className: "text-center text-lg md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-8xl my-10", children: "COMING SOON" }, void 0, !1, {
         fileName: "app/routes/_public.products._index.tsx",
-        lineNumber: 40,
+        lineNumber: 39,
         columnNumber: 7
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "mx-auto text-md md:text-2xl  my-2 px-12 md:py-0 md:w-[50vw] sm:max-w-lg", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "mx-auto text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-3xl  my-2 px-12 md:py-0 md:w-[75vw] lg:w-[60vw]", children: [
         " ",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("span", { className: "", children: "We are partnering with a nature conscious organization that will plant trees for every item purchased.  " }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("span", { className: "", children: " Our totes are sustainably sourced from a retailer that cares about fair trade practices. The totes are imported from India. We will be partnering with a nature conscious organization to plant a tree for every item purchased.  " }, void 0, !1, {
           fileName: "app/routes/_public.products._index.tsx",
-          lineNumber: 41,
-          columnNumber: 97
+          lineNumber: 40,
+          columnNumber: 134
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/_public.products._index.tsx",
-        lineNumber: 41,
+        lineNumber: 40,
         columnNumber: 7
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_public.products._index.tsx",
-      lineNumber: 39,
+      lineNumber: 38,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
@@ -1019,12 +1014,13 @@ __export(public_index_exports, {
   default: () => IndexRoute,
   meta: () => meta
 });
+var import_react13 = require("@remix-run/react");
 
 // app/assets/home-hero.png
 var home_hero_default = "/build/_assets/home-hero-SNSI4A4G.png";
 
-// app/assets/hero-mobile.png
-var hero_mobile_default = "/build/_assets/hero-mobile-3Z2Y6CL7.png";
+// app/assets/hero-mobile1.png
+var hero_mobile1_default = "/build/_assets/hero-mobile1-4B6SVOL4.png";
 
 // app/components/ui/button.tsx
 var React = __toESM(require("react")), import_react_slot = require("@radix-ui/react-slot"), import_class_variance_authority = require("class-variance-authority");
@@ -1091,30 +1087,48 @@ var import_jsx_dev_runtime16 = require("react/jsx-dev-runtime"), meta = () => [
 function IndexRoute() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "relative", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "hidden md:block lg:w-screen", src: home_hero_default }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "hidden lg:block lg:w-screen", src: home_hero_default }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
         lineNumber: 26,
         columnNumber: 6
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "md:hidden", src: hero_mobile_default }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "lg:hidden w-screen", src: hero_mobile1_default }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
         lineNumber: 27,
         columnNumber: 6
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "absolute top-1/4 lg:top-1/3 grid grid-cols-5 items-center px-8 lg:p-0 w-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "col-span-4 lg:col-start-2 justify-center text-white", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ", children: "A dystopian treeless view from 2050." }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "absolute top-1/4 lg:top-1/3 grid grid-cols-5 items-center px-8 lg:pr-5 w-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "col-span-4 lg:col-start-2 justify-center text-white", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-bold", children: "The year is 2050." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
           lineNumber: 31,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-4 md:pt-10 drop-shadow-lg", children: "The world is impacted by climate change. " }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold block pt-4 md:pt-10 drop-shadow-lg", children: "90% of earths forests are impacted by climate change." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
           lineNumber: 32,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(Button, { className: "mt-4 md:mt-10", size: "lg", variant: "secondary", children: [
           " ",
-          /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-base md:text-lg lg:text-2xl 2xl:text-3xl p-0 md:p-3", children: " CHAT TO LEARN MORE" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-base md:text-lg lg:text-2xl 2xl:text-3xl p-0 md:p-3", children: [
+            "                      ",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+              import_react13.NavLink,
+              {
+                to: "/chat",
+                className: "",
+                children: "CHAT TO LEARN MORE"
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/routes/_public._index.tsx",
+                lineNumber: 34,
+                columnNumber: 179
+              },
+              this
+            )
+          ] }, void 0, !0, {
             fileName: "app/routes/_public._index.tsx",
             lineNumber: 34,
             columnNumber: 82
@@ -1145,106 +1159,176 @@ function IndexRoute() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "relative h-full  col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 43,
+        lineNumber: 48,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 42,
+        lineNumber: 47,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "lg:w-3/5 text-xl", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block font-bold text-xl md:text-3xl mb-4", children: "Why Pao?" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block font-bold text-xl md:text-3xl mb-4", children: "Why zer0?" }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 47,
+          lineNumber: 52,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block text-base  md:text-2xl leading-relaxed md:leading-loose", children: "Why a word that is used in the Indian subcontinent, Brazil, Portugal and Macao? Pao (meaning bread) is a simple word that unites us, no matter which part of the world you come from. While climate change might be visible in certain parts of the globe, we are all responsible for the outcome. At the rate of decline, we are likely on a trajectory that will put us in a bleak position in 2050. We are hoping to shed some light on what the future will look like in this scenario - some food for thought." }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block text-base  md:text-2xl leading-relaxed md:leading-loose", children: "While climate change might be visible in certain parts of the globe, we are all responsible for the outcome. At the rate of decline, we are likely on a trajectory that will put us in a bleak position in 2050. We are hoping to shed some light on what the future will look like in this scenario - a future with zero trees. At zer0.supply, we transcend the present to shape a future where every action counts. Drawing from the stark realities of a treeless future, where environmental devastation has ravaged our planet, we lead the charge in cultivating a sustainable tomorrow. In a world where forests are scorched, temperatures are relentless, and water is scarce, we're committed to redefining the narrative. Our mission is to reverse the countdown to zero trees, empowering individuals and communities with the tools to reclaim our ecosystem. Together, we envision a future where life thrives in harmony with nature, crafting a legacy of resilience and abundance for generations to come." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 50,
+          lineNumber: 55,
           columnNumber: 17
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 46,
+        lineNumber: 51,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 45,
+        lineNumber: 50,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_public._index.tsx",
-      lineNumber: 41,
+      lineNumber: 46,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col-reverse items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "grid col-start-2 col-span-2 m-10 h-full place-items-center xl:place-items-start content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "lg:w-3/5 text-xl", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Deforestation is still an issue" }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 69,
+          lineNumber: 70,
           columnNumber: 17
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block text-base md:text-2xl leading-relaxed md:leading-loose", children: "The world was once a much greener place. 10,000 years ago, 71% of the Earth\u2019s land surface \u2013 a total of 10.6 billion hectares \u2013 was covered by forests, shrubs, and wild grasslands. Today, half of this land is mostly used for agriculture, grazing, and urban settlements, while the total surface still covered by forests and grassland dropped down to just around 4.1 billion hectares. To put things into perspective, we are losing forests at a rate equivalent to 27 soccer fields per minute." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 72,
+          lineNumber: 73,
           columnNumber: 17
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 68,
+        lineNumber: 69,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 67,
+        lineNumber: 68,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "h-full col-span-2 grid justify-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "max-h-full object-contain", src: home_hero_default }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 78,
+        lineNumber: 79,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 77,
+        lineNumber: 78,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_public._index.tsx",
-      lineNumber: 66,
+      lineNumber: 67,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "relative h-full col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "w-40", src: root1_default }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 84,
+        lineNumber: 85,
         columnNumber: 15
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 83,
+        lineNumber: 84,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "lg:w-3/5 text-xl", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Nearly 1.6 Billion Hectares of Forest Are at High Risk of Degradation" }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 88,
+          lineNumber: 89,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block text-base md:text-2xl leading-relaxed md:leading-loose", children: "In terms of land mass, forest degradation is an even bigger problem than deforestation. Nearly 1.6 billion hectares of forest are at high risk of degradation in the next decade. This phenomenon occurs when forest ecosystems are weakened to a point where they lose their ability to provide goods and services to people and nature. Even though climate change is a contributing factor in degradation, the main trigger for it has been unsustainable and illegal logging. This, along with timber extraction, are the major drivers in Asia and Latin America: together, they account for more than 70% of total tropical forest degradation. In Africa, this occurs as forests are exploited to obtain fuelwood and charcoal. Indeed, more than 80% of people in Sub-Saharan Africa do not have clean cooking fuels and thus heavily rely on wood." }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block text-base md:text-2xl leading-relaxed md:leading-loose", children: "At the current pace, the alarming trajectory towards a future bereft of trees by 2050 looms over us. The impending threat of deforestation and forest degradation casts a shadow over our world's green lungs, with a staggering 47% of global forests facing high risks of depletion or deterioration by 2030. While the distinction between deforestation and forest degradation is crucial, the consequences of both are equally devastating. Deforestation, often driven by unsustainable and unlawful agricultural practices, entails the complete obliteration of forests, making way for lucrative cash crops like palm oil and rubber. The sheer scale of this devastation is exemplified by the staggering loss of forests at a rate equivalent to 27 soccer fields every single minute, a statistic that continues to haunt our environmental conscience. Conversely, forest degradation, though less perceptible, poses an equally grave threat, rendering once-vibrant forests into mere shadows of their former selves. As their vitality diminishes, crucial ecological functions such as air and water purification, biodiversity support, and habitat provision for wildlife are significantly compromised. Astoundingly, the land area at high risk of forest degradation is estimated to encompass a daunting 6.5 million square miles in the next decade, underscoring the urgency of the situation. A convergence of factors contributes to forest degradation, including the relentless impact of climate change, manifesting in heightened temperatures, erratic weather patterns, and an increased vulnerability to forest fires, pest infestations, and diseases. However, the primary culprit remains unsustainable and illegal logging, a lucrative industry fueled by the insatiable demand for inexpensive timber, paper products, and fuel. This voracious consumption exacerbates the vulnerability of our dwindling forest resources, threatening to fast-track our journey to a world devoid of the essential life-giving force that is our planet's verdant foliage." }, void 0, !1, {
           fileName: "app/routes/_public._index.tsx",
-          lineNumber: 91,
+          lineNumber: 92,
           columnNumber: 17
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 87,
+        lineNumber: 88,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public._index.tsx",
-        lineNumber: 86,
+        lineNumber: 87,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_public._index.tsx",
-      lineNumber: 82,
+      lineNumber: 83,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "lg:w-3/5 text-xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block font-bold text-3xl mb-4", children: "Nearly 75% of the Amazon rainforest has been exhibiting signs of degradation since the early 2000s" }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 108,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block text-base md:text-2xl leading-relaxed md:leading-loose", children: "The relentless march towards a world devoid of trees by 2050 is ominously underscored by the plight of the Amazon rainforest, which teeters perilously on the brink of a transformative collapse. Recent studies reveal a distressing trend, with more than 75% of the rainforest exhibiting signs of degradation since the early 2000s, potentially signaling an irreversible shift towards savanna terrain. Evidently, the interplay of deforestation and climate change emerges as the chief catalyst driving this decline, as emphasized by Niklas Boers, a professor at the Technical University of Munich. An analysis of satellite data unequivocally exposes a consistent erosion of the rainforest's resilience, particularly pronounced in regions proximate to human encroachment and those subjected to dwindling rainfall, laying bare the vulnerability of this vital ecological sanctuary. The ominous implications of this faltering resilience echo throughout the Amazon, heightening the specter of widespread ecosystem collapse, as articulated by Tim Lenton of the University of Exeter. Despite its seemingly unchanged facade, the rainforest's capacity to recuperate from adversities such as droughts is diminishing, laying the groundwork for a monumental ecological paradigm shift that threatens the delicate balance of biodiversity, global carbon sequestration, and the overarching trajectory of climate change. While the exact timeline remains elusive, the experts, led by Chris Boulton from the University of Exeter, warn of an imminent threshold, a critical juncture that could precipitate the irreversible transformation of the Amazon. The confluence of multifaceted stressors, from droughts and deforestation to degradation and climate fluctuations, portends the encroaching inevitability of this catastrophic tipping point, with profound ramifications for the planet's intricate climatic equilibrium. In the grand orchestration of the Earth's delicate environmental equilibrium, tropical forests, epitomized by the Amazon, assume an indispensable role in climate regulation, as highlighted by Panthera, a renowned environmental organization. Serving as a veritable reservoir of biodiversity, this intricate ecosystem not only sustains a quarter of the world's biodiversity but also orchestrates the vital natural cycles fundamental to the planet's sustenance, as underscored by Laura Schneider of Rutgers University. Furthermore, its formidable capacity to absorb carbon dioxide, a pivotal agent in exacerbating global warming, further accentuates its pivotal role in curbing the trajectory of climate change, as emphasized by Daniel Nepstad, director of the Earth Innovation Institute." }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 111,
+          columnNumber: 17
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 107,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 106,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "relative h-full col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "text-5xl", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "text-7xl italic", children: "47%" }, void 0, !1, {
+          fileName: "app/routes/_public._index.tsx",
+          lineNumber: 125,
+          columnNumber: 41
+        }, this),
+        "of forests face high risks of depletion by 2030"
+      ] }, void 0, !0, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 125,
+        columnNumber: 15
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 124,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public._index.tsx",
+      lineNumber: 105,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "relative h-full col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "text-5xl", children: "47% of forests face high risks of depletion by 2030" }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 131,
+        columnNumber: 15
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 130,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "lg:w-3/5 text-xl", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "block text-base md:text-2xl leading-relaxed md:leading-loose", children: "The relentless march towards a world devoid of trees by 2050 is ominously underscored by the plight of the Amazon rainforest, which teeters perilously on the brink of a transformative collapse. Recent studies reveal a distressing trend, with more than 75% of the rainforest exhibiting signs of degradation since the early 2000s, potentially signaling an irreversible shift towards savanna terrain. Evidently, the interplay of deforestation and climate change emerges as the chief catalyst driving this decline, as emphasized by Niklas Boers, a professor at the Technical University of Munich. An analysis of satellite data unequivocally exposes a consistent erosion of the rainforest's resilience, particularly pronounced in regions proximate to human encroachment and those subjected to dwindling rainfall, laying bare the vulnerability of this vital ecological sanctuary. The ominous implications of this faltering resilience echo throughout the Amazon, heightening the specter of widespread ecosystem collapse, as articulated by Tim Lenton of the University of Exeter. Despite its seemingly unchanged facade, the rainforest's capacity to recuperate from adversities such as droughts is diminishing, laying the groundwork for a monumental ecological paradigm shift that threatens the delicate balance of biodiversity, global carbon sequestration, and the overarching trajectory of climate change. While the exact timeline remains elusive, the experts, led by Chris Boulton from the University of Exeter, warn of an imminent threshold, a critical juncture that could precipitate the irreversible transformation of the Amazon. The confluence of multifaceted stressors, from droughts and deforestation to degradation and climate fluctuations, portends the encroaching inevitability of this catastrophic tipping point, with profound ramifications for the planet's intricate climatic equilibrium. In the grand orchestration of the Earth's delicate environmental equilibrium, tropical forests, epitomized by the Amazon, assume an indispensable role in climate regulation, as highlighted by Panthera, a renowned environmental organization. Serving as a veritable reservoir of biodiversity, this intricate ecosystem not only sustains a quarter of the world's biodiversity but also orchestrates the vital natural cycles fundamental to the planet's sustenance, as underscored by Laura Schneider of Rutgers University. Furthermore, its formidable capacity to absorb carbon dioxide, a pivotal agent in exacerbating global warming, further accentuates its pivotal role in curbing the trajectory of climate change, as emphasized by Daniel Nepstad, director of the Earth Innovation Institute." }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 135,
+        columnNumber: 17
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 134,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public._index.tsx",
+        lineNumber: 133,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_public._index.tsx",
+      lineNumber: 129,
       columnNumber: 5
     }, this)
   ] }, void 0, !0, {
@@ -1260,7 +1344,7 @@ __export(public_about_exports, {
   default: () => AboutRoute,
   loader: () => loader8
 });
-var import_react13 = require("@remix-run/react");
+var import_react14 = require("@remix-run/react");
 
 // app/assets/roots-slim.png
 var roots_slim_default = "/build/_assets/roots-slim-KJNBM2K5.png";
@@ -1272,7 +1356,7 @@ async function loader8({ request }) {
   return items ? { userId, itemLength: items.length } : { userId, itemLength: 0 };
 }
 function AboutRoute() {
-  let userId = (0, import_react13.useLoaderData)();
+  let userId = (0, import_react14.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("section", { className: "w-full", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "relative", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("img", { className: "w-screen", src: roots_slim_default }, void 0, !1, {
@@ -1414,7 +1498,7 @@ __export(public_chat_exports, {
 });
 
 // app/components/iframeDoc.jsx
-var import_react14 = require("react"), import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), IframeDocument = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(
+var import_react15 = require("react"), import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), IframeDocument = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(
   "iframe",
   {
     style: {},
@@ -1458,8 +1542,11 @@ var import_react14 = require("react"), import_jsx_dev_runtime18 = require("react
   this
 );
 
+// app/assets/hero-mobile.png
+var hero_mobile_default = "/build/_assets/hero-mobile-3Z2Y6CL7.png";
+
 // app/routes/_public.chat.tsx
-var import_jsx_dev_runtime19 = require("react/jsx-dev-runtime"), meta2 = () => [
+var import_lucide_react = require("lucide-react"), import_jsx_dev_runtime19 = require("react/jsx-dev-runtime"), meta2 = () => [
   { title: "New Remix App" },
   { name: "description", content: "Welcome to Remix!" }
 ];
@@ -1468,56 +1555,71 @@ function IndexRoute2() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "relative", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("img", { className: "hidden md:block md:w-screen", src: home_hero_default }, void 0, !1, {
         fileName: "app/routes/_public.chat.tsx",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("img", { className: "md:hidden", src: hero_mobile_default }, void 0, !1, {
         fileName: "app/routes/_public.chat.tsx",
-        lineNumber: 22,
+        lineNumber: 23,
         columnNumber: 6
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "absolute top-1/4 md:top-1/3 grid grid-cols-5 items-center px-8 md:p-0 md:w-screen", children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "col-span-4 md:col-start-2 justify-center text-white", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ", children: "CHAT.." }, void 0, !1, {
-          fileName: "app/routes/_public.chat.tsx",
-          lineNumber: 25,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-4 md:pt-10 drop-shadow-lg max-w-3xl leading-relaxed", children: "An agent from the future will assist with your questions on the impact of climate change. " }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "absolute top-1/4 md:top-1/3 grid grid-cols-5 items-center px-8 lg:pr-5 md:w-screen", children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "col-span-4 lg:col-start-2 justify-center text-white", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ", children: "CHAT..." }, void 0, !1, {
           fileName: "app/routes/_public.chat.tsx",
           lineNumber: 26,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "text-md leading-relaxed lg:leading-[2rem] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold block pt-4 md:pt-10 max-w-3xl ", children: "An agent from the future will assist with any questions on the impact of climate change. " }, void 0, !1, {
+          fileName: "app/routes/_public.chat.tsx",
+          lineNumber: 27,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/_public.chat.tsx",
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 8
       }, this) }, void 0, !1, {
         fileName: "app/routes/_public.chat.tsx",
-        lineNumber: 23,
+        lineNumber: 24,
         columnNumber: 8
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_public.chat.tsx",
-      lineNumber: 20,
+      lineNumber: 21,
       columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "px-12 text-lg md:text-3xl text-center  py-4 md:py-20", children: " Ask our agent anything about life in 2050." }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "px-12 text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl md:text-5xl text-center  py-4 md:py-20", children: [
+      " Chat here",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "inline-block text-black outline-none animate-bounce", children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(import_lucide_react.MoveDown, { size: 40 }, void 0, !1, {
+        fileName: "app/routes/_public.chat.tsx",
+        lineNumber: 33,
+        columnNumber: 75
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_public.chat.tsx",
+        lineNumber: 33,
+        columnNumber: 5
+      }, this)
+    ] }, void 0, !0, {
       fileName: "app/routes/_public.chat.tsx",
       lineNumber: 32,
       columnNumber: 5
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "m-auto mt-4 md:mt-20 w-screen md:w-8/12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(IframeDocument, { children: "Hello, IframeDocument" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "bg-black", children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "bg-black m-auto lg:mt-10 w-screen md:w-8/12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(IframeDocument, { children: "Hello, IframeDocument" }, void 0, !1, {
       fileName: "app/routes/_public.chat.tsx",
-      lineNumber: 34,
-      columnNumber: 5
+      lineNumber: 37,
+      columnNumber: 7
     }, this) }, void 0, !1, {
       fileName: "app/routes/_public.chat.tsx",
-      lineNumber: 33,
+      lineNumber: 36,
+      columnNumber: 7
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_public.chat.tsx",
+      lineNumber: 35,
       columnNumber: 5
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/_public.chat.tsx",
-    lineNumber: 18,
+    lineNumber: 19,
     columnNumber: 5
   }, this);
 }
@@ -1543,7 +1645,7 @@ function validateCredentials(input) {
 }
 
 // app/components/AuthForm.tsx
-var import_react15 = require("@remix-run/react");
+var import_react16 = require("@remix-run/react");
 
 // app/components/ui/input.tsx
 var React2 = __toESM(require("react"));
@@ -1577,9 +1679,9 @@ var pao_black_default = "/build/_assets/pao-black-MVR5KJHI.png";
 // app/components/AuthForm.tsx
 var import_jsx_dev_runtime21 = require("react/jsx-dev-runtime");
 function AuthForm() {
-  let [searchParams] = (0, import_react15.useSearchParams)(), navigation = (0, import_react15.useTransition)(), validationErrors = (0, import_react15.useActionData)(), authMode = searchParams.get("mode") || "login", submitBtnCaption = authMode === "login" ? "Login" : "Create User", toggleBtnCaption = authMode === "login" ? "Create a new user" : "Log in with existing user", isSubmitting = navigation.state !== "idle";
+  let [searchParams] = (0, import_react16.useSearchParams)(), navigation = (0, import_react16.useTransition)(), validationErrors = (0, import_react16.useActionData)(), authMode = searchParams.get("mode") || "login", submitBtnCaption = authMode === "login" ? "Login" : "Create User", toggleBtnCaption = authMode === "login" ? "Create a new user" : "Log in with existing user", isSubmitting = navigation.state !== "idle";
   return /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(
-    import_react15.Form,
+    import_react16.Form,
     {
       method: "post",
       className: "grid w-full max-w-sm items-center gap-1.5",
@@ -1657,7 +1759,7 @@ function AuthForm() {
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(
-            import_react15.Link,
+            import_react16.Link,
             {
               className: "text-center mt-5",
               to: authMode === "login" ? "?mode=signup" : "?mode=login",
@@ -1743,7 +1845,7 @@ __export(auth_user_exports, {
   default: () => AuthRoute,
   loader: () => loader9
 });
-var import_react16 = require("@remix-run/react");
+var import_react17 = require("@remix-run/react");
 var import_node6 = require("@remix-run/node"), import_jsx_dev_runtime23 = require("react/jsx-dev-runtime"), client9 = createClient();
 async function loader9({ request }) {
   await requireUserCookie(request);
@@ -1751,7 +1853,7 @@ async function loader9({ request }) {
   return (0, import_node6.json)(customer);
 }
 function AuthRoute() {
-  let customer = (0, import_react16.useLoaderData)();
+  let customer = (0, import_react17.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "w-full mt-8", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { children: customer.id }, void 0, !1, {
       fileName: "app/routes/_auth.user.tsx",
@@ -1786,26 +1888,26 @@ __export(public_exports, {
   default: () => IndexLayout,
   loader: () => loader10
 });
-var import_react18 = require("@remix-run/react");
+var import_react19 = require("@remix-run/react");
 
 // app/components/navbar.tsx
-var import_react17 = require("@remix-run/react"), React3 = __toESM(require("react")), import_bi2 = require("react-icons/bi");
+var import_react18 = require("@remix-run/react"), React3 = __toESM(require("react")), import_bi2 = require("react-icons/bi");
 
 // app/assets/zer0.svg
 var zer0_default = "/build/_assets/zer0-2AE4SAU5.svg";
 
 // app/components/navbar.tsx
-var import_lucide_react = require("lucide-react"), import_jsx_dev_runtime24 = require("react/jsx-dev-runtime");
+var import_lucide_react2 = require("lucide-react"), import_jsx_dev_runtime24 = require("react/jsx-dev-runtime");
 function Navbar() {
   let [state, setState] = React3.useState(!1), links2 = [
     // {
     //   label: "Home",
     //   url: "/",
     // },
-    {
-      label: "Story",
-      url: "/about"
-    },
+    // {
+    //     label: 'Story',
+    //     url: '/about',
+    // },
     {
       label: "Shop",
       url: "/products"
@@ -1814,10 +1916,10 @@ function Navbar() {
       label: "Chat",
       url: "/chat"
     }
-  ], data = (0, import_react17.useLoaderData)(), userId = data.userId, itemLength = data.itemLength;
+  ], data = (0, import_react18.useLoaderData)(), userId = data.userId, itemLength = data.itemLength;
   return /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("nav", { className: "flex lg:grid lg:grid-cols-5 items-center justify-between md:py-10 bg-black", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex flex-1 justify-between items-center p-4 sm:p-8 lg:pl-0 col-span-1 lg:col-span-1 lg:col-start-2", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react17.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react18.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
         "img",
         {
           src: zer0_default,
@@ -1842,7 +1944,7 @@ function Navbar() {
           {
             className: "text-white outline-none p-2",
             onClick: () => setState(!state),
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_lucide_react.Menu, {}, void 0, !1, {
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_lucide_react2.Menu, {}, void 0, !1, {
               fileName: "app/components/navbar.tsx",
               lineNumber: 58,
               columnNumber: 25
@@ -1867,7 +1969,7 @@ function Navbar() {
                 {
                   className: "text-white outline-none p-2",
                   onClick: () => setState(!state),
-                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_lucide_react.X, {}, void 0, !1, {
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_lucide_react2.X, {}, void 0, !1, {
                     fileName: "app/components/navbar.tsx",
                     lineNumber: 70,
                     columnNumber: 29
@@ -1882,8 +1984,8 @@ function Navbar() {
                 },
                 this
               ),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "justify-center items-center md:flex md:space-x-6 md:space-y-0", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
-                import_react17.NavLink,
+              /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "justify-center items-center flex-col md:flex md:space-x-6 md:space-y-0", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+                import_react18.NavLink,
                 {
                   to: link.url,
                   className: "text-white block hover:text-indigo-600",
@@ -1924,7 +2026,7 @@ function Navbar() {
       lineNumber: 46,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "hidden lg:flex md:pl-6 md:col-span-2 lg:col-span-1 justify-between text-white ", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react17.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "hidden lg:flex md:pl-6 md:col-span-2 lg:col-span-1 justify-between text-white ", children: links2.map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react18.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
       fileName: "app/components/navbar.tsx",
       lineNumber: 90,
       columnNumber: 21
@@ -1935,7 +2037,7 @@ function Navbar() {
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "hidden lg:flex md:col-span-1 lg:col-span-2 justify-end ", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "font-semibold text-white hover:text-emerald-500", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
-        import_react17.NavLink,
+        import_react18.NavLink,
         {
           to: "/cart",
           className: "inline-flex items-center space-x-1 text-white duration-300 ",
@@ -1967,7 +2069,7 @@ function Navbar() {
         columnNumber: 17
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "px-4", children: [
-        userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react17.Form, { method: "post", action: "/logout", id: "logout-form", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("button", { className: "cta-alt text-white", children: "Logout" }, void 0, !1, {
+        userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react18.Form, { method: "post", action: "/logout", id: "logout-form", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("button", { className: "cta-alt text-white", children: "Logout" }, void 0, !1, {
           fileName: "app/components/navbar.tsx",
           lineNumber: 110,
           columnNumber: 29
@@ -1977,7 +2079,7 @@ function Navbar() {
           columnNumber: 25
         }, this),
         userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
-          import_react17.NavLink,
+          import_react18.NavLink,
           {
             to: "/user",
             className: "inline-flex items-center space-x-1 text-white duration-300",
@@ -1993,7 +2095,7 @@ function Navbar() {
           this
         ),
         !userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
-          import_react17.NavLink,
+          import_react18.NavLink,
           {
             to: "/login",
             className: "inline-flex items-center space-x-1 text-white duration-300",
@@ -2038,7 +2140,7 @@ function IndexLayout() {
       lineNumber: 21,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react18.Outlet, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react19.Outlet, {}, void 0, !1, {
       fileName: "app/routes/_public.tsx",
       lineNumber: 22,
       columnNumber: 7
@@ -2068,13 +2170,13 @@ __export(auth_exports, {
   default: () => AuthLayout,
   loader: () => loader11
 });
-var import_react19 = require("@remix-run/react");
+var import_react20 = require("@remix-run/react");
 var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime");
 async function loader11({ request }) {
   return getUser(request);
 }
 function AuthLayout() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_jsx_dev_runtime26.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_react19.Outlet, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_jsx_dev_runtime26.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_react20.Outlet, {}, void 0, !1, {
     fileName: "app/routes/_auth.tsx",
     lineNumber: 12,
     columnNumber: 7
@@ -2086,7 +2188,7 @@ function AuthLayout() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RVKYDOXG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-FVHLIEDG.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-J7GIT2O6.js", imports: ["/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-G3PXCU5R.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-G7YUS4RK.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js", "/build/_shared/chunk-IVHM3IJE.js", "/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-XQACP3S5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-X22BDGDY.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.chat": { id: "routes/_public.chat", parentId: "routes/_public", path: "chat", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.chat-3WEYOZQG.js", imports: ["/build/_shared/chunk-IVHM3IJE.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-ZGA7YNVF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-J7ZSNHUJ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-LXI63N6A.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "c5c8ec8b", hmr: void 0, url: "/build/manifest-C5C8EC8B.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-LT2ZNFKJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-FVHLIEDG.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-6TFFJX3A.js", imports: ["/build/_shared/chunk-KHWIBKT6.js", "/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-G3PXCU5R.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-QT26JYQL.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js", "/build/_shared/chunk-MFGQBVH3.js", "/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-XQACP3S5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-X22BDGDY.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.chat": { id: "routes/_public.chat", parentId: "routes/_public", path: "chat", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.chat-6UVCCWLA.js", imports: ["/build/_shared/chunk-MFGQBVH3.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-ZGA7YNVF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-J7ZSNHUJ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-GRHGBDUF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "4ee31cd2", hmr: void 0, url: "/build/manifest-4EE31CD2.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

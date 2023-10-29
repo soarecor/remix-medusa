@@ -1,8 +1,8 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import { Link, NavLink } from "@remix-run/react";
 import { IframeDocument } from "~/components/iframeDoc";
 import hero from "~/assets/home-hero.png";
-import heroM from "~/assets/hero-mobile.png";
+import heroM from "~/assets/hero-mobile1.png";
 import {Button} from "~/components/ui/button"
 import root from "~/assets/root1.svg";
 import forest from "~/assets/home-hero.png";
@@ -23,15 +23,20 @@ export default function IndexRoute() {
     <div className="">
      {/* {cartId} */}
     <div className="relative">
-     <img className="hidden md:block lg:w-screen" src={hero}  />
-     <img className="md:hidden" src={heroM}  />
+     <img className="hidden lg:block lg:w-screen" src={hero}  />
+     <img className="lg:hidden w-screen" src={heroM}  />
      {/* <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white"> */}
-     <div className="absolute top-1/4 lg:top-1/3 grid grid-cols-5 items-center px-8 lg:p-0 w-full">
+     <div className="absolute top-1/4 lg:top-1/3 grid grid-cols-5 items-center px-8 lg:pr-5 w-full">
        <span className="col-span-4 lg:col-start-2 justify-center text-white">
-            <span className="text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-semibold ">A dystopian treeless view from 2050.</span> 
-            <span className="text-md md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold block pt-4 md:pt-10 drop-shadow-lg">The world is impacted by climate change. </span>  
+            <span className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-bold">The year is 2050.</span> 
+            <span className="text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold block pt-4 md:pt-10 drop-shadow-lg">90% of earths forests are impacted by climate change.</span>  
             <div>
-                <Button className="mt-4 md:mt-10" size="lg" variant="secondary"> <span className="text-base md:text-lg lg:text-2xl 2xl:text-3xl p-0 md:p-3"> CHAT TO LEARN MORE</span></Button>
+                <Button className="mt-4 md:mt-10" size="lg" variant="secondary"> <span className="text-base md:text-lg lg:text-2xl 2xl:text-3xl p-0 md:p-3">                      <NavLink
+                            to="/chat"
+                            className=""
+                        >
+                            CHAT TO LEARN MORE
+                        </NavLink></span></Button>
             </div>
        </span>
      </div>
@@ -45,19 +50,15 @@ export default function IndexRoute() {
         <div className="grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0">
             <div className="lg:w-3/5 text-xl">
                 <span className="block font-bold text-xl md:text-3xl mb-4">
-                    Why Pao?
+                    Why zer0?
                 </span>
                 <span className="block text-base  md:text-2xl leading-relaxed md:leading-loose">
-                    Why a word that is used in the Indian
-                    subcontinent, Brazil, Portugal and Macao?
-                    Pao (meaning bread) is a simple word that
-                    unites us, no matter which part of the world you come from.
                     While climate change might be visible in certain parts of the 
                     globe, we are all responsible for the outcome. 
                     At the rate of decline, we are likely on a trajectory that will 
                     put us in a bleak position in 2050. We are hoping to shed some 
-                    light on what the future will look like in this scenario - some 
-                    food for thought.
+                    light on what the future will look like in this scenario - a future with zero trees.
+                    At zer0.supply, we transcend the present to shape a future where every action counts. Drawing from the stark realities of a treeless future, where environmental devastation has ravaged our planet, we lead the charge in cultivating a sustainable tomorrow. In a world where forests are scorched, temperatures are relentless, and water is scarce, we're committed to redefining the narrative. Our mission is to reverse the countdown to zero trees, empowering individuals and communities with the tools to reclaim our ecosystem. Together, we envision a future where life thrives in harmony with nature, crafting a legacy of resilience and abundance for generations to come.
                 </span>
             </div>
         </div>
@@ -89,7 +90,58 @@ export default function IndexRoute() {
                 Nearly 1.6 Billion Hectares of Forest Are at High Risk of Degradation
                 </span>
                 <span className="block text-base md:text-2xl leading-relaxed md:leading-loose">
-                In terms of land mass, forest degradation is an even bigger problem than deforestation. Nearly 1.6 billion hectares of forest are at high risk of degradation in the next decade. This phenomenon occurs when forest ecosystems are weakened to a point where they lose their ability to provide goods and services to people and nature. Even though climate change is a contributing factor in degradation, the main trigger for it has been unsustainable and illegal logging. This, along with timber extraction, are the major drivers in Asia and Latin America: together, they account for more than 70% of total tropical forest degradation. In Africa, this occurs as forests are exploited to obtain fuelwood and charcoal. Indeed, more than 80% of people in Sub-Saharan Africa do not have clean cooking fuels and thus heavily rely on wood.
+                At the current pace, the alarming trajectory towards a future bereft of trees by 2050 looms over us. The impending threat of deforestation and forest degradation casts a shadow over our world's green lungs, with a staggering 47% of global forests facing high risks of depletion or deterioration by 2030. While the distinction between deforestation and forest degradation is crucial, the consequences of both are equally devastating.
+
+Deforestation, often driven by unsustainable and unlawful agricultural practices, entails the complete obliteration of forests, making way for lucrative cash crops like palm oil and rubber. The sheer scale of this devastation is exemplified by the staggering loss of forests at a rate equivalent to 27 soccer fields every single minute, a statistic that continues to haunt our environmental conscience.
+
+Conversely, forest degradation, though less perceptible, poses an equally grave threat, rendering once-vibrant forests into mere shadows of their former selves. As their vitality diminishes, crucial ecological functions such as air and water purification, biodiversity support, and habitat provision for wildlife are significantly compromised. Astoundingly, the land area at high risk of forest degradation is estimated to encompass a daunting 6.5 million square miles in the next decade, underscoring the urgency of the situation.
+
+A convergence of factors contributes to forest degradation, including the relentless impact of climate change, manifesting in heightened temperatures, erratic weather patterns, and an increased vulnerability to forest fires, pest infestations, and diseases. However, the primary culprit remains unsustainable and illegal logging, a lucrative industry fueled by the insatiable demand for inexpensive timber, paper products, and fuel. This voracious consumption exacerbates the vulnerability of our dwindling forest resources, threatening to fast-track our journey to a world devoid of the essential life-giving force that is our planet's verdant foliage.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div className="flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20">
+        <div className="grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0">
+            <div className="lg:w-3/5 text-xl">
+                <span className="block font-bold text-3xl mb-4">
+                Nearly 75% of the Amazon rainforest has been exhibiting signs of degradation since the early 2000s
+                </span>
+                <span className="block text-base md:text-2xl leading-relaxed md:leading-loose">
+                The relentless march towards a world devoid of trees by 2050 is ominously underscored by the plight of the Amazon rainforest, which teeters perilously on the brink of a transformative collapse. Recent studies reveal a distressing trend, with more than 75% of the rainforest exhibiting signs of degradation since the early 2000s, potentially signaling an irreversible shift towards savanna terrain.
+
+Evidently, the interplay of deforestation and climate change emerges as the chief catalyst driving this decline, as emphasized by Niklas Boers, a professor at the Technical University of Munich. An analysis of satellite data unequivocally exposes a consistent erosion of the rainforest's resilience, particularly pronounced in regions proximate to human encroachment and those subjected to dwindling rainfall, laying bare the vulnerability of this vital ecological sanctuary.
+
+The ominous implications of this faltering resilience echo throughout the Amazon, heightening the specter of widespread ecosystem collapse, as articulated by Tim Lenton of the University of Exeter. Despite its seemingly unchanged facade, the rainforest's capacity to recuperate from adversities such as droughts is diminishing, laying the groundwork for a monumental ecological paradigm shift that threatens the delicate balance of biodiversity, global carbon sequestration, and the overarching trajectory of climate change.
+
+While the exact timeline remains elusive, the experts, led by Chris Boulton from the University of Exeter, warn of an imminent threshold, a critical juncture that could precipitate the irreversible transformation of the Amazon. The confluence of multifaceted stressors, from droughts and deforestation to degradation and climate fluctuations, portends the encroaching inevitability of this catastrophic tipping point, with profound ramifications for the planet's intricate climatic equilibrium.
+
+In the grand orchestration of the Earth's delicate environmental equilibrium, tropical forests, epitomized by the Amazon, assume an indispensable role in climate regulation, as highlighted by Panthera, a renowned environmental organization. Serving as a veritable reservoir of biodiversity, this intricate ecosystem not only sustains a quarter of the world's biodiversity but also orchestrates the vital natural cycles fundamental to the planet's sustenance, as underscored by Laura Schneider of Rutgers University. Furthermore, its formidable capacity to absorb carbon dioxide, a pivotal agent in exacerbating global warming, further accentuates its pivotal role in curbing the trajectory of climate change, as emphasized by Daniel Nepstad, director of the Earth Innovation Institute.
+                </span>
+            </div>
+        </div>
+        <div className="relative h-full col-span-1 lg:grid-cols-1 grid place-items-center content-center">
+              <div className="text-5xl"><div className="text-7xl italic">47%</div>of forests face high risks of depletion by 2030</div>
+        </div>
+    </div>
+
+    <div className="flex flex-col items-center justify-center xl:grid lg:max-w-none xl:grid-cols-5 lg:px-0 my-20">
+        <div className="relative h-full col-start-2 col-span-1 lg:grid-cols-1 grid place-items-center content-center">
+              <div className="text-5xl">47% of forests face high risks of depletion by 2030</div>
+        </div>
+        <div className="grid col-span-3 p-0 xl:p-20 m-10 h-full place-items-center content-center gap-0">
+            <div className="lg:w-3/5 text-xl">
+                <span className="block text-base md:text-2xl leading-relaxed md:leading-loose">
+                The relentless march towards a world devoid of trees by 2050 is ominously underscored by the plight of the Amazon rainforest, which teeters perilously on the brink of a transformative collapse. Recent studies reveal a distressing trend, with more than 75% of the rainforest exhibiting signs of degradation since the early 2000s, potentially signaling an irreversible shift towards savanna terrain.
+
+Evidently, the interplay of deforestation and climate change emerges as the chief catalyst driving this decline, as emphasized by Niklas Boers, a professor at the Technical University of Munich. An analysis of satellite data unequivocally exposes a consistent erosion of the rainforest's resilience, particularly pronounced in regions proximate to human encroachment and those subjected to dwindling rainfall, laying bare the vulnerability of this vital ecological sanctuary.
+
+The ominous implications of this faltering resilience echo throughout the Amazon, heightening the specter of widespread ecosystem collapse, as articulated by Tim Lenton of the University of Exeter. Despite its seemingly unchanged facade, the rainforest's capacity to recuperate from adversities such as droughts is diminishing, laying the groundwork for a monumental ecological paradigm shift that threatens the delicate balance of biodiversity, global carbon sequestration, and the overarching trajectory of climate change.
+
+While the exact timeline remains elusive, the experts, led by Chris Boulton from the University of Exeter, warn of an imminent threshold, a critical juncture that could precipitate the irreversible transformation of the Amazon. The confluence of multifaceted stressors, from droughts and deforestation to degradation and climate fluctuations, portends the encroaching inevitability of this catastrophic tipping point, with profound ramifications for the planet's intricate climatic equilibrium.
+
+In the grand orchestration of the Earth's delicate environmental equilibrium, tropical forests, epitomized by the Amazon, assume an indispensable role in climate regulation, as highlighted by Panthera, a renowned environmental organization. Serving as a veritable reservoir of biodiversity, this intricate ecosystem not only sustains a quarter of the world's biodiversity but also orchestrates the vital natural cycles fundamental to the planet's sustenance, as underscored by Laura Schneider of Rutgers University. Furthermore, its formidable capacity to absorb carbon dioxide, a pivotal agent in exacerbating global warming, further accentuates its pivotal role in curbing the trajectory of climate change, as emphasized by Daniel Nepstad, director of the Earth Innovation Institute.
                 </span>
             </div>
         </div>
