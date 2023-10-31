@@ -9,7 +9,8 @@ import {
 import * as React from 'react'
 import { BiShoppingBag } from 'react-icons/bi'
 // import pao from '~/assets/pao.png'
-import pao from '~/assets/zer0.svg'
+import zero from '~/assets/zer0.svg'
+import zerow from '~/assets/0-w.svg'
 import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
@@ -46,7 +47,7 @@ export default function Navbar() {
             <div className="flex flex-1 justify-between items-center p-4 sm:p-8 lg:pl-0 col-span-1 lg:col-span-1 lg:col-start-2">
                 <Link to="/">
                     <img
-                        src={pao}
+                        src={zero}
                         className="pl-4 md:pl-0 w-[70px] md:w-[150px]"
                     />
                 </Link>
@@ -59,22 +60,26 @@ export default function Navbar() {
                     </button>
 
                     <div
-                        className={`h-screen w-screen top-0 left-0 bg-black pl-2 z-10 pb-3 lg:hidden border-4 border-lime-500 ${
+                        className={`h-screen w-screen top-0 left-0 bg-black z-10 pb-3 overflow-hidden lg:hidden border-4 border-lime-500 ${
                             state ? 'absolute' : 'hidden'
                         }`}
                     >
                         <button
-                            className="text-white outline-none p-2"
+                            className="text-white outline-none absolute right-2 top-2 p-2"
                             onClick={() => setState(!state)}
                         >
                             <X />
                         </button>
-                        <div className="justify-center items-center flex-col md:flex md:space-x-6 md:space-y-0">
+                        <div className="grid justify-center content-center items-center h-full">
+                            <img
+                                src={zerow}
+                                className="pb-7 mx-auto text-center w-[40px] md:w-[150px]"
+                            />
                             {links.map((link, index) => (
                                 <NavLink
                                     key={index}
                                     to={link.url}
-                                    className="text-white block hover:text-indigo-600"
+                                    className="text-white block text-4xl py-4"
                                     onClick={() => setState(!state)}
                                 >
                                     {link.label}
