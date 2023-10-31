@@ -26,7 +26,7 @@ export default function IndexRoute() {
      <img className="hidden lg:block lg:w-screen" src={hero}  />
      <img className="lg:hidden w-screen" src={heroM}  />
      {/* <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white"> */}
-     <div className="absolute top-1/4 lg:top-1/3 grid grid-cols-5 items-center px-8 lg:pr-5 w-full">
+     <div className="absolute top-1/4 lg:top-1/3 grid grid-cols-5 items-center px-8 lg:px-0 lg:pr-5 w-full">
        <span className="col-span-4 lg:col-start-2 justify-center text-white">
             <span className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-bold">The year is 2050.</span> 
             <span className="text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold block pt-4 md:pt-10 drop-shadow-lg">90% of earths forests are impacted by climate change.</span>  

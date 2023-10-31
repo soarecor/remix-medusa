@@ -48,7 +48,7 @@ export default function Navbar() {
                 <Link to="/">
                     <img
                         src={zero}
-                        className="pl-4 md:pl-0 w-[70px] md:w-[150px]"
+                        className="pl-4 md:pl-0 w-[70px] md:w-[100px]"
                     />
                 </Link>
                 <div className="lg:hidden">
@@ -59,6 +59,7 @@ export default function Navbar() {
                         <Menu />
                     </button>
 
+                    {/* MENU MODAL */}
                     <div
                         className={`h-screen w-screen top-0 left-0 bg-black z-10 pb-3 overflow-hidden lg:hidden border-4 border-lime-500 ${
                             state ? 'absolute' : 'hidden'
@@ -87,6 +88,7 @@ export default function Navbar() {
                             ))}
                         </div>
                     </div>
+                    {/* MENU MODAL */}
                 </div>
             </div>
             {/* Navigation Links */}
