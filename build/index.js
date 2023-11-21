@@ -153,7 +153,7 @@ function Footer() {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-SQCROTC4.css";
+var tailwind_default = "/build/_assets/tailwind-DURLJPZ7.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
@@ -1801,25 +1801,25 @@ function LoginRoute() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "container relative h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "relative hidden h-full flex-col bg-muted text-white dark:border-r md:hidden lg:flex", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("img", { className: "h-screen", src: forest_default, alt: "" }, void 0, !1, {
       fileName: "app/routes/_auth.login.tsx",
-      lineNumber: 43,
+      lineNumber: 41,
       columnNumber: 7
     }, this) }, void 0, !1, {
       fileName: "app/routes/_auth.login.tsx",
-      lineNumber: 42,
+      lineNumber: 40,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "h-screen grid place-items-center content-center gap-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(AuthForm_default, {}, void 0, !1, {
       fileName: "app/routes/_auth.login.tsx",
-      lineNumber: 48,
+      lineNumber: 44,
       columnNumber: 7
     }, this) }, void 0, !1, {
       fileName: "app/routes/_auth.login.tsx",
-      lineNumber: 46,
+      lineNumber: 43,
       columnNumber: 5
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/_auth.login.tsx",
-    lineNumber: 41,
+    lineNumber: 39,
     columnNumber: 3
   }, this);
 }
@@ -1876,7 +1876,7 @@ __export(public_exports, {
 var import_react19 = require("@remix-run/react");
 
 // app/components/navbar.tsx
-var import_react18 = require("@remix-run/react"), React3 = __toESM(require("react")), import_bi2 = require("react-icons/bi");
+var import_react18 = require("@remix-run/react"), React3 = __toESM(require("react"));
 
 // app/assets/zer0.svg
 var zer0_default = "/build/_assets/zer0-2AE4SAU5.svg";
@@ -2040,87 +2040,53 @@ function Navbar() {
       lineNumber: 95,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "hidden lg:flex md:col-span-1 lg:col-span-2 justify-end ", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "font-semibold text-white hover:text-emerald-500", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "hidden lg:flex md:col-span-1 lg:col-span-2 justify-end ", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "px-4", children: [
+      userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react18.Form, { method: "post", action: "/logout", id: "logout-form", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("button", { className: "cta-alt text-white", children: "Logout" }, void 0, !1, {
+        fileName: "app/components/navbar.tsx",
+        lineNumber: 117,
+        columnNumber: 29
+      }, this) }, void 0, !1, {
+        fileName: "app/components/navbar.tsx",
+        lineNumber: 116,
+        columnNumber: 25
+      }, this),
+      userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
         import_react18.NavLink,
         {
-          to: "/cart",
-          className: "inline-flex items-center space-x-1 text-white duration-300 ",
-          children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_bi2.BiShoppingBag, { className: "text-xl" }, void 0, !1, {
-              fileName: "app/components/navbar.tsx",
-              lineNumber: 109,
-              columnNumber: 25
-            }, this),
-            " ",
-            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("span", { children: itemLength }, void 0, !1, {
-              fileName: "app/components/navbar.tsx",
-              lineNumber: 110,
-              columnNumber: 25
-            }, this)
-          ]
+          to: "/user",
+          className: "inline-flex items-center space-x-1 text-white duration-300",
+          children: "User"
         },
         void 0,
-        !0,
+        !1,
         {
           fileName: "app/components/navbar.tsx",
-          lineNumber: 105,
-          columnNumber: 21
+          lineNumber: 124,
+          columnNumber: 25
         },
         this
-      ) }, void 0, !1, {
-        fileName: "app/components/navbar.tsx",
-        lineNumber: 104,
-        columnNumber: 17
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "px-4", children: [
-        userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react18.Form, { method: "post", action: "/logout", id: "logout-form", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("button", { className: "cta-alt text-white", children: "Logout" }, void 0, !1, {
+      ),
+      !userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+        import_react18.NavLink,
+        {
+          to: "/login",
+          className: "inline-flex items-center space-x-1 text-white duration-300",
+          children: "Login"
+        },
+        void 0,
+        !1,
+        {
           fileName: "app/components/navbar.tsx",
-          lineNumber: 117,
-          columnNumber: 29
-        }, this) }, void 0, !1, {
-          fileName: "app/components/navbar.tsx",
-          lineNumber: 116,
+          lineNumber: 133,
           columnNumber: 25
-        }, this),
-        userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
-          import_react18.NavLink,
-          {
-            to: "/user",
-            className: "inline-flex items-center space-x-1 text-white duration-300",
-            children: "User"
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/components/navbar.tsx",
-            lineNumber: 124,
-            columnNumber: 25
-          },
-          this
-        ),
-        !userId && /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
-          import_react18.NavLink,
-          {
-            to: "/login",
-            className: "inline-flex items-center space-x-1 text-white duration-300",
-            children: "Login"
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/components/navbar.tsx",
-            lineNumber: 133,
-            columnNumber: 25
-          },
-          this
-        )
-      ] }, void 0, !0, {
-        fileName: "app/components/navbar.tsx",
-        lineNumber: 114,
-        columnNumber: 17
-      }, this)
+        },
+        this
+      )
     ] }, void 0, !0, {
+      fileName: "app/components/navbar.tsx",
+      lineNumber: 114,
+      columnNumber: 17
+    }, this) }, void 0, !1, {
       fileName: "app/components/navbar.tsx",
       lineNumber: 103,
       columnNumber: 13
@@ -2193,7 +2159,7 @@ function AuthLayout() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-HQQ3AKC3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-XY34HASE.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-FI2V3L2H.js", imports: ["/build/_shared/chunk-KHWIBKT6.js", "/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-G3PXCU5R.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-MG4BPLVI.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js", "/build/_shared/chunk-MFGQBVH3.js", "/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-XQACP3S5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-X22BDGDY.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.chat": { id: "routes/_public.chat", parentId: "routes/_public", path: "chat", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.chat-6UVCCWLA.js", imports: ["/build/_shared/chunk-MFGQBVH3.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-ZGA7YNVF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-J7ZSNHUJ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-GRHGBDUF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "97899cb8", hmr: void 0, url: "/build/manifest-97899CB8.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-2O6U4O5S.js", imports: ["/build/_shared/chunk-TR72F42V.js", "/build/_shared/chunk-NWZQ45AO.js", "/build/_shared/chunk-H6TUETJN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RLCGFBYG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth": { id: "routes/_auth", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_auth-V4SJQHLJ.js", imports: ["/build/_shared/chunk-H4U6JSGI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.login": { id: "routes/_auth.login", parentId: "routes/_auth", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.login-LEPSMLEV.js", imports: ["/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_auth.user": { id: "routes/_auth.user", parentId: "routes/_auth", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/_auth.user-T6SCP6WR.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public": { id: "routes/_public", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_public-JJ3ILZX6.js", imports: ["/build/_shared/chunk-KHWIBKT6.js", "/build/_shared/chunk-H4U6JSGI.js", "/build/_shared/chunk-E6WQW5T2.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public._index": { id: "routes/_public._index", parentId: "routes/_public", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_public._index-MG4BPLVI.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js", "/build/_shared/chunk-MFGQBVH3.js", "/build/_shared/chunk-5BA5YPQJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.about": { id: "routes/_public.about", parentId: "routes/_public", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.about-XQACP3S5.js", imports: ["/build/_shared/chunk-2IHEWGGZ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.$productId": { id: "routes/_public.cart.$productId", parentId: "routes/_public", path: "cart/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.$productId-X22BDGDY.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart._index": { id: "routes/_public.cart._index", parentId: "routes/_public", path: "cart", index: !0, caseSensitive: void 0, module: "/build/routes/_public.cart._index-SKYXCALQ.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.pay": { id: "routes/_public.cart.pay", parentId: "routes/_public", path: "cart/pay", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.pay-2NK5W4YK.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.cart.success": { id: "routes/_public.cart.success", parentId: "routes/_public", path: "cart/success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.cart.success-65ZC34N4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.chat": { id: "routes/_public.chat", parentId: "routes/_public", path: "chat", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.chat-6UVCCWLA.js", imports: ["/build/_shared/chunk-MFGQBVH3.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.checkout": { id: "routes/_public.checkout", parentId: "routes/_public", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.checkout-ZGA7YNVF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products.$productId": { id: "routes/_public.products.$productId", parentId: "routes/_public", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.products.$productId-EENNVJX7.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.products._index": { id: "routes/_public.products._index", parentId: "routes/_public", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/_public.products._index-GRHGBDUF.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_public.success": { id: "routes/_public.success", parentId: "routes/_public", path: "success", index: void 0, caseSensitive: void 0, module: "/build/routes/_public.success-DSPHMJZU.js", imports: ["/build/_shared/chunk-AC544PYV.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-SE52HUUP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "f89b4094", hmr: void 0, url: "/build/manifest-F89B4094.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

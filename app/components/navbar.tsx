@@ -101,7 +101,7 @@ export default function Navbar() {
             </div>
             {/* Shopping Cart Indicator/Checkout Link */}
             <div className="hidden lg:flex md:col-span-1 lg:col-span-2 justify-end ">
-                <div className="font-semibold text-white hover:text-emerald-500">
+                {/* <div className="font-semibold text-white hover:text-emerald-500">
                     <NavLink
                         to="/cart"
                         className="inline-flex items-center space-x-1 text-white duration-300 "
@@ -109,7 +109,7 @@ export default function Navbar() {
                         <BiShoppingBag className="text-xl" />{' '}
                         <span>{itemLength}</span>
                     </NavLink>
-                </div>
+                </div> */}
 
                 <div className="px-4">
                     {userId && (
