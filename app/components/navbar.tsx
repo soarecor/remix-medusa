@@ -61,7 +61,7 @@ export default function Navbar() {
 
                     {/* MENU MODAL */}
                     <div
-                        className={`h-screen w-screen top-0 left-0 bg-black z-10 pb-3 overflow-hidden lg:hidden border-4 border-lime-500 ${
+                        className={`h-screen w-screen top-0 left-0 bg-black z-10 pb-3 overflow-hidden lg:hidden ${
                             state ? 'absolute' : 'hidden'
                         }`}
                     >
