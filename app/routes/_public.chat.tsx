@@ -33,7 +33,7 @@ export default function IndexRoute() {
     <span className="inline-block text-black outline-none animate-bounce"><MoveDown size={40}/></span></div>
     
     <div className="bg-black">
-      <div className="bg-black m-auto lg:mt-10 w-screen md:w-8/12">
+      <div className="bg-black m-auto mb-10 lg:mt-10 w-screen md:w-8/12">
       <IframeDocument>Hello, IframeDocument</IframeDocument>
       </div>
     </div>

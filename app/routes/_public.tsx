@@ -3,6 +3,7 @@ import Navbar from "~/components/navbar";
 import { getUser } from '~/data/auth.server';
 import { cartItems } from '~/data/cart.server'
 import type { LoaderArgs } from "@remix-run/node"; // or cloudflare/deno
+import Footer from "~/components/footer";
 
 export async function loader({request}: LoaderArgs){
   const items = await cartItems(request)
@@ -20,6 +21,7 @@ export default function IndexLayout() {
     <>
       <Navbar />
       <Outlet />
+      <Footer />
     </>
   );
 }

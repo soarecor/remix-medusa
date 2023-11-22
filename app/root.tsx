@@ -9,7 +9,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import Footer from "~/components/footer";
+
 import styles from "./tailwind.css";
 
 export default function App() {
@@ -28,7 +28,6 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <Footer />
       </body>
     </html>
   );
