@@ -97,7 +97,7 @@ Deforestation, often driven by unsustainable and unlawful agricultural practices
 
 Conversely, forest degradation, though less perceptible, poses an equally grave threat, rendering vibrant forests into mere shadows of their former selves. As their vitality diminishes, crucial ecological functions such as air and water purification, biodiversity support, and habitat provision for wildlife are significantly compromised. 
 
-A convergence of factors contributes to forest degradation, including the relentless impact of climate change, manifesting in heightened temperatures, erratic weather patterns, and an increased vulnerability to forest fires, pest infestations, and diseases. However, the primary culprit remains unsustainable and illegal logging - a lucrative industry fueled by the insatiable demand for timber, paper products and fuel. .
+A convergence of factors contributes to forest degradation, including the relentless impact of climate change, manifesting in heightened temperatures, erratic weather patterns, and an increased vulnerability to forest fires, pest infestations, and diseases. However, the primary culprit remains unsustainable and illegal logging - a lucrative industry fueled by the insatiable demand for timber, paper products and fuel.
                 </span>
             </div>
         </div>
