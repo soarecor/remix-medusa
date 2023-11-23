@@ -8,8 +8,8 @@ import { MoveDown } from 'lucide-react'
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "zer0 supply" },
+    { name: "description", content: "chat with an agent from the future" },
   ];
 };
 

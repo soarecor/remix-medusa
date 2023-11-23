@@ -11,8 +11,8 @@ import forest from "~/assets/home-hero.png";
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "zer0 supply" },
+    { name: "description", content: "zer0 tree in 2050" },
   ];
 };
 
