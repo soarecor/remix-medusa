@@ -56,10 +56,10 @@ export default function IndexRoute() {
                 <span className="block text-base  md:text-2xl leading-relaxed md:leading-loose">
                     While climate change might be visible in certain parts of the 
                     globe, we are all responsible for the outcome. 
-                    At the rate of decline, we are on a trajectory that will 
+                    At this rate of decline, we are on a trajectory that will 
                     put us in a bleak position in 2050. We are hoping to shed some 
-                    light on what the future will look like in this scenario - a future with zero trees.
-                    At zer0.supply, we transcend the present to shape a future where every action counts. Drawing from the stark realities of a treeless future, where environmental devastation has ravaged our planet, we lead the charge in cultivating a sustainable tomorrow. In a world where forests are scorched, temperatures are relentless, and water is scarce, we're committed to redefining the narrative. our mission is to reverse the countdown to zero trees, empowering individuals and communities with knowledge. Together, we envision a future where life thrives in harmony with nature, crafting a legacy of resilience and abundance for generations to come.
+                    light on what the future will look like in this scenario - a future on a trajectory to zero trees.
+                    At zer0.supply, we transcend the present to shape a future where every action counts. Drawing from the stark realities of a treeless future, where environmental devastation has ravaged our planet, we lead the charge in cultivating a sustainable tomorrow. In a world where forests are scorched, temperatures are relentless, and water is scarce, we're committed to redefining the narrative. Our mission is to reverse the countdown to zero trees, empowering individuals and communities with knowledge. Together, we envision a future where life thrives in harmony with nature, crafting a legacy of resilience and abundance for generations to come.
                 </span>
             </div>
         </div>
