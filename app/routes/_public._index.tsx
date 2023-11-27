@@ -12,7 +12,7 @@ import forest from "~/assets/home-hero.png";
 export const meta: V2_MetaFunction = () => {
   return [
     { title: "zer0 supply" },
-    { name: "description", content: "zer0 tree in 2050" },
+    { name: "description", content: "zer0 trees in 2050" },
   ];
 };
 
@@ -28,8 +28,8 @@ export default function IndexRoute() {
      {/* <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-76 text-white"> */}
      <div className="absolute top-1/4 lg:top-1/3 grid grid-cols-5 items-center px-8 lg:px-0 lg:pr-5 w-full">
        <span className="col-span-4 lg:col-start-2 justify-center text-white">
-            <span className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-bold">The year is 2050.</span> 
-            <span className="text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold block pt-4 md:pt-10 drop-shadow-lg">90% of earths forests are impacted by climate change.</span>  
+            <span className="text-2xl md:text-2xl  sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-8xl font-bold">The year is 2050.</span> 
+            <span className="text-lg md:text-2xl  sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold block pt-4 md:pt-10 drop-shadow-lg">90% of earths forests are impacted by climate change.</span>  
             <div>
                 <Button className="mt-4 md:mt-10" size="lg" variant="secondary"> <span className="text-base md:text-lg lg:text-2xl 2xl:text-3xl p-0 md:p-3">                      <NavLink
                             to="/chat"

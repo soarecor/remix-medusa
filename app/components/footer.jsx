@@ -3,7 +3,7 @@ export default function Footer() {
 
     return (
         <div className="mt-8 mb-4 px-8 text-base  md:text-2xl text-center">
-            &copy; Copyright {currentYear} Zero Supply. All Rights Reserved.
+            &copy; Copyright {currentYear} zer0 supply. All Rights Reserved.
         </div>
     )
 }
